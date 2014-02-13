@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="
+      M16 0
+      L32 16
+      L28 16
+      L28 32
+      L20 32
+      L20 22
+      L12 22
+      L12 32
+      L4 32
+      L4 16
+      L0 16
+      Z
+    "/>
+</svg>

@@ -1,3 +1,27 @@
+.go {
+  display: inline-block;
+  vertical-align: -.125em;
+  background-image: url(go-sprite.svg);
+  line-height: inherit;
+  background-size: 1em auto;
+  width: 1em;
+  height: 1em; }
+
+.go--32 {
+  font-size: 2rem; }
+
+.go--48 {
+  font-size: 3rem; }
+
+.go--64 {
+  font-size: 4rem; }
+
+.go-pin {
+  background-position: 0 -1em; }
+
+.go-heart {
+  background-position: 0 -2em; }
+
 .geo:before {
   display: inline-block;
   vertical-align: middle;
@@ -60,5 +84,30 @@
 .geo-search:before {
   content: url(search.svg); }
 
+.geo-pin:before {
+  content: url(pin.svg); }
+
+.geo-heart:before {
+  content: url(heart.svg); }
+
+.geo-star:before {
+  content: url(star.svg); }
+
+.geo-home:before {
+  content: url(home.svg); }
+
 .geo-x-alt:before {
   content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" stroke="#000000" viewBox="0 0 32 32"> <line x1="2" y1="2" x2="30" y2="30" stroke-width="4"/> <line x1="2" y1="30" x2="30" y2="2" stroke-width="4"/> </svg>'); }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333; }
+
+h1 {
+  line-height: 3rem; }
+
+.pad {
+  padding: 2rem; }
+
+.outline, .outline * {
+  outline: 1px solid rgba(0, 204, 255, 0.5); }
