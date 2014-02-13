@@ -1,0 +1,16 @@
+<svg id="pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128">
+  <path d="
+    M8 24
+    A24 24 0 0 1 56 24
+    C56 24, 56 40, 32 64
+    z
+    M8 24
+    C8 24, 8 40, 32 64
+    z
+    M22 24
+    A10 10 0 0 0 42 24
+    A10 10 0 0 0 22 24
+    Z
+  " />
+</svg>
+

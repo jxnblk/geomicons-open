@@ -1,0 +1,64 @@
+.geo:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  fill: #ff0000; }
+
+.geo:before .svg-geo,
+.svg-geo {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  fill: #ff0000; }
+
+.geo--24:before {
+  width: 1.5rem;
+  height: 1.5rem; }
+
+.geo--16:before {
+  width: 1rem;
+  height: 1rem; }
+
+.geo--48:before {
+  width: 3rem;
+  height: 4rem; }
+
+.geo-square:before {
+  content: url(square.svg); }
+
+.geo-square--optical:before {
+  content: url(square--optical.svg); }
+
+.geo-circle:before {
+  content: url(circle.svg); }
+
+.geo-square--rounded:before {
+  content: url(square--rounded.svg); }
+
+.geo-x:before {
+  content: url(x.svg); }
+
+.geo-nav-left:before {
+  content: url(nav-left.svg); }
+
+.geo-nav-right:before {
+  content: url(nav-right.svg); }
+
+.geo-play:before {
+  content: url(play.svg); }
+
+.geo-pause:before {
+  content: url(pause.svg); }
+
+.geo-skip:before {
+  content: url(skip.svg); }
+
+.geo-previous:before {
+  content: url(previous.svg); }
+
+.geo-search:before {
+  content: url(search.svg); }
+
+.geo-x-alt:before {
+  content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" stroke="#000000" viewBox="0 0 32 32"> <line x1="2" y1="2" x2="30" y2="30" stroke-width="4"/> <line x1="2" y1="30" x2="30" y2="2" stroke-width="4"/> </svg>'); }
