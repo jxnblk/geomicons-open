@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path d="
+
+    M2 12
+    L8 12
+    L16 6
+    L16 26
+    L8 20
+    L2 20
+    z
+
+    "/>
+
+  <path fill="none" stroke="#000" stroke-width="3"
+    d="
+
+    M20 10 
+    A8 8 0 0 1 20 22
+    
+
+    M26 6
+    A14 14 0 0 1 26 26
+   
+    "/>
+
+</svg>
+

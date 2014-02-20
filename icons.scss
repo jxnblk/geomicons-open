@@ -6,7 +6,8 @@
   vertical-align: middle;
   width: 2rem;
   height: 2rem;
-  padding: .5rem;
+  //padding: .5rem;
+  margin: .5rem;
   fill: #ff0000;
 }
 .geo:before .svg-geo,
@@ -49,6 +50,8 @@
 .geo-bookmark:before { content: url(bookmark.svg); }
 .geo-trash:before { content: url(trash.svg); }
 .geo-camera:before { content: url(camera.svg); }
+.geo-speaker-volume:before { content: url(speaker-volume.svg); }
+.geo-speaker:before { content: url(speaker.svg); }
 
 .geo-globe:before { content: url(globe.svg); }
 .geo-globe1:before { content: url(globe1.svg); }
@@ -66,7 +69,7 @@ body {
 h1 { line-height: 3rem; }
 .pad { padding: 2rem; }
 
-.outline, .outline * { outline: 1px solid rgba(#0cf,.5); }
+.outline .geo:before { outline: 1px solid rgba(#0cf,.5); }
 
 // Background sprite method
 .go {

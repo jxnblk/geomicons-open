@@ -3,7 +3,7 @@
   vertical-align: middle;
   width: 2rem;
   height: 2rem;
-  padding: .5rem;
+  margin: .5rem;
   fill: #ff0000; }
 
 .geo:before .svg-geo,
@@ -99,6 +99,12 @@
 .geo-camera:before {
   content: url(camera.svg); }
 
+.geo-speaker-volume:before {
+  content: url(speaker-volume.svg); }
+
+.geo-speaker:before {
+  content: url(speaker.svg); }
+
 .geo-globe:before {
   content: url(globe.svg); }
 
@@ -118,7 +124,7 @@ h1 {
 .pad {
   padding: 2rem; }
 
-.outline, .outline * {
+.outline .geo:before {
   outline: 1px solid rgba(0, 204, 255, 0.5); }
 
 .go {
