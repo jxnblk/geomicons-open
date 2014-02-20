@@ -110,6 +110,9 @@
 .geo-cog2:before {
   content: url(cog2.svg); }
 
+.geo-lock:before {
+  content: url(lock.svg); }
+
 .geo-globe:before {
   content: url(globe.svg); }
 
