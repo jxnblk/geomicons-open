@@ -6,6 +6,7 @@
   vertical-align: middle;
   width: 2rem;
   height: 2rem;
+  padding: .5rem;
   fill: #ff0000;
 }
 .geo:before .svg-geo,
@@ -46,6 +47,7 @@
 
 .geo-lock:before { content: url(lock.svg); }
 .geo-bookmark:before { content: url(bookmark.svg); }
+.geo-trash:before { content: url(trash.svg); }
 
 .geo-globe:before { content: url(globe.svg); }
 .geo-globe1:before { content: url(globe1.svg); }
