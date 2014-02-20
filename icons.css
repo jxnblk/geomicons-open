@@ -1,27 +1,3 @@
-.go {
-  display: inline-block;
-  vertical-align: -.125em;
-  background-image: url(go-sprite.svg);
-  line-height: inherit;
-  background-size: 1em auto;
-  width: 1em;
-  height: 1em; }
-
-.go--32 {
-  font-size: 2rem; }
-
-.go--48 {
-  font-size: 3rem; }
-
-.go--64 {
-  font-size: 4rem; }
-
-.go-pin {
-  background-position: 0 -1em; }
-
-.go-heart {
-  background-position: 0 -2em; }
-
 .geo:before {
   display: inline-block;
   vertical-align: middle;
@@ -113,6 +89,9 @@
 .geo-lock:before {
   content: url(lock.svg); }
 
+.geo-bookmark:before {
+  content: url(bookmark.svg); }
+
 .geo-globe:before {
   content: url(globe.svg); }
 
@@ -134,3 +113,27 @@ h1 {
 
 .outline, .outline * {
   outline: 1px solid rgba(0, 204, 255, 0.5); }
+
+.go {
+  display: inline-block;
+  vertical-align: -.125em;
+  background-image: url(go-sprite.svg);
+  line-height: inherit;
+  background-size: 1em auto;
+  width: 1em;
+  height: 1em; }
+
+.go--32 {
+  font-size: 2rem; }
+
+.go--48 {
+  font-size: 3rem; }
+
+.go--64 {
+  font-size: 4rem; }
+
+.go-pin {
+  background-position: 0 -1em; }
+
+.go-heart {
+  background-position: 0 -2em; }
