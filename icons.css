@@ -105,6 +105,9 @@
 .geo-speaker:before {
   content: url(speaker.svg); }
 
+.geo-tag:before {
+  content: url(tag.svg); }
+
 .geo-globe:before {
   content: url(globe.svg); }
 
