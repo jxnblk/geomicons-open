@@ -96,6 +96,9 @@
 .geo-trash:before {
   content: url(trash.svg); }
 
+.geo-camera:before {
+  content: url(camera.svg); }
+
 .geo-globe:before {
   content: url(globe.svg); }
 
