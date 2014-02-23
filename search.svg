@@ -1,4 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#000000" stroke-width="4">
-  <circle cx="12" cy="12" r="10"/>
-  <line x1="18" y1="18" x2="30" y2="30"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="
+    M12 0
+    A12 12 0 0 0 0 12
+    A12 12 0 0 0 12 24
+    A12 12 0 0 0 18.5 22.25
+    L28 32
+    L32 28
+    L22.25 18.5
+    A12 12 0 0 0 24 12
+    A12 12 0 0 0 12 0
+    M12 4
+    A8 8 0 0 1 12 20
+    A8 8 0 0 1 12 4
+    " />
 </svg>
+
