@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(chat.svg); }
+  content: url(file.svg); }
 
 .geo {
   margin: .5rem;
@@ -127,6 +127,15 @@
 
 .geo-chat:before {
   content: url(chat.svg); }
+
+.geo-mail:before {
+  content: url(mail.svg); }
+
+.geo-folder:before {
+  content: url(folder.svg); }
+
+.geo-file:before {
+  content: url(file.svg); }
 
 .geo-globe:before {
   content: url(globe.svg); }

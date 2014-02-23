@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(chat.svg); } // For build
+.geo-current:before { content: url(file.svg); } // For build
 
 
 // Pseudo class method
@@ -66,6 +66,9 @@
 .geo-tag:before { content: url(tag.svg); }
 .geo-music-note:before { content: url(music-note.svg); }
 .geo-chat:before { content: url(chat.svg); }
+.geo-mail:before { content: url(mail.svg); }
+.geo-folder:before { content: url(folder.svg); }
+.geo-file:before { content: url(file.svg); }
 
 .geo-globe:before { content: url(globe.svg); }
 .geo-globe1:before { content: url(globe1.svg); }
