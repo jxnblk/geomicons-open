@@ -1,11 +1,16 @@
 .geo-current:before {
   content: url(file.svg); }
 
+body {
+  color: #fff;
+  background-color: #444; }
+
 .geo {
   margin: .5rem;
   display: inline-block; }
 
 .geo:before {
+  -webkit-filter: invert(100%);
   display: inline-block;
   vertical-align: middle;
   width: 2rem;
