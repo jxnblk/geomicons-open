@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(star.svg); } // For build
+.geo-current:before { content: url(cloud.svg); } // For build
 
 
 body {
@@ -75,6 +75,7 @@ body {
 .geo-folder:before { content: url(folder.svg); }
 .geo-file:before { content: url(file.svg); }
 .geo-calendar:before { content: url(calendar.svg); }
+.geo-cloud:before { content: url(cloud.svg); }
 
 .geo-globe:before { content: url(globe.svg); }
 .geo-globe1:before { content: url(globe1.svg); }

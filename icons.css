@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(star.svg); }
+  content: url(cloud.svg); }
 
 body {
   color: #fff;
@@ -144,6 +144,9 @@ body {
 
 .geo-calendar:before {
   content: url(calendar.svg); }
+
+.geo-cloud:before {
+  content: url(cloud.svg); }
 
 .geo-globe:before {
   content: url(globe.svg); }
