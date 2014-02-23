@@ -1,10 +1,20 @@
+.geo-current:before {
+  content: url(chat.svg); }
+
+.geo {
+  margin: .5rem;
+  display: inline-block; }
+
 .geo:before {
   display: inline-block;
   vertical-align: middle;
   width: 2rem;
   height: 2rem;
-  margin: .5rem;
   fill: #ff0000; }
+
+.geo-grid {
+  background-image: url(bg-grid.svg);
+  background-size: cover; }
 
 .geo:before .svg-geo,
 .svg-geo {
@@ -13,25 +23,29 @@
   vertical-align: middle;
   fill: #ff0000; }
 
-.geo--24:before {
-  width: 1.5rem;
-  height: 1.5rem; }
-
-.geo--16:before {
+.geo--16, .geo--16:before {
   width: 1rem;
   height: 1rem; }
 
-.geo--48:before {
+.geo--24, .geo--24:before {
+  width: 1.5rem;
+  height: 1.5rem; }
+
+.geo--48, .geo--48:before {
   width: 3rem;
   height: 3rem; }
 
-.geo--64:before {
+.geo--64, .geo--64:before {
   width: 4rem;
   height: 4rem; }
 
-.geo--128:before {
+.geo--128, .geo--128:before {
   width: 8rem;
   height: 8rem; }
+
+.geo--256, .geo--256:before {
+  width: 16rem;
+  height: 16rem; }
 
 .geo-square:before {
   content: url(square.svg); }
@@ -107,6 +121,12 @@
 
 .geo-tag:before {
   content: url(tag.svg); }
+
+.geo-music-note:before {
+  content: url(music-note.svg); }
+
+.geo-chat:before {
+  content: url(chat.svg); }
 
 .geo-globe:before {
   content: url(globe.svg); }
