@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(cog3.svg); }
+  content: url(info.svg); }
 
 body {
   color: #fff;
@@ -147,6 +147,9 @@ body {
 
 .geo-cloud:before {
   content: url(cloud.svg); }
+
+.geo-warning:before {
+  content: url(warning-alt.svg); }
 
 .geo-twitter:before {
   content: url(twitter.svg); }
