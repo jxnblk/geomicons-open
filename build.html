@@ -5,6 +5,7 @@
 </head>
 <body class="pad xoutline">
 
+<!--
 <div class="pad">
   <span class="geo geo-current geo--256 geo-grid"></span>
   <span class="geo geo-current geo--128"></span>
@@ -18,14 +19,13 @@
   <span class="geo geo-globe geo--64"></span>
 </div>
 
+-->
+
+<!--
 <div class="pad">
   <span class="geo geo-globe"></span>
   <span class="geo geo-globe1"></span>
 
-  <!--
-  <span class="geo geo-nav-left"></span>
-  <span class="geo geo-nav-right"></span>
-  -->
   <span class="geo geo-previous"></span>
   <span class="geo geo-play"></span>
   <span class="geo geo-pause"></span>
@@ -53,20 +53,29 @@
   <span class="geo geo-warning"></span>
   <span class="geo geo-twitter"></span>
 </div>
+<div>
+  <span class="go go--32 go-heart"></span>
+  <span class="go go--32 go-pin"></span> <span class="go--32">Derp</span>
+</div>
 
-<!--
-<section>
-  <style>
-    svg { max-height: 100%; }
-    .svg {
-      width: 50%;
-    }
-  </style>
-  <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" preserveaspectratio="x32y32 meet">
-    <path d=" M7 12 A7 7 0 0 0 0 19 A7 7 0 0 0 7 26 H27 A5 5 0 0 0 32 21 A5 5 0 0 0 27 16 A10 10 0 0 0 28 12 A10 10 0 0 0 18 2 A10 10 0 0 0 8 12 A7 7 0 0 0 7 12 " />
-  </svg>
-</section>
+<div>
+  <img src="go-sprite.svg" />
+</div>
 -->
+
+<div class="pad">
+  <h1>js injection test area</h1>
+  <img class="geomicon geomicon-heart fill-blue geo--32" src="heart.svg"/>
+  <img class="geomicon geomicon-pin geo--32" src="pin.svg"/>
+  <img class="geomicon geo--32" src="cog.svg"/>
+  <img class="geomicon geo--32 fill-white" src="warning-alt.svg"/>
+  <img class="geomicon geo--32 fill-white" src="music-note.svg"/>
+  <img class="geomicon geo--32 fill-white" src="camera.svg"/>
+</div>
+
+
+<script src="corslite.js"></script>
+<script src="geomicons.js"></script>
 
 </body>
 </html>

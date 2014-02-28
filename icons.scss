@@ -17,7 +17,9 @@ body {
   height: 2rem;
   //padding: .5rem;
   //margin: .5rem;
-  fill: #ff0000;
+  svg {
+    fill: #ff0000;
+  }
 }
 .geo-grid {
   background-image: url(bg-grid.svg);
@@ -35,6 +37,7 @@ body {
 
 .geo--16, .geo--16:before { width: 1rem; height: 1rem; }
 .geo--24, .geo--24:before { width: 1.5rem; height: 1.5rem; }
+.geo--32, .geo--32:before { width: 2rem; height: 2rem; }
 
 .geo--48, .geo--48:before { width: 3rem; height: 3rem; }
 .geo--64, .geo--64:before { width: 4rem; height: 4rem; }
@@ -114,4 +117,15 @@ h1 { line-height: 3rem; }
 
 .go-pin { background-position: 0 -1em; }
 .go-heart { background-position: 0 -2em; }
+
+.geomicon-blue {
+  fill: #0cf;
+  &:hover {
+    fill: #fff;
+  }
+}
+
+.fill-blue { fill: #0cf; }
+.fill-white { fill: #fff; }
+
 
