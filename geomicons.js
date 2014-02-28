@@ -26,9 +26,11 @@ getIcon = function(el, path) {
 
 for (var i = 0; i < icons.length; i++) {
   var icon = icons[i];
+  console.log(icon.src.documentElement);
   var path = icon.getAttribute('src');
-  icon.style.display = 'none';
-  icon.setAttribute('src', '');
+  if (!path) path = icon.getAttribute('data-src');
+  //icon.style.visibility = 'hidden';
+  //icon.setAttribute('src', '');
   getIcon(icon, path);
 };
 

@@ -1,5 +1,10 @@
 .geo-current:before {
-  content: url(info.svg); }
+  content: url(speaker-volume.svg); }
+
+.geomicon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em; }
 
 body {
   color: #fff;
@@ -169,8 +174,7 @@ body {
   content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" stroke="#000000" viewBox="0 0 32 32"> <line x1="2" y1="2" x2="30" y2="30" stroke-width="4"/> <line x1="2" y1="30" x2="30" y2="2" stroke-width="4"/> </svg>'); }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  color: #333; }
+  font-family: 'Helvetica Neue', Helvetica, sans-serif; }
 
 h1 {
   line-height: 3rem; }
@@ -215,3 +219,12 @@ h1 {
 
 .fill-white {
   fill: #fff; }
+
+.h1 {
+  font-size: 5rem; }
+
+.h2 {
+  font-size: 3rem; }
+
+.h3 {
+  font-size: 2rem; }

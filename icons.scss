@@ -1,7 +1,11 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(info.svg); } // For build
+.geo-current:before { content: url(speaker-volume.svg); } // For build
 
+.geomicon {
+  width: 1em; height: 1em;
+  vertical-align: -.125em;
+}
 
 body {
   color: #fff;
@@ -93,7 +97,7 @@ body {
 // Base utilities
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  color: #333;
+  //color: #333;
 }
 h1 { line-height: 3rem; }
 .pad { padding: 2rem; }
@@ -125,7 +129,11 @@ h1 { line-height: 3rem; }
   }
 }
 
+
 .fill-blue { fill: #0cf; }
 .fill-white { fill: #fff; }
 
+.h1 { font-size: 5rem; }
+.h2 { font-size: 3rem; }
+.h3 { font-size: 2rem; }
 

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#0cf">
+  <defs>
+    <mask id="cog-center">
+      <rect fill="#fff" width="32" height="32" />
+      <circle fill="#000" cx="16" cy="16" r="6" />
+    </mask>
+  </defs>
+  <g mask="url(#cog-center)">
+    <path d="M14 0 L18 0 L22 16 L18 32 L14 32 L10 16 Z "/>
+    <path d="M14 0 L18 0 L22 16 L18 32 L14 32 L10 16 Z " transform="rotate(45 16 16)" />
+    <path d="M14 0 L18 0 L22 16 L18 32 L14 32 L10 16 Z " transform="rotate(90 16 16)" />
+    <path d="M14 0 L18 0 L22 16 L18 32 L14 32 L10 16 Z " transform="rotate(135 16 16)" />
+    <circle cx="16" cy="16" r="11" />
+  </g>
+</svg>
