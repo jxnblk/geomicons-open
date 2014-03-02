@@ -15,41 +15,57 @@ injectSvg = function(el, svg){
   el.parentNode.replaceChild(svg, el);
 };
 
-getIcon = function(el, path) {
-  xhr(path, function(err, resp) {
-    if(resp) {
-      var svg = resp.responseXML.documentElement;
-      injectSvg(el, svg);
-    }
-    if(err) console.log(err);
-  }, true);
-};
+//getIcon = function(el, path) {
+//  xhr(path, function(err, resp) {
+//    if(resp) {
+//      var svg = resp.responseXML.documentElement;
+//      injectSvg(el, svg);
+//    }
+//    if(err) console.log(err);
+//  }, true);
+//};
 
-for (var i = 0; i < icons.length; i++) {
-  var icon = icons[i];
-  var path = icon.getAttribute('src');
-  if (!path) path = icon.getAttribute('data-src');
-  getIcon(icon, path);
-};
+//for (var i = 0; i < icons.length; i++) {
+//  var icon = icons[i];
+//  var path = icon.getAttribute('src');
+//  if (!path) path = icon.getAttribute('data-src');
+//  getIcon(icon, path);
+//};
 
 
 // Sprite method
 
 var sprite;
 
-function getSprite() {
-  xhr('go-sprite.svg', function(err, resp) {
-    if(resp) {
-      var sprite = resp.responseXML.documentElement;
-      console.log(sprite);
-      parseSpriteIcons(sprite);
-    }
-    if(err) console.log(err);
-  }, true);
-};
-getSprite();
+function httpGet(url) {
+  var xmlHttp = null;
+  xmlHttp = new XMLHttpRequest();
+  xmlHttp.open( "GET", url, false );
+  xmlHttp.send( null );
+  return xmlHttp;
+}
 
-function parseSpriteIcons(sprite) {
+var sprite = httpGet('go-sprite.svg').responseXML.documentElement;
+
+/*
+  function getSprite() {
+
+    console.log(sprite);
+    // Probably don't need this for same-origin requests
+    //xhr('go-sprite.svg', function(err, resp) {
+    //  if(resp) {
+    //    var sprite = resp.responseXML.documentElement;
+    //    console.log(sprite);
+    //    parseSpriteIcons(sprite);
+    //  }
+    //  if(err) console.log(err);
+    //}, true);
+  };
+*/
+
+//getSprite();
+
+//function parseSpriteIcons(sprite) {
   for (var i = 0; i < spriteIcons.length; i++){
     var icon = spriteIcons[i],
         id = icon.getAttribute('data-id'),
@@ -61,5 +77,5 @@ function parseSpriteIcons(sprite) {
     console.log(svg);
     injectSvg(icon, svg);
   };
-};
+//};
 

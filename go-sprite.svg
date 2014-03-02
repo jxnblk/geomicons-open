@@ -1,11 +1,15 @@
-<svg id="go-sprite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 128" width="32" height="128">
+<svg id="go-sprite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 160" width="32" height="160">
 
-  <svg id="pin" transform="translate(0,32)" viewBox="0 0 32 32" width="32" height="32">
+  <svg id="pin" y="32" viewBox="0 0 32 32" width="32" height="32">
     <path d=" M4 12 A12 12 0 0 1 28 12 C28 20, 16 32, 16 32 C16 32, 4 20 4 12 M11 12 A5 5 0 0 0 21 12 A5 5 0 0 0 11 12 Z" />
   </svg>
 
-  <svg id="heart" transform="translate(0,64)" viewBox="0 0 32 32" width="32" height="32">
+  <svg id="heart" y="64" viewBox="0 0 32 32" width="32" height="32">
     <path d=" M0 10 C0 6, 3 2, 8 2 C12 2, 15 5, 16 6 C17 5, 20 2, 24 2 C30 2, 32 6, 32 10 C32 18, 18 29, 16 30 C14 29, 0 18, 0 10 " />
+  </svg>
+
+  <svg id="cloud" y="96" viewBox="0 0 32 32" width="32" height="32">
+    <path d=" M7 14 A7 7 0 0 0 0 21 A7 7 0 0 0 7 28 H27 A5 5 0 0 0 32 23 A5 5 0 0 0 27 18 A10 10 0 0 0 28 14 A10 10 0 0 0 18 4 A10 10 0 0 0 8 14 A7 7 0 0 0 7 14 " />
   </svg>
 
 </svg>
