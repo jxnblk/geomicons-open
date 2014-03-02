@@ -6,10 +6,12 @@
 // of img src
 
 var icons = document.getElementsByClassName('geomicon'),
+    spriteIcons = document.getElementsByClassName('geo-sprite'),
     injectSvg,
     getIcon;
 
 injectSvg = function(el, svg){
+  svg.setAttribute('class', el.className);
   el.parentNode.replaceChild(svg, el);
 };
 
@@ -17,7 +19,6 @@ getIcon = function(el, path) {
   xhr(path, function(err, resp) {
     if(resp) {
       var svg = resp.responseXML.documentElement;
-      svg.setAttribute('class', el.className);
       injectSvg(el, svg);
     }
     if(err) console.log(err);
@@ -26,11 +27,39 @@ getIcon = function(el, path) {
 
 for (var i = 0; i < icons.length; i++) {
   var icon = icons[i];
-  console.log(icon.src.documentElement);
   var path = icon.getAttribute('src');
   if (!path) path = icon.getAttribute('data-src');
-  //icon.style.visibility = 'hidden';
-  //icon.setAttribute('src', '');
   getIcon(icon, path);
+};
+
+
+// Sprite method
+
+var sprite;
+
+function getSprite() {
+  xhr('go-sprite.svg', function(err, resp) {
+    if(resp) {
+      var sprite = resp.responseXML.documentElement;
+      console.log(sprite);
+      parseSpriteIcons(sprite);
+    }
+    if(err) console.log(err);
+  }, true);
+};
+getSprite();
+
+function parseSpriteIcons(sprite) {
+  for (var i = 0; i < spriteIcons.length; i++){
+    var icon = spriteIcons[i],
+        id = icon.getAttribute('data-id'),
+        svg = sprite.getElementById(id);
+    svg.removeAttribute('transform');
+    svg.id = id + '-' + i;
+
+    icon.classList.add('geomicon-' + id);
+    console.log(svg);
+    injectSvg(icon, svg);
+  };
 };
 

@@ -6,6 +6,10 @@
   height: 1em;
   vertical-align: -.125em; }
 
+.geo-sprite {
+  width: 1em;
+  height: 1em; }
+
 body {
   color: #fff;
   background-color: #444; }
