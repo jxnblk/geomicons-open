@@ -69,7 +69,7 @@ var sprite = httpGet('go-sprite.svg').responseXML.documentElement;
   for (var i = 0; i < spriteIcons.length; i++){
     var icon = spriteIcons[i],
         id = icon.getAttribute('data-id'),
-        svg = sprite.getElementById(id);
+        svg = sprite.getElementById(id).cloneNode(true);
     svg.removeAttribute('transform');
     svg.id = id + '-' + i;
 
