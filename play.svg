@@ -1,4 +1,3 @@
-<?xml-stylesheet type="text/css" href="svg.css" ?>
-<svg class="svg-geo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <polygon points="2,2 30,16 2,30"/>
+<svg id="play" class="plangular-icon plangular-icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" y="32">
+  <path d="M4 4 L28 16 L4 28 z" />
 </svg>

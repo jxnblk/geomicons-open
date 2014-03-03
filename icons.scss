@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(speaker-volume.svg); } // For build
+.geo-current:before { content: url(check.svg); } // For build
 
 .geomicon {
   width: 1em; height: 1em;
@@ -8,12 +8,16 @@
 }
 .geo-sprite {
   width: 1em; height: 1em;
+  //vertical-align: -0.1875em;
+  vertical-align: -0.125em;
 }
 
 body {
   color: #fff;
   background-color: #444;
+  -webkit-font-smoothing: antialiased;
 }
+
 // Pseudo class method
 .geo { margin: .5rem; display: inline-block; }
 .geo:before {
@@ -88,6 +92,8 @@ body {
 .geo-cloud:before { content: url(cloud.svg); }
 .geo-warning:before { content: url(warning-alt.svg); }
 .geo-twitter:before { content: url(twitter.svg); }
+.geo-info:before { content: url(info.svg); }
+.geo-check:before { content: url(check.svg); }
 
 .geo-globe:before { content: url(globe.svg); }
 .geo-globe1:before { content: url(globe1.svg); }
@@ -140,4 +146,7 @@ h1 { line-height: 3rem; }
 .h1 { font-size: 5rem; }
 .h2 { font-size: 3rem; }
 .h3 { font-size: 2rem; }
+.h4 { font-size: 1.5rem; }
+
+.bold { font-weight: bold; }
 

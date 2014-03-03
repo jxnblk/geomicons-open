@@ -1,0 +1,9 @@
+<svg class="plangular-icon plangular-icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!--
+  <path fill="none" stroke="red" stroke-width="8" d="M3 16 L12 25 L29 10 "/>
+  -->
+  <path
+    d="
+    M0 17 L5 13 L12 20 L27 8 L32 13 L12 29
+  " />
+</svg>

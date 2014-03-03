@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(speaker-volume.svg); }
+  content: url(check.svg); }
 
 .geomicon {
   width: 1em;
@@ -8,11 +8,13 @@
 
 .geo-sprite {
   width: 1em;
-  height: 1em; }
+  height: 1em;
+  vertical-align: -0.125em; }
 
 body {
   color: #fff;
-  background-color: #444; }
+  background-color: #444;
+  -webkit-font-smoothing: antialiased; }
 
 .geo {
   margin: .5rem;
@@ -168,6 +170,12 @@ body {
 .geo-twitter:before {
   content: url(twitter.svg); }
 
+.geo-info:before {
+  content: url(info.svg); }
+
+.geo-check:before {
+  content: url(check.svg); }
+
 .geo-globe:before {
   content: url(globe.svg); }
 
@@ -235,3 +243,9 @@ h1 {
 
 .h3 {
   font-size: 2rem; }
+
+.h4 {
+  font-size: 1.5rem; }
+
+.bold {
+  font-weight: bold; }
