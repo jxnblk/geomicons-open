@@ -1,7 +1,7 @@
 // Geomicons SVG injection
 
 var icons = document.getElementsByClassName('geomicon'),
-    iconUrl = 'go-sprite.svg',
+    iconUrl = 'geomicons-sprite.svg',
     xmlHttp = null,
     injectSvg,
     sprite;
@@ -22,7 +22,6 @@ injectSvg = function(el, svg){
 };
 
 for (var i = 0; i < icons.length; i++){
-  if (!sprite) return false;
   var icon = icons[i],
       id = icon.getAttribute('data-id'),
       svg = sprite.getElementById(id).cloneNode(true);
