@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(facebook.svg); } // For build
+.geo-current:before { content: url(../facebook.svg); } // For build
 
 .geomicon {
   width: 1em; height: 1em;
@@ -33,8 +33,8 @@ body {
   }
 }
 .geo-grid {
-  background-image: url(bg-grid.svg);
-  background-image: url(fb.png);
+  background-image: url(../scratch/bg-grid.svg);
+  background-image: url(../fb.png);
   //background-size: 100% 100%;
   background-size: cover;
 }

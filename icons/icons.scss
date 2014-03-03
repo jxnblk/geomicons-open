@@ -1,0 +1,169 @@
+// Geomicons Open 
+
+.geo-current:before { content: url(facebook.svg); } // For build
+
+.geomicon {
+  width: 1em; height: 1em;
+  vertical-align: -.125em;
+}
+.geo-sprite {
+  width: 1em; height: 1em;
+  //vertical-align: -0.1875em;
+  vertical-align: -0.125em;
+}
+
+body {
+  color: #fff;
+  background-color: #444;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Pseudo class method
+.geo { margin: .5rem; display: inline-block; }
+.geo:before {
+  -webkit-filter: invert(100%);
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  //padding: .5rem;
+  //margin: .5rem;
+  svg {
+    fill: #ff0000;
+  }
+}
+.geo-grid {
+  background-image: url(../scratch/bg-grid.svg);
+  //background-image: url(../fb.png);
+  //background-size: 100% 100%;
+  background-size: cover;
+}
+.geo:before .svg-geo,
+.svg-geo {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  fill: #ff0000;
+}
+
+
+.geo--16, .geo--16:before { width: 1rem; height: 1rem; }
+.geo--24, .geo--24:before { width: 1.5rem; height: 1.5rem; }
+.geo--32, .geo--32:before { width: 2rem; height: 2rem; }
+
+.geo--48, .geo--48:before { width: 3rem; height: 3rem; }
+.geo--64, .geo--64:before { width: 4rem; height: 4rem; }
+
+.geo--128, .geo--128:before { width: 8rem; height: 8rem; }
+.geo--256, .geo--256:before { width: 16rem; height: 16rem; }
+
+.geo-square:before { content: url(square.svg); }
+.geo-square--optical:before { content: url(square--optical.svg); }
+.geo-circle:before { content: url(circle.svg); }
+.geo-square--rounded:before { content: url(square--rounded.svg); }
+.geo-x:before { content: url(x.svg); }
+.geo-nav-left:before { content: url(nav-left.svg); }
+.geo-nav-right:before { content: url(nav-right.svg); }
+.geo-play:before { content: url(play.svg); }
+.geo-pause:before { content: url(pause.svg); }
+.geo-skip:before { content: url(skip.svg); }
+.geo-previous:before { content: url(previous.svg); }
+
+.geo-search:before { content: url(search.svg); }
+.geo-pin:before { content: url(pin.svg); }
+.geo-heart:before { content: url(heart.svg); }
+.geo-star:before { content: url(star.svg); }
+.geo-home:before { content: url(home.svg); }
+.geo-cog:before { content: url(cog.svg); }
+
+.geo-lock:before { content: url(lock.svg); }
+.geo-bookmark:before { content: url(bookmark.svg); }
+.geo-trash:before { content: url(trash.svg); }
+.geo-camera:before { content: url(camera.svg); }
+.geo-speaker-volume:before { content: url(speaker-volume.svg); }
+.geo-speaker:before { content: url(speaker.svg); }
+.geo-tag:before { content: url(tag.svg); }
+.geo-music-note:before { content: url(music-note.svg); }
+.geo-chat:before { content: url(chat.svg); }
+.geo-mail:before { content: url(mail.svg); }
+.geo-folder:before { content: url(folder.svg); }
+.geo-file:before { content: url(file.svg); }
+.geo-calendar:before { content: url(calendar.svg); }
+.geo-cloud:before { content: url(cloud.svg); }
+.geo-warning:before { content: url(warning.svg); }
+.geo-twitter:before { content: url(twitter.svg); }
+.geo-info:before { content: url(info.svg); }
+.geo-check:before { content: url(check.svg); }
+
+.geo-triangle-down:before { content: url(triangle-down.svg); }
+.geo-triangle-up:before { content: url(triangle-up.svg); }
+.geo-triangle-left:before { content: url(triangle-left.svg); }
+.geo-triangle-right:before { content: url(triangle-right.svg); }
+
+.geo-carat-up:before { content: url(carat-up.svg); }
+.geo-carat-down:before { content: url(carat-down.svg); }
+.geo-carat-left:before { content: url(carat-left.svg); }
+.geo-carat-right:before { content: url(carat-right.svg); }
+
+.geo-close:before { content: url(close.svg); }
+.geo-user:before { content: url(user.svg); }
+.geo-compose:before { content: url(compose.svg); }
+
+.geo-globe:before { content: url(globe.svg); }
+
+.geo-x-alt:before {
+  content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" stroke="#000000" viewBox="0 0 32 32"> <line x1="2" y1="2" x2="30" y2="30" stroke-width="4"/> <line x1="2" y1="30" x2="30" y2="2" stroke-width="4"/> </svg>');
+}
+
+
+// Base utilities
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  //color: #333;
+}
+h1 { line-height: 3rem; }
+.pad { padding: 2rem; }
+
+.outline .geo:before { outline: 1px solid rgba(#0cf,.5); }
+
+// Background sprite method
+.go {
+  display: inline-block;
+  //vertical-align: middle;
+  vertical-align: -.125em;
+  background-image: url(go-sprite.svg);
+  line-height: inherit;
+  background-size: 1em auto;
+  width: 1em;
+  height: 1em;
+}
+.go--32 { font-size: 2rem; }
+.go--48 { font-size: 3rem; }
+.go--64 { font-size: 4rem; }
+
+.go-pin { background-position: 0 -1em; }
+.go-heart { background-position: 0 -2em; }
+
+.geomicon-blue {
+  fill: #0cf;
+  &:hover {
+    fill: #fff;
+  }
+}
+
+
+.fill-blue { fill: #0cf; }
+.fill-white { fill: #fff; }
+
+.h00 { font-size: 12rem; }
+.h1 { font-size: 5rem; }
+.h2 { font-size: 3rem; }
+.h3 { font-size: 2rem; }
+.h4 { font-size: 1.5rem; }
+
+.bold { font-weight: bold; }
+
+.merriweather { font-family: 'Merriweather'; }
+.open-sans { font-family: 'Open Sans'; }
+.source-sans { font-family: 'Source Sans Pro'; }
+
