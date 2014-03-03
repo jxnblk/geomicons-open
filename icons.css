@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(check.svg); }
+  content: url(warning.svg); }
 
 .geomicon {
   width: 1em;
@@ -165,7 +165,7 @@ body {
   content: url(cloud.svg); }
 
 .geo-warning:before {
-  content: url(warning-alt.svg); }
+  content: url(warning.svg); }
 
 .geo-twitter:before {
   content: url(twitter.svg); }

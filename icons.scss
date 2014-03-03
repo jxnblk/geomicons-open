@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(check.svg); } // For build
+.geo-current:before { content: url(warning.svg); } // For build
 
 .geomicon {
   width: 1em; height: 1em;
@@ -90,7 +90,7 @@ body {
 .geo-file:before { content: url(file.svg); }
 .geo-calendar:before { content: url(calendar.svg); }
 .geo-cloud:before { content: url(cloud.svg); }
-.geo-warning:before { content: url(warning-alt.svg); }
+.geo-warning:before { content: url(warning.svg); }
 .geo-twitter:before { content: url(twitter.svg); }
 .geo-info:before { content: url(info.svg); }
 .geo-check:before { content: url(check.svg); }
