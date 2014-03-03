@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(warning.svg); } // For build
+.geo-current:before { content: url(user.svg); } // For build
 
 .geomicon {
   width: 1em; height: 1em;
@@ -106,6 +106,7 @@ body {
 .geo-carat-right:before { content: url(carat-right.svg); }
 
 .geo-close:before { content: url(close.svg); }
+.geo-user:before { content: url(user.svg); }
 
 .geo-globe:before { content: url(globe.svg); }
 .geo-globe1:before { content: url(globe1.svg); }
