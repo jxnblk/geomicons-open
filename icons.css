@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(triangle-left.svg); }
+  content: url(carat-right.svg); }
 
 .geomicon {
   width: 1em;
@@ -187,6 +187,18 @@ body {
 
 .geo-triangle-right:before {
   content: url(triangle-right.svg); }
+
+.geo-carat-up:before {
+  content: url(carat-up.svg); }
+
+.geo-carat-down:before {
+  content: url(carat-down.svg); }
+
+.geo-carat-left:before {
+  content: url(carat-left.svg); }
+
+.geo-carat-right:before {
+  content: url(carat-right.svg); }
 
 .geo-globe:before {
   content: url(globe.svg); }
