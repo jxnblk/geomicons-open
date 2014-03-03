@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(carat-right.svg); }
+  content: url(close.svg); }
 
 .geomicon {
   width: 1em;
@@ -199,6 +199,9 @@ body {
 
 .geo-carat-right:before {
   content: url(carat-right.svg); }
+
+.geo-close:before {
+  content: url(close.svg); }
 
 .geo-globe:before {
   content: url(globe.svg); }
