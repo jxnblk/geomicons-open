@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(user.svg); }
+  content: url(compose.svg); }
 
 .geomicon {
   width: 1em;
@@ -205,6 +205,9 @@ body {
 
 .geo-user:before {
   content: url(user.svg); }
+
+.geo-compose:before {
+  content: url(compose.svg); }
 
 .geo-globe:before {
   content: url(globe.svg); }
