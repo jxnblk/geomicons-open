@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 
 
-<svg xmlns="http://www.w3.org/2000/svg" id="bookmark" width="32" height="32" viewBox="0 0 32 32">
+<svg id="bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
 
     M6 2
@@ -15,7 +15,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M2 4
     L6 4
@@ -38,7 +38,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="camera" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
 
     M0 6
@@ -59,23 +59,23 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="carat-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M1 12 L16 26 L31 12 L27 8 L16 18 L5 8 z"/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="carat-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="carat-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="carat-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M1 20 L16 6 L31 20 L27 24 L16 14 L5 24 z"/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="chat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M32 16
     A16 12 0 0 0 0 16
@@ -89,15 +89,15 @@
 </svg>
 
 
-<svg class="plangular-icon plangular-icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M1 14 L5 10 L13 18 L27 4 L31 8 L13 26 z"/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z"/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M7 14
     A7 7 0 0 0 0 21
@@ -113,7 +113,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="cog" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M14 0
     H18
@@ -155,7 +155,7 @@
   "/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="compose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M4 4 L16 4 L16 8 L8 8 L8 24 L24 24 L24 16 L28 16
     L28 28 L4 28 z
@@ -163,7 +163,7 @@
   "/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path
     opacity=".8"
     fill="cyan"
@@ -178,7 +178,7 @@
   "/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M4 2
     L4 30
@@ -196,7 +196,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M0 4
     L0 28
@@ -209,7 +209,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#000" stroke-width="1">
+<svg id="globe" class="stroked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="#000" stroke-width="1" width="32" height="32">
   <ellipse cx="16" cy="16" rx="15" ry="11" stroke-width="2" />
   <path d="
     M5 9 A42 42 0 0 0 27 9
@@ -221,7 +221,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M0 10
     C0 6, 3 2, 8 2
@@ -234,7 +234,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
       M16 0
       L32 16
@@ -251,7 +251,7 @@
     "/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path
     d="
     M16 0
@@ -278,7 +278,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" id="lock" width="32" height="32" viewBox="0 0 32 32">
+<svg id="lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
 
     M22 16
@@ -301,7 +301,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M0 6
     L16 16
@@ -318,7 +318,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="music-note" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
 
     M0 24
@@ -340,11 +340,15 @@
     A2 2 0 0 0 28 24
     -->
 
-<svg id="pause" class="plangular-icon plangular-icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" y="64">
+<svg id="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <path d="M4 4 L24 14 V4 H28 V28 H24 V18 L4 28 z" />
+</svg>
+
+<svg id="pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 4 H12 V28 H4 z M20 4 H28 V28 H20 z" />
 </svg>
 
-<svg id="pin" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<svg id="pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M4 12
     A12 12 0 0 1 28 12
@@ -357,15 +361,15 @@
 </svg>
 
 
-<svg id="play" class="plangular-icon plangular-icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" y="32">
+<svg id="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 4 L28 16 L4 28 z" />
 </svg>
 
-<svg id="previous" class="plangular-icon plangular-icon-previous" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" y="96">
+<svg id="previous" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 4 H8 V14 L28 4 V28 L8 18 V28 H4 z" />
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M12 0
     A12 12 0 0 0 0 12
@@ -383,11 +387,7 @@
 </svg>
 
 
-<svg id="next" class="plangular-icon plangular-icon-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" y="128">
-  <path d="M4 4 L24 14 V4 H28 V28 H24 V18 L4 28 z" />
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="speaker-volume" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M2 12
     L8 12
@@ -398,6 +398,7 @@
     z
     "/>
 
+  <!--
   <path fill="none" stroke="red" stroke-width="4" opacity="0"
     d="
       M20 10 
@@ -405,6 +406,7 @@
       M26 6
       A14 14 0 0 1 26 26
     "/>
+    -->
 
   <path
     d="
@@ -428,7 +430,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<svg id="speaker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
 
     M2 12
@@ -443,7 +445,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M16 0
     L21 11 
@@ -458,7 +460,7 @@
   "/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<svg id="tag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
 
     M0 18
@@ -476,7 +478,7 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<svg id="trash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
 
     M4 4
@@ -499,23 +501,23 @@
 </svg>
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="triangle-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 8 H28 L16 26 z" />
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="triangle-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M24 4 V28 L6 16 z" />
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="triangle-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M8 4 V28 L26 16 z" />
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="triangle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 24 H28 L16 6 z" />
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg id="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
   <path d="
     M5 8
     a37 37 0 0 0 26 14
@@ -536,7 +538,7 @@
   "/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M10 8
     A6 6 0 0 1 22 8
@@ -553,7 +555,7 @@
   "/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path
     d="
     M15 0

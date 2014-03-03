@@ -1,7 +1,7 @@
 // Geomicons SVG injection
 
 var icons = document.getElementsByClassName('geomicon'),
-    iconUrl = 'geomicons-sprite.svg',
+    iconUrl = 'sprite/sprite.svg',
     xmlHttp = null,
     injectSvg,
     sprite;

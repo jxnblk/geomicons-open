@@ -6,7 +6,6 @@ gulp.task('default', function() {
 });
 
 gulp.task('sprite', function() {
-  //var stream = gulp.src('./partials/_sprite-head.svg', './icons/*.svg', './partials/_sprite-footer.svg')
   var stream = gulp.src(['./partials/_sprite-head.svg', './icons/*.svg', './partials/_sprite-footer.svg'])
     .pipe(concat('sprite.svg'))
     .pipe(gulp.dest('./sprite'));

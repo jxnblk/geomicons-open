@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="speaker-volume" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M2 12
     L8 12
@@ -9,6 +9,7 @@
     z
     "/>
 
+  <!--
   <path fill="none" stroke="red" stroke-width="4" opacity="0"
     d="
       M20 10 
@@ -16,6 +17,7 @@
       M26 6
       A14 14 0 0 1 26 26
     "/>
+    -->
 
   <path
     d="
