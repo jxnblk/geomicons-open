@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(check.svg); }
+  content: url(triangle-left.svg); }
 
 .geomicon {
   width: 1em;
@@ -176,6 +176,18 @@ body {
 .geo-check:before {
   content: url(check.svg); }
 
+.geo-triangle-down:before {
+  content: url(triangle-down.svg); }
+
+.geo-triangle-up:before {
+  content: url(triangle-up.svg); }
+
+.geo-triangle-left:before {
+  content: url(triangle-left.svg); }
+
+.geo-triangle-right:before {
+  content: url(triangle-right.svg); }
+
 .geo-globe:before {
   content: url(globe.svg); }
 
@@ -249,3 +261,12 @@ h1 {
 
 .bold {
   font-weight: bold; }
+
+.merriweather {
+  font-family: 'Merriweather'; }
+
+.open-sans {
+  font-family: 'Open Sans'; }
+
+.source-sans {
+  font-family: 'Source Sans Pro'; }

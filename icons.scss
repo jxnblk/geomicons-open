@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(check.svg); } // For build
+.geo-current:before { content: url(triangle-left.svg); } // For build
 
 .geomicon {
   width: 1em; height: 1em;
@@ -95,6 +95,11 @@ body {
 .geo-info:before { content: url(info.svg); }
 .geo-check:before { content: url(check.svg); }
 
+.geo-triangle-down:before { content: url(triangle-down.svg); }
+.geo-triangle-up:before { content: url(triangle-up.svg); }
+.geo-triangle-left:before { content: url(triangle-left.svg); }
+.geo-triangle-right:before { content: url(triangle-right.svg); }
+
 .geo-globe:before { content: url(globe.svg); }
 .geo-globe1:before { content: url(globe1.svg); }
 
@@ -149,4 +154,8 @@ h1 { line-height: 3rem; }
 .h4 { font-size: 1.5rem; }
 
 .bold { font-weight: bold; }
+
+.merriweather { font-family: 'Merriweather'; }
+.open-sans { font-family: 'Open Sans'; }
+.source-sans { font-family: 'Source Sans Pro'; }
 
