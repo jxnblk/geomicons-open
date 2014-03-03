@@ -1,8 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
-  <g id="reference">
-    <rect width="60" height="60" fill="green" opacity=".5"/>
-    <image xlink:href="https://www.facebook.com/images/fb_icon_325x325.png" width="64" height="64"/>
-  </g>
-  <path d="
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+  <path
+    opacity=".8"
+    fill="cyan"
+    d="
+      M12 14
+      L18 14 L18 10
+      C18 6 22 4 28 5
+      L28 10 L26 10
+      C24 10 22 12 22 14
+      L28 14 L28 18 L22 18
+      L22 32 L18 32
   "/>
 </svg>

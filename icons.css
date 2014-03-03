@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(compose.svg); }
+  content: url(facebook.svg); }
 
 .geomicon {
   width: 1em;
@@ -31,6 +31,7 @@ body {
 
 .geo-grid {
   background-image: url(bg-grid.svg);
+  background-image: url(fb.png);
   background-size: cover; }
 
 .geo:before .svg-geo,
