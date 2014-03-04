@@ -6,7 +6,8 @@
     "gulp": "~3.5.5",
     "gulp-htmlmin": "0.1.2",
     "gulp-svgmin": "0.4.4",
-    "gulp-concat": "~2.1.7"
+    "gulp-concat": "~2.1.7",
+    "gulp-cheerio": "0.1.0"
   },
   "repository": {
     "type": "git",
