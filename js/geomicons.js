@@ -24,9 +24,12 @@ injectSvg = function(el, svg){
 for (var i = 0; i < icons.length; i++){
   var icon = icons[i],
       id = icon.getAttribute('data-id'),
-      svg = sprite.getElementById(id).cloneNode(true);
-  svg.id = id + '-' + i;
-  icon.className += ' geomicon-' + id;
-  injectSvg(icon, svg);
+      svg = sprite.getElementById(id);
+  if(svg) {
+    svg = svg.cloneNode(true);
+    svg.id = id + '-' + i;
+    icon.className += ' geomicon-' + id;
+    injectSvg(icon, svg);
+  }
 };
 

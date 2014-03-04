@@ -30,7 +30,7 @@ gulp.task('defs', function() {
         }
     }))
     .pipe(concat('defs.svg'))
-    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg"><defs>'))
+    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs>'))
     .pipe(footer('</defs></svg>'))
     // svgmin removes ids - need to disable this
     //.pipe(svgmin())
