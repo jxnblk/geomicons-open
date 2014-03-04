@@ -1,6 +1,6 @@
 // Geomicons Open 
 
-.geo-current:before { content: url(facebook.svg); } // For build
+.geo-current:before { content: url(github.svg); } // For build
 
 .geomicon {
   width: 1em; height: 1em;
@@ -8,7 +8,6 @@
 }
 .geo-sprite {
   width: 1em; height: 1em;
-  //vertical-align: -0.1875em;
   vertical-align: -0.125em;
 }
 
@@ -26,16 +25,12 @@ body {
   vertical-align: middle;
   width: 2rem;
   height: 2rem;
-  //padding: .5rem;
-  //margin: .5rem;
   svg {
     fill: #ff0000;
   }
 }
 .geo-grid {
   background-image: url(../scratch/bg-grid.svg);
-  //background-image: url(../fb.png);
-  //background-size: 100% 100%;
   background-size: cover;
 }
 .geo:before .svg-geo,
@@ -109,6 +104,7 @@ body {
 .geo-close:before { content: url(close.svg); }
 .geo-user:before { content: url(user.svg); }
 .geo-compose:before { content: url(compose.svg); }
+.geo-github:before { content: url(github.svg); }
 
 .geo-globe:before { content: url(globe.svg); }
 

@@ -1,5 +1,5 @@
 .geo-current:before {
-  content: url(facebook.svg); }
+  content: url(github.svg); }
 
 .geomicon {
   width: 1em;
@@ -208,6 +208,9 @@ body {
 
 .geo-compose:before {
   content: url(compose.svg); }
+
+.geo-github:before {
+  content: url(github.svg); }
 
 .geo-globe:before {
   content: url(globe.svg); }
