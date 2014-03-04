@@ -9,9 +9,31 @@ gulp.task('default', function() {
   console.log('herro');
 });
 
-gulp.task('sprite', function() {
+gulp.task('sprite-image', function() {
   var stream = gulp.src('./icons/*.svg')
     .pipe(concat('sprite.svg'))
+    .pipe(cheerio({
+      run: function($) {
+        var y = 32;
+        $('svg').each(function(){
+          $(this)
+            .attr('y', y)
+            .attr('width', '32')
+            .attr('height', '32');
+          y += 32;
+        });
+      }
+    }))
+    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
+    .pipe(footer('</svg>'))
+    // svgmin removes ids - need to disable this
+    //.pipe(svgmin([{ cleanupIDs: false }]))
+    .pipe(gulp.dest('./sprite'));
+});
+
+gulp.task('sprite-js', function() {
+  var stream = gulp.src('./icons/*.svg')
+    .pipe(concat('js-sprite.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
     .pipe(footer('</svg>'))
     // svgmin removes ids - need to disable this
@@ -22,7 +44,7 @@ gulp.task('sprite', function() {
 gulp.task('defs', function() {
   var stream = gulp.src('./icons/*.svg')
     .pipe(cheerio({
-      run: function ($) {
+      run: function($) {
         var $path = $('svg').children('path');
         var id = $('svg').attr('id');
         $path.attr('id', id);
