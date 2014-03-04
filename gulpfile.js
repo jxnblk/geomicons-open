@@ -7,7 +7,7 @@ var cheerio = require('gulp-cheerio');
 var minimist = require('minimist')(process.argv.slice(2));;
 
 gulp.task('default', function() {
-  console.log('herro');
+  console.log('herro there!');
 });
 
 gulp.task('image-sprite', function() {
@@ -60,3 +60,21 @@ gulp.task('defs', function() {
     .pipe(gulp.dest('./sprite'));
 });
 
+
+/*
+// Work in progress
+// No idea what I'm doing
+gulp.task('image-sprite-css', function() {
+  var iconIds = [];
+  gulp.src('./icons/*.svg')
+    .pipe(cheerio({
+      run: function($) {
+        $('svg').each(function() {
+          var id = $(this).attr('id');
+          iconIds.push(id);
+        });
+        console.log(iconIds);
+      }
+    }));
+});
+*/
