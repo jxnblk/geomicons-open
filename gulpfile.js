@@ -19,11 +19,10 @@ gulp.task('defs', function() {
   var stream = gulp.src('./icons/*.svg')
     .pipe(cheerio({
       run: function ($) {
-          $('svg').each(function(){
-            var $paths = $(this).children('path');
-            var id = $(this).attr('id');
-            $paths.attr('id', id);
-          });
+        var $path = $('svg').children('path');
+        var id = $('svg').attr('id');
+        $path.attr('id', id);
+        $('svg').replaceWith($path);
         }
     }))
     .pipe(concat('defs.svg'))
