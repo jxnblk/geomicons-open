@@ -4,14 +4,21 @@ var concat = require('gulp-concat');
 var header = require('gulp-header');
 var footer = require('gulp-footer');
 var cheerio = require('gulp-cheerio');
+var minimist = require('minimist')(process.argv.slice(2));;
 
 gulp.task('default', function() {
   console.log('herro');
 });
 
-gulp.task('sprite-image', function() {
+gulp.task('image-sprite', function() {
+  var fill = '';
+  var filename = 'sprite';
+  if(minimist.fill) {
+    fill = minimist.fill;
+    filename = filename + '-' + fill;
+  }
   var stream = gulp.src('./icons/*.svg')
-    .pipe(concat('sprite.svg'))
+    .pipe(concat(filename + '.svg'))
     .pipe(cheerio({
       run: function($) {
         var y = 32;
@@ -24,20 +31,16 @@ gulp.task('sprite-image', function() {
         });
       }
     }))
-    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
+    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" fill="#' + fill + '">'))
     .pipe(footer('</svg>'))
-    // svgmin removes ids - need to disable this
-    //.pipe(svgmin([{ cleanupIDs: false }]))
     .pipe(gulp.dest('./sprite'));
 });
 
-gulp.task('sprite-js', function() {
+gulp.task('js-sprite', function() {
   var stream = gulp.src('./icons/*.svg')
     .pipe(concat('js-sprite.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
     .pipe(footer('</svg>'))
-    // svgmin removes ids - need to disable this
-    //.pipe(svgmin([{ cleanupIDs: false }]))
     .pipe(gulp.dest('./sprite'));
 });
 
@@ -54,8 +57,6 @@ gulp.task('defs', function() {
     .pipe(concat('defs.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs>'))
     .pipe(footer('</defs></svg>'))
-    // svgmin removes ids - need to disable this
-    //.pipe(svgmin())
     .pipe(gulp.dest('./sprite'));
 });
 
