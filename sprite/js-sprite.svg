@@ -54,7 +54,7 @@
 <svg id="compose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 4 L16 4 L16 8 L8 8 L8 24 L24 24 L24 16 L28 16 L28 28 L4 28 z M26 2 L30 6 L16 20 L12 20 L12 16 z"/> </svg>
 
-<svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"/>
 </svg>
 
@@ -68,7 +68,7 @@
 </svg>
 
 
-<svg id="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M0 16
     C0 9 6 4 16 4
@@ -140,7 +140,7 @@
   <path d="M4 4 H12 V28 H4 z M20 4 H28 V28 H20 z" />
 </svg>
 
-<svg id="pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg id="pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 12 A12 12 0 0 1 28 12 C28 20, 16 32, 16 32 C16 32, 4 20 4 12 M11 12 A5 5 0 0 0 21 12 A5 5 0 0 0 11 12 Z"/>
 </svg>
 
@@ -153,7 +153,7 @@
   <path d="M4 4 H8 V14 L28 4 V28 L8 18 V28 H4 z" />
 </svg>
 
-<svg id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" >
+<svg id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M12 0 A12 12 0 0 0 0 12 A12 12 0 0 0 12 24 A12 12 0 0 0 18.5 22.25 L28 32 L32 28 L22.25 18.5 A12 12 0 0 0 24 12 A12 12 0 0 0 12 0 M12 4 A8 8 0 0 1 12 20 A8 8 0 0 1 12 4" />
 </svg>
 

@@ -25,19 +25,19 @@ gulp.task('image-sprite', function() {
         $('svg').each(function(){
           $(this)
             .attr('y', y)
-            .attr('width', '32')
-            .attr('height', '32');
+            .attr('width', null)
+            .attr('height', null);
           y += 32;
         });
       }
     }))
-    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" fill="#' + fill + '">'))
+    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 2048" fill="#' + fill + '">'))
     .pipe(footer('</svg>'))
     .pipe(gulp.dest('./sprite'));
 });
 
 gulp.task('js-sprite', function() {
-  var stream = gulp.src('./icons/*.svg')
+  return gulp.src('./icons/*.svg')
     .pipe(concat('js-sprite.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
     .pipe(footer('</svg>'))
@@ -78,3 +78,4 @@ gulp.task('image-sprite-css', function() {
     }));
 });
 */
+

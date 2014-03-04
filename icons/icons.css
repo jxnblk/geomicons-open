@@ -18,16 +18,16 @@ body {
 
 .geo {
   margin: .5rem;
-  display: inline-block; }
+  display: inline-block;
+  width: 1em;
+  height: 1em; }
 
 .geo:before {
   -webkit-filter: invert(100%);
   display: inline-block;
   vertical-align: middle;
-  width: 2rem;
-  height: 2rem; }
-  .geo:before svg {
-    fill: #ff0000; }
+  width: 1em;
+  height: 1em; }
 
 .geo-grid {
   background-image: url(../scratch/bg-grid.svg);
@@ -215,9 +215,6 @@ body {
 .geo-globe:before {
   content: url(globe.svg); }
 
-.geo-x-alt:before {
-  content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" stroke="#000000" viewBox="0 0 32 32"> <line x1="2" y1="2" x2="30" y2="30" stroke-width="4"/> <line x1="2" y1="30" x2="30" y2="2" stroke-width="4"/> </svg>'); }
-
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif; }
 
@@ -233,7 +230,7 @@ h1 {
 .go {
   display: inline-block;
   vertical-align: -.125em;
-  background-image: url(go-sprite.svg);
+  background-image: url(../sprite/sprite-0cf.svg);
   line-height: inherit;
   background-size: 1em auto;
   width: 1em;
@@ -253,6 +250,9 @@ h1 {
 
 .go-heart {
   background-position: 0 -2em; }
+
+.go-current {
+  background-position: 0 -17em; }
 
 .geomicon-blue {
   fill: #0cf; }
