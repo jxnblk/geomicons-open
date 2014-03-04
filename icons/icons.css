@@ -95,8 +95,8 @@ body {
 .geo-pause:before {
   content: url(pause.svg); }
 
-.geo-skip:before {
-  content: url(skip.svg); }
+.geo-next:before {
+  content: url(next.svg); }
 
 .geo-previous:before {
   content: url(previous.svg); }
@@ -166,6 +166,9 @@ body {
 
 .geo-twitter:before {
   content: url(twitter.svg); }
+
+.geo-facebook:before {
+  content: url(facebook.svg); }
 
 .geo-info:before {
   content: url(info.svg); }

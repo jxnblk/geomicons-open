@@ -13,6 +13,7 @@
   },
   "author": "Jxnblk",
   "devDependencies": {
-    "gulp-svgmin": "~0.4.4"
+    "gulp-svgmin": "~0.4.4",
+    "gulp": "^3.5.5"
   }
 }
