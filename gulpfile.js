@@ -1,10 +1,10 @@
 var gulp = require('gulp');
-var svgmin = require('gulp-svgmin');
-var concat = require('gulp-concat');
-var header = require('gulp-header');
-var footer = require('gulp-footer');
 var cheerio = require('gulp-cheerio');
-var minimist = require('minimist')(process.argv.slice(2));;
+var concat = require('gulp-concat');
+var footer = require('gulp-footer');
+var header = require('gulp-header');
+var minimist = require('minimist')(process.argv.slice(2));
+var watch = require('gulp-watch');
 
 gulp.task('default', function() {
   console.log('herro there!');

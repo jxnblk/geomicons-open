@@ -1,30 +1,13 @@
 {
   "name": "geomicons-open",
   "version": "0.0.1",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "~3.5.5",
-    "gulp-htmlmin": "0.1.2",
-    "gulp-svgmin": "0.4.4",
-    "gulp-concat": "~2.1.7",
-    "gulp-header": "1.0.2",
-    "gulp-footer": "1.0.4",
-    "minimist": "0.0.8",
-    "gulp-cheerio": "0.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jxnblk/geomicons-open.git"
-  },
-  "author": "Jxnblk",
   "devDependencies": {
-    "gulp": "~3.5.5",
-    "gulp-htmlmin": "0.1.2",
-    "gulp-svgmin": "0.4.4",
+    "gulp": "^3.5.5",
+    "gulp-cheerio": "0.1.0",
     "gulp-concat": "~2.1.7",
-    "gulp-header": "1.0.2",
     "gulp-footer": "1.0.4",
-    "minimist": "0.0.8",
-    "gulp-cheerio": "0.1.0"
+    "gulp-header": "1.0.2",
+    "gulp-watch": "~0.5.0",
+    "minimist": "0.0.8"
   }
 }
