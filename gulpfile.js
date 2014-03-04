@@ -10,8 +10,11 @@ gulp.task('default', function() {
 });
 
 gulp.task('sprite', function() {
-  var stream = gulp.src(['./partials/_sprite-head.svg', './icons/*.svg', './partials/_sprite-footer.svg'])
+  var stream = gulp.src('./icons/*.svg')
     .pipe(concat('sprite.svg'))
+    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
+    .pipe(footer('</svg>'))
+    // svgmin removes ids - need to disable this
     //.pipe(svgmin([{ cleanupIDs: false }]))
     .pipe(gulp.dest('./sprite'));
 });
@@ -23,7 +26,7 @@ gulp.task('defs', function() {
         var $path = $('svg').children('path');
         var id = $('svg').attr('id');
         $path.attr('id', id);
-        $('svg').replaceWith($path);
+        $('svg').replaceWith($path[0]);
         }
     }))
     .pipe(concat('defs.svg'))
