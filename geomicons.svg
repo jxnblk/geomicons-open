@@ -195,6 +195,10 @@
   <path d="M4 4 H8 V14 L28 4 V28 L8 18 V28 H4 z" />
 </svg>
 
+<svg id="repost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <path d="M6 8 L12 14 L8 14 L8 20 L18 20 L18 24 L4 24 L4 14 L0 14 z M14 8 L28 8 L28 18 L32 18 L26 24 L20 18 L24 18 L24 12 L14 12z"/>
+</svg>
+
 <svg id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M12 0 A12 12 0 0 0 0 12 A12 12 0 0 0 12 24 A12 12 0 0 0 18.5 22.25 L28 32 L32 28 L22.25 18.5 A12 12 0 0 0 24 12 A12 12 0 0 0 12 0 M12 4 A8 8 0 0 1 12 20 A8 8 0 0 1 12 4" />
 </svg>
