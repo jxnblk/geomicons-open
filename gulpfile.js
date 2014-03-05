@@ -3,37 +3,16 @@ var cheerio = require('gulp-cheerio');
 var concat = require('gulp-concat');
 var footer = require('gulp-footer');
 var header = require('gulp-header');
-var minimist = require('minimist')(process.argv.slice(2));
 var watch = require('gulp-watch');
 
 gulp.task('default', function() {
-  console.log('herro there!');
+  console.log('herro!');
 });
 
-gulp.task('image-sprite', function() {
-  var fill = '';
-  var filename = 'sprite';
-  if(minimist.fill) {
-    fill = minimist.fill;
-    filename = filename + '-' + fill;
-  }
-  var stream = gulp.src('./icons/*.svg')
-    .pipe(concat(filename + '.svg'))
-    .pipe(cheerio({
-      run: function($) {
-        var y = 32;
-        $('svg').each(function(){
-          $(this)
-            .attr('y', y)
-            .attr('width', null)
-            .attr('height', null);
-          y += 32;
-        });
-      }
-    }))
-    .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 2048" fill="#' + fill + '">'))
-    .pipe(footer('</svg>'))
-    .pipe(gulp.dest('./sprite'));
+gulp.task('dev', function() {
+  gulp.watch(['./icons/*.svg'], function(){
+    gulp.run('js-sprite');
+  });
 });
 
 gulp.task('js-sprite', function() {
@@ -59,23 +38,4 @@ gulp.task('defs', function() {
     .pipe(footer('</defs></svg>'))
     .pipe(gulp.dest('./sprite'));
 });
-
-
-/*
-// Work in progress
-// No idea what I'm doing
-gulp.task('image-sprite-css', function() {
-  var iconIds = [];
-  gulp.src('./icons/*.svg')
-    .pipe(cheerio({
-      run: function($) {
-        $('svg').each(function() {
-          var id = $(this).attr('id');
-          iconIds.push(id);
-        });
-        console.log(iconIds);
-      }
-    }));
-});
-*/
 
