@@ -1,11 +1,14 @@
 // Type
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5rem;
   font-weight: 400;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
 
 // Base Type Scale
 
@@ -75,7 +78,7 @@ small, .small, .f5 {
 
 // Utilities
 
-strong, .bold { font-weight: bold; }
+strong, .bold { font-weight: 600; }
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }

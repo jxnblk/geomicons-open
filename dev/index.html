@@ -7,10 +7,17 @@
   <link rel="stylesheet" href="site/style.css" />
   <link rel="stylesheet" href="geomicons.css" />
 </head>
-<body class="px-responsive">
+<body class="px-responsive vignette">
 
 <div class="py-responsive">
-  <span class="geomicon geomicon-huge fill-white" data-id="speaker-volume"></span>
+  <style>
+    .dev { display: inline-block; width: 1em; height: 1em; }
+    .dev:before { display: inline-block; width: 1em; height: 1em; content: url(icons/link.svg); }
+    .dev-big { width: 16rem; height: 16rem; }
+    .dev-big:before { width: 16rem; height: 16rem; }
+  </style>
+  <span class="dev dev-big bg-grid"></span>
+  <span class="dev "></span>
 </div>
 
 <section class="py-responsive h2">
@@ -56,6 +63,7 @@
   <span class="geomicon fill-white" data-id="triangle-up"></span> 
   <span class="geomicon fill-white" data-id="user"></span> 
   <span class="geomicon fill-white" data-id="warning"></span> 
+  <span class="geomicon fill-white" data-id="link"></span> 
 </section>
 
 <footer class="py-responsive">

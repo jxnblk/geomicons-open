@@ -109,3 +109,10 @@ a {
 // Utilities
 .rounded { border-radius: .25rem; }
 
+.vignette { box-shadow: inset 0 0 16rem rgba(#026,.1); }
+
+// Dev styles
+.bg-grid {
+  background-image: url(../dev/bg-grid.svg);
+  background-size: cover;
+}
