@@ -6,8 +6,7 @@
 // 
 
 
-var hook = 'geomicon', // Class hook to replace icons
-    icons = document.getElementsByClassName(hook),
+var icons = document.getElementsByClassName('geomicon'),
     iconUrl = 'geomicons.svg', // Location of svg sprite
     xmlHttp = null,
     injectSvg,
@@ -37,6 +36,8 @@ for (var i = 0; i < icons.length; i++){
     svg.id = id + '-' + i;
     icon.className += ' geomicon-' + id;
     injectSvg(icon, svg);
+  } else {
+    console.error(id + ' not found');
   }
 };
 

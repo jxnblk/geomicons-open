@@ -278,6 +278,18 @@
   <path d="M10 8 A6 6 0 0 1 22 8 L22 12 A6 6 0 0 1 10 12 z M2 26 C3 23 10 20 14 20 L18 20 C22 20 29 23 30 26 L30 28 L2 28 z"/>
 </svg>
 
+<svg id="video" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <path d="
+    M0 6 L0 26 L24 26
+    L24 20
+    C24 20 30 24 32 24
+    L32 8
+    C30 8 24 12 24 12
+    L24 6 z
+  "/>
+</svg>
+
+
 <svg id="warning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M15 0 H17 L32 29 L31 30 L1 30 L0 29 z M19 8 L13 8 L14 20 L18 20 z M16 22 A3 3 0 0 0 16 28 A3 3 0 0 0 16 22" />
 </svg>

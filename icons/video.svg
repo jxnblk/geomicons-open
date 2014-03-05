@@ -1,0 +1,11 @@
+<svg id="video" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <path d="
+    M0 6 L0 26 L24 26
+    L24 20
+    C24 20 30 24 32 24
+    L32 8
+    C30 8 24 12 24 12
+    L24 6 z
+  "/>
+</svg>
+
