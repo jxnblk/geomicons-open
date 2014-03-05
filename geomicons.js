@@ -8,7 +8,7 @@
 
 var hook = 'geomicon', // Class hook to replace icons
     icons = document.getElementsByClassName(hook),
-    iconUrl = '/geomicons.svg', // Location of svg sprite
+    iconUrl = 'geomicons.svg', // Location of svg sprite
     xmlHttp = null,
     injectSvg,
     sprite;
