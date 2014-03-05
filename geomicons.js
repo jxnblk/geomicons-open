@@ -1,7 +1,14 @@
-// Geomicons SVG injection
+//
+// Geomicons Open
+// 
+// http://jxnblk.github.io/geomicons-open
+// JS SVG injection
+// 
 
-var icons = document.getElementsByClassName('geomicon'),
-    iconUrl = 'sprite/js-sprite.svg',
+
+var hook = 'geomicon', // Class hook to replace icons
+    icons = document.getElementsByClassName(hook),
+    iconUrl = '/geomicons.svg', // Location of svg sprite
     xmlHttp = null,
     injectSvg,
     sprite;
@@ -28,8 +35,6 @@ for (var i = 0; i < icons.length; i++){
   if(svg) {
     svg = svg.cloneNode(true);
     svg.id = id + '-' + i;
-    //svg.setAttribute('width', '32');
-    //svg.setAttribute('height','32');
     icon.className += ' geomicon-' + id;
     injectSvg(icon, svg);
   }

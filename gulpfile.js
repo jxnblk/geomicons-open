@@ -11,16 +11,16 @@ gulp.task('default', function() {
 
 gulp.task('dev', function() {
   gulp.watch(['./icons/*.svg'], function(){
-    gulp.run('js-sprite');
+    gulp.run('sprite');
   });
 });
 
-gulp.task('js-sprite', function() {
+gulp.task('sprite', function() {
   return gulp.src('./icons/*.svg')
-    .pipe(concat('js-sprite.svg'))
+    .pipe(concat('geomicons.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
     .pipe(footer('</svg>'))
-    .pipe(gulp.dest('./sprite'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('defs', function() {
@@ -33,9 +33,9 @@ gulp.task('defs', function() {
         $('svg').replaceWith($path[0]);
         }
     }))
-    .pipe(concat('defs.svg'))
+    .pipe(concat('geomicons-defs.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs>'))
     .pipe(footer('</defs></svg>'))
-    .pipe(gulp.dest('./sprite'));
+    .pipe(gulp.dest('./'));
 });
 

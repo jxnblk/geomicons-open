@@ -1,0 +1,33 @@
+/* 
+ * Geomicons Open
+ *
+ * http://jxnblk.github.io/geomicons-open
+ * Base icon styles
+ *
+ */
+
+
+/* Setting width and height to 1em allows sizing based
+ * on a type scale
+ */
+.geomicon {
+  width: 1em;
+  height: 1em;
+}
+
+
+/* Alternatively, you can set custom sizes
+ */
+.geomicon-big  { width: 8rem; height: 8rem; }
+.geomicon-huge { width: 16rem; height: 16rem; }
+
+
+/* Example SVG Skins
+ * Replace with styles that match your color scheme
+ */
+
+.fill-white { fill: #fff; }
+.fill-dark  { fill: #333; }
+.fill-blue  { fill: #0cf; }
+
+
