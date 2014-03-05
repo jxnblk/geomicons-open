@@ -54,6 +54,13 @@
 <svg id="compose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M4 4 L16 4 L16 8 L8 8 L8 24 L24 24 L24 16 L28 16 L28 28 L4 28 z M26 2 L30 6 L16 20 L12 20 L12 16 z"/> </svg>
 
+<svg id="expand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <path d="
+    M16 4 L28 4 L28 16 L24 12 L20 16 L16 12 L20 8z
+    M4 16 L8 20 L12 16 L16 20 L12 24 L16 28 L4 28z
+   "/>
+</svg>
+
 <svg id="external" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="
     M4 4 L12 4 L12 8 L8 8 L8 24 L24 24 L24 20 L28 20 L28 28 L4 28 z
