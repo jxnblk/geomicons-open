@@ -4,6 +4,8 @@ var concat = require('gulp-concat');
 var footer = require('gulp-footer');
 var header = require('gulp-header');
 var watch = require('gulp-watch');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
 
 gulp.task('default', function() {
   console.log('herro!');
@@ -36,6 +38,13 @@ gulp.task('defs', function() {
     .pipe(concat('geomicons-defs.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs>'))
     .pipe(footer('</defs></svg>'))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('minify-js', function() {
+  return gulp.src('geomicons.js')
+    .pipe(uglify())
+    .pipe(rename('geomicons.min.js'))
     .pipe(gulp.dest('./'));
 });
 

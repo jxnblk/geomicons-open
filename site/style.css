@@ -557,7 +557,7 @@ strong, .bold {
   color: #e9ecef; }
 
 .mid-gray {
-  color: #a9acac; }
+  color: #b9bcbc; }
 
 .dark-gray {
   color: #46494f; }
@@ -572,7 +572,7 @@ strong, .bold {
   background-color: #e9ecef; }
 
 .bg-mid-gray {
-  background-color: #a9acac; }
+  background-color: #b9bcbc; }
 
 .bg-dark-gray {
   background-color: #46494f; }
@@ -587,13 +587,13 @@ strong, .bold {
   fill: #e9ecef; }
 
 .fill-mid-gray {
-  fill: #a9acac; }
+  fill: #b9bcbc; }
 
 .fill-dark-gray {
   fill: #46494f; }
 
 .stroke-mid-gray {
-  stroke: #a9acac; }
+  stroke: #b9bcbc; }
 
 .stroke-light-gray {
   stroke: #e9ecef; }
@@ -626,10 +626,10 @@ a {
 
 .button-gray {
   color: #fff;
-  background-color: #a9acac; }
+  background-color: #b9bcbc; }
   .button-gray:hover {
     color: #fff;
-    background-color: #757a7a; }
+    background-color: #858a8a; }
 
 .border {
   border-style: solid;
@@ -658,7 +658,7 @@ a {
   background-size: cover; }
 
 .highlight {
-  color: #a9acac;
+  color: #b9bcbc;
   line-height: 1.5rem; }
   .highlight .p {
     font-size: 1rem;
