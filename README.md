@@ -22,6 +22,8 @@ Open Source Icons for the Web
 #### Style with CSS
 - fill, size, transform, button example
 
+#### List of icons and ids
+
 #### Custom Builds
 - Installing Gulp
 - gulp sprite for js method

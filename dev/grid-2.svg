@@ -1,0 +1,15 @@
+<svg id="grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <path d="
+    M4 4 L10 4 L10 10 L4 10z
+    M13 4 L19 4 L19 10 L13 10z
+    M22 4 L28 4 L28 10 L22 10z
+
+    M4 13 L10 13 L10 19 L4 19z
+    M13 13 L19 13 L19 19 L13 19z
+    M22 13 L28 13 L28 19 L22 19z
+
+    M4 22 L10 22 L10 28 L4 28z
+    M13 22 L19 22 L19 28 L13 28z
+    M22 22 L28 22 L28 28 L22 28z
+   "/>
+</svg>
