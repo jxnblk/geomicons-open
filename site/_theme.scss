@@ -7,9 +7,9 @@ $blue: #0be;
 //$light-gray: #d0dcdf;
 //$light-gray: #e0ecef;
 $light-gray: #e9ecef;
-$mid-gray: #898c8c;
+//$mid-gray: #898c8c;
 
-$mid-gray: #999c9c;
+$mid-gray: #a9acac;
 $dark-gray: #46494f;
 
 // Warm grays
@@ -112,7 +112,7 @@ a {
 .vignette { box-shadow: inset 0 0 16rem rgba(#026,.1); }
 
 // Dev styles
-.bg-grid {
-  background-image: url(../dev/bg-grid.svg);
-  background-size: cover;
-}
+.bg-grid { background-image: url(../dev/bg-grid.svg); }
+.bg-grid-big { background-size: 16rem 16rem; }
+.bg-cover { background-size: cover; }
+

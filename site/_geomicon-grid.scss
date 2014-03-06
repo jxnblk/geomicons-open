@@ -1,0 +1,79 @@
+// Geomicon Grid
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  //transition: max-width .3s linear;
+}
+
+.tile {
+  float: left;
+  font-size: 3rem;
+  width: 3rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  //transition: font-size .3s linear, width .3s linear;
+}
+
+.tile-small {
+  float: left;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 29.9375em) {
+  .container {
+    max-width: 16.5rem;
+  }
+  .tile:nth-child(4n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
+@media (min-width: 30em) and (max-width: 37.9375em) {
+  .container { max-width: 25.5rem; }
+  .tile:nth-child(6n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
+@media (min-width: 38em) and (max-width: 59.9375em) {
+  .container { max-width: 34rem; }
+  .tile { font-size: 4rem; width: 4rem; margin-left: 2rem; margin-bottom: 2rem; }
+  .tile:nth-child(6n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 67.9375em) {
+  .container { max-width: 59rem; }
+  .tile { font-size: 5rem; width: 5rem; margin-left: 2.5rem; margin-bottom: 2.5rem; }
+  .tile:nth-child(8n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
+@media (min-width: 68em) and (max-width: 80.9375em) {
+  .container { max-width: 57.5rem; }
+  .tile { font-size: 5rem; width: 5rem; margin-left: 2.5rem; margin-bottom: 2.5rem; }
+  .tile:nth-child(8n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
+@media (min-width: 81em) {
+  .container { max-width: 69rem; }
+  .tile { font-size: 6rem; width: 6rem; margin-left: 3rem; margin-bottom: 3rem; }
+  .tile:nth-child(8n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+
