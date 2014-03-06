@@ -178,6 +178,20 @@
 </svg>
 
 
+<svg id="list" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <path d="
+    M3 8 A3 3 0 0 0 9 8 A3 3 0 0 0 3 8
+    M12 6 L28 6 L28 10 L12 10z
+
+    M3 16 A3 3 0 0 0 9 16 A3 3 0 0 0 3 16
+    M12 14 L28 14 L28 18 L12 18z
+
+    M3 24 A3 3 0 0 0 9 24 A3 3 0 0 0 3 24
+    M12 22 L28 22 L28 26 L12 26z
+
+   "/>
+</svg>
+
 <svg id="lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <path d="M22 16 L22 12 A6 6 0 0 0 10 12 L10 16 z M4 16 L6 16 L6 12 A10 10 0 0 1 26 12 L26 16 L28 16 L28 30 L4 30 z"/>
 </svg>
