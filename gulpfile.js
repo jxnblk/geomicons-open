@@ -6,6 +6,7 @@ var header = require('gulp-header');
 var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var cleanhtml = require('gulp-cleanhtml');
 
 gulp.task('default', function() {
   console.log('herro!');
@@ -22,6 +23,7 @@ gulp.task('sprite', function() {
     .pipe(concat('geomicons.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg">'))
     .pipe(footer('</svg>'))
+    .pipe(cleanhtml())
     .pipe(gulp.dest('./'));
 });
 
@@ -38,6 +40,7 @@ gulp.task('defs', function() {
     .pipe(concat('geomicons-defs.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs>'))
     .pipe(footer('</defs></svg>'))
+    .pipe(cleanhtml())
     .pipe(gulp.dest('./'));
 });
 

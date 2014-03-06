@@ -17,3 +17,7 @@ With native SVG defs, you can use icons without javascript or any additional net
 
 Style with CSS
 Add hover effects and transitions with simple CSS
+
+      <h2 class="h2 mb0 ">Utilitarian</h2>
+      <p class="">Geomicons Open's simple, straight-forward design doesn't compete with the visual design of your site. They do their job, then get out of your users' way.</p>
+
