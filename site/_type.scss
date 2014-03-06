@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  //font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  //font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5rem;
   font-weight: 400;
 }
@@ -20,22 +22,17 @@ pre { overflow: auto; }
 
 h1, .h1, .f1 {
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 h2, .h2, .f2 {
   font-size: 1.5em;
-  line-height: 3rem;
+  line-height: 2rem;
 }
-
-//h3, .h3, .f3 {
-//  font-size: 1.25rem;
-//  line-height: 2rem;
-//}
 
 p, .p, .f3, h3, h4, h5, h6, dl, ol, ul {
   font-size: 1.125rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 small, .small, .f4 {
@@ -46,27 +43,16 @@ small, .small, .f4 {
 
 // Responsive Type Scale
 
-@media screen and (min-width: 48em) {
-  .h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-  .h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-  //.h3 {
-  //  font-size: 1.5rem;
-  //  line-height: 2rem;
-  //}
-  //.p {
-  //  font-size: 1.25rem;
-  //  line-height: 2rem;
-  //}
-  //.small {
-  //  font-size: 1rem;
-  //}
-}
+//@media screen and (min-width: 48em) {
+//  .h1 {
+//    font-size: 3rem;
+//    line-height: 4rem;
+//  }
+//  .h2 {
+//    font-size: 2rem;
+//    line-height: 3rem;
+//  }
+//}
 
 /*
 @media screen and (min-width: 64em) {

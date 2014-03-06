@@ -3,15 +3,21 @@
 
 //$blue: #0096cc;
 $blue: #0be;
+$blue: #3ad;
 //$light-gray: #c0cccf;
 //$light-gray: #d0dcdf;
 //$light-gray: #e0ecef;
-$light-gray: #e9ecef;
+//$light-gray: #e9ecef;
+$light-gray: #f9fcff;
 //$mid-gray: #898c8c;
 
 //$mid-gray: #a9acac;
 $mid-gray: #b9bcbc;
+$mid-gray: #c9cccc;
+$mid-gray: #c0c9cc;
 $dark-gray: #46494f;
+//$dark-gray: #56595f;
+$dark-gray: #30393f;
 
 // Warm grays
 //$light-gray: #ecece3;
@@ -109,7 +115,9 @@ a {
 // Utilities
 .rounded { border-radius: .25rem; }
 
-.vignette { box-shadow: inset 0 0 16rem rgba(#026,.1); }
+//.vignette { box-shadow: inset 0 0 16rem rgba(#026,.1); }
+.vignette { box-shadow: inset 0 0 16rem rgba(#320,.1); }
+.bottom-edge { box-shadow: 0 2rem 4rem 2rem rgba(#320, .1); }
 
 // Dev styles
 .bg-grid { background-image: url(../dev/bg-grid.svg); }

@@ -40,28 +40,20 @@ pre {
 
 h1, .h1, .f1 {
   font-size: 2rem;
-  line-height: 4rem; }
+  line-height: 3rem; }
 
 h2, .h2, .f2 {
   font-size: 1.5em;
-  line-height: 3rem; }
+  line-height: 2rem; }
 
 p, .p, .f3, h3, h4, h5, h6, dl, ol, ul {
   font-size: 1.125rem;
-  line-height: 1.5rem; }
+  line-height: 2rem; }
 
 small, .small, .f4 {
   font-size: .875rem;
   line-height: 1.5rem; }
 
-@media screen and (min-width: 48em) {
-  .h1 {
-    font-size: 3rem;
-    line-height: 4rem; }
-
-  .h2 {
-    font-size: 2rem;
-    line-height: 3rem; } }
 /*
 @media screen and (min-width: 64em) {
   .h1 {
@@ -551,62 +543,62 @@ strong, .bold {
   color: #fff; }
 
 .blue {
-  color: #00bbee; }
+  color: #33aadd; }
 
 .light-gray {
-  color: #e9ecef; }
+  color: #f9fcff; }
 
 .mid-gray {
-  color: #b9bcbc; }
+  color: #c0c9cc; }
 
 .dark-gray {
-  color: #46494f; }
+  color: #30393f; }
 
 .bg-white {
   background-color: #fff; }
 
 .bg-blue {
-  background-color: #00bbee; }
+  background-color: #33aadd; }
 
 .bg-light-gray {
-  background-color: #e9ecef; }
+  background-color: #f9fcff; }
 
 .bg-mid-gray {
-  background-color: #b9bcbc; }
+  background-color: #c0c9cc; }
 
 .bg-dark-gray {
-  background-color: #46494f; }
+  background-color: #30393f; }
 
 .fill-white {
   fill: #fff; }
 
 .fill-blue {
-  fill: #00bbee; }
+  fill: #33aadd; }
 
 .fill-light-gray {
-  fill: #e9ecef; }
+  fill: #f9fcff; }
 
 .fill-mid-gray {
-  fill: #b9bcbc; }
+  fill: #c0c9cc; }
 
 .fill-dark-gray {
-  fill: #46494f; }
+  fill: #30393f; }
 
 .stroke-mid-gray {
-  stroke: #b9bcbc; }
+  stroke: #c0c9cc; }
 
 .stroke-light-gray {
-  stroke: #e9ecef; }
+  stroke: #f9fcff; }
 
 body {
-  color: #46494f;
-  background-color: #e9ecef; }
+  color: #30393f;
+  background-color: #f9fcff; }
 
 a {
-  color: #00bbee;
+  color: #33aadd;
   text-decoration: none; }
   a:hover {
-    color: #0093bb; }
+    color: #208ebd; }
 
 .button {
   border-radius: .25rem;
@@ -615,21 +607,21 @@ a {
   transition-property: box-shadow , background-color; }
   .button:focus {
     outline: none;
-    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(0, 187, 238, 0.5); }
+    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(51, 170, 221, 0.5); }
 
 .button-blue {
   color: #fff;
-  background-color: #00bbee; }
+  background-color: #33aadd; }
   .button-blue:hover {
     color: #fff;
-    background-color: #006b88; }
+    background-color: #186d92; }
 
 .button-gray {
   color: #fff;
-  background-color: #b9bcbc; }
+  background-color: #c0c9cc; }
   .button-gray:hover {
     color: #fff;
-    background-color: #858a8a; }
+    background-color: #88999e; }
 
 .border {
   border-style: solid;
@@ -640,13 +632,16 @@ a {
   border-top-width: 1px; }
 
 .border-light-gray {
-  border-color: #e9ecef; }
+  border-color: #f9fcff; }
 
 .rounded {
   border-radius: .25rem; }
 
 .vignette {
-  box-shadow: inset 0 0 16rem rgba(0, 34, 102, 0.1); }
+  box-shadow: inset 0 0 16rem rgba(51, 34, 0, 0.1); }
+
+.bottom-edge {
+  box-shadow: 0 2rem 4rem 2rem rgba(51, 34, 0, 0.1); }
 
 .bg-grid {
   background-image: url(../dev/bg-grid.svg); }
@@ -658,14 +653,14 @@ a {
   background-size: cover; }
 
 .highlight {
-  color: #b9bcbc;
+  color: #c0c9cc;
   line-height: 1.5rem; }
   .highlight .p {
     font-size: 1rem;
     line-height: 1.5rem; }
   .highlight .nc, .highlight .s, .highlight .kd, .highlight .s1 {
-    color: #0093bb; }
+    color: #208ebd; }
   .highlight .nt, .highlight .nx {
-    color: #00bbee; }
+    color: #33aadd; }
   .highlight .k, .highlight .m, .highlight .n {
-    color: #00bbee; }
+    color: #33aadd; }

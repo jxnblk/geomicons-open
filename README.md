@@ -2,15 +2,8 @@
 Open Source Icons for the Web
 
 
-## Outline
-### Value Props
-- Performant (smaller than webfonts – only include what you need)
-- Two methods - js and defs
-- Hand-coded pixel precise
-- Design-agnostic
-- Alignment with type
 
-### Usage
+## Usage
 #### JS Method
 - Include geomicons.js, or embed
 - Link to sprite file
@@ -36,4 +29,5 @@ Open Source Icons for the Web
 ### Requesting Additional Icons
 - Link to Issues
 
+[MIT License](http://opensource.org/licenses/MIT)
 

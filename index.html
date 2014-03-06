@@ -14,17 +14,17 @@
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
   -->
   <link rel="stylesheet" href="site/style.css" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Code+Pro|Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
 </head>
-<body class="bg-mid-gray fill-light-gray">
+<body class="bg-light-gray fill-white">
 
-<header class="py4 mb4">
+<header class="py4 mb4 bg-mid-gray">
   <div class="container mb4">
-    <h1 class="h2 mb0">Geomicons Open</h1>
-    <p class="">Open Source Icons for the Web</p>
+    <h1 class="h1 mb0">Geomicons Open</h1>
+    <p class="">Open Source Icons for the Web <small>v0.0.1</small></p>
   </div>
 
-  <section class="container clearfix">
+  <section class="container clearfix mb4">
     <div class="tile"><span class="geomicon" data-id="cog"></span> </div>
     <div class="tile"><span class="geomicon" data-id="cloud"></span> </div>
     <div class="tile"><span class="geomicon" data-id="bookmark"></span> </div>
@@ -82,38 +82,31 @@
   </section>
 
   <section id="value-props" class="container">
-    <div class="py2">
-      <h1 class="h2 mb0 ">Fast</h1>
-      <p class="p">Smaller than similar webfonts and fewer network requests than other icon solutions</p>
-    </div>
-    <div class="py2">
-      <h1 class="h2 mb0 ">Hand-coded</h1>
-      <p class="p">No extraneous cruft from drawing apps &ndash; just pixel-perfect paths</p>
-    </div>
-    <div class="py2">
-      <h1 class="h2 mb0 ">Javascript-free options</h1>
-      <p class="p">With native SVG defs, you can use icons without javascript or any additional network requests</p>
-    </div>
-    <div class="py2">
-      <h1 class="h2 mb0 ">Style with CSS</h1>
-      <p class="p">Add hover effects and transitions with simple CSS</p>
-    </div>
-  </section>
+      <h2 class="h2 mb0 ">Fast</h2>
+      <p class="mb2">Smaller than similar webfonts and fewer network requests than other icon solutions, Geomicons Open are built from the ground up for performance. Designed on a grid for pixel-precision at standard sizes, each icon is hand-coded to avoid any bloat created from traditional vector drawing applications.</p>
+      
+      <h2 class="h2 mb0 ">Utilitarian</h2>
+      <p class="">Geomicons Open's simple, straight-forward design doesn't compete with the visual design of your site. They do their job, then get out of your users' way.</p>
 
+      <!--
+      <h2 class="h2 mb0 ">Style with CSS</h2>
+      <p class="">Add hover effects and transitions with simple CSS</p>
+      -->
+  </section>
 </header>
 
 
 <section id="usage" class="container mb4">
   <h1 class="h1">Usage</h1>
   <h2 class="h2">Javascript Method</h2>
-  <p class="">Link to or include <code class="white">geomicons.js</code> (648 bytes) just before the closing body tag in your HTML.</p>
+  <p class="">Link to or include <code class="blue">geomicons.js</code> (648 bytes) just before the closing body tag in your HTML.</p>
   <div class="p1 mb2 bg-dark-gray rounded">
 {% highlight html %}
 <script src="geomicons.min.js"></script>
 </body>
 {% endhighlight %}
   </div>
-  <p class="">Link to the SVG sprite file <code class="white">geomicons.svg</code> (12KB).</p>
+  <p class="">Link to the SVG sprite file <code class="blue">geomicons.svg</code> (12KB).</p>
   <div class="p1 mb2 bg-dark-gray rounded">
 {% highlight javascript %}
 // Location of svg sprite
@@ -141,7 +134,7 @@ var iconUrl = 'geomicons.svg';
   <h2 class="h2 mt4 mb0">Alternative defs method</h2>
   <p class="">For even faster performance, you can use the native SVG defs method without any javascript.</p>
 
-  <p class="">Copy and paste or include the contents of the <code class="white">geomicons-defs.svg</code> file directly into the HTML.</p>
+  <p class="">Copy and paste or include the contents of the <code class="blue">geomicons-defs.svg</code> file directly into the HTML.</p>
   <div class="p1 mb2 bg-dark-gray rounded">
 {% highlight html %}
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs><path d="M6 2 L26 2 L26 30 L16 24 L6 30 Z" id="bookmark">
@@ -151,7 +144,7 @@ var iconUrl = 'geomicons.svg';
 {% endhighlight %}
   </div>
 
-  <p class="">Call SVG icons with the <code class="white">use</code> tag.</p>
+  <p class="">Call SVG icons with the <code class="blue">use</code> tag.</p>
   <div class="p1 mb2 bg-dark-gray rounded">
 {% highlight html %}
 <svg><use xlink:href="#heart"></svg>
@@ -224,9 +217,10 @@ var iconUrl = 'geomicons.svg';
 
 
 <footer class="container clearfix px-responsive py2">
-  <span class="geomicon f2 stroke-mid-gray" data-id="globe"></span> 
-  <p class="small">Made with love by Jxnblk</p>
-  <p class="small">MIT License</p>
+  <p class="small">
+    <span class="geomicon" data-id="heart"></span> Made with love by <a href="http://jxnblk.com" class="mr1">Jxnblk</a>
+    <a href="http://opensource.org/licenses/MIT">MIT License</a>
+  </p>
 </footer>
 
 <script src="geomicons.min.js"></script>
