@@ -452,10 +452,23 @@ strong, .bold {
   margin-left: 1.5rem;
   margin-bottom: 1.5rem; }
 
-.tile-small {
+.tile-medium-wrap {
+  margin-right: -2.5rem; }
+
+.tile-medium {
   float: left;
   font-size: 1.5rem;
   width: 1.5rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem; }
+
+.tile-small-wrap {
+  margin-right: -1.5rem; }
+
+.tile-small {
+  float: left;
+  font-size: 1rem;
+  width: 1rem;
   margin-right: 1.5rem;
   margin-bottom: 1.5rem; }
 
@@ -473,7 +486,7 @@ strong, .bold {
   .tile:nth-child(6n+1) {
     margin-left: 0;
     clear: left; } }
-@media (min-width: 38em) and (max-width: 59.9375em) {
+@media (min-width: 38em) and (max-width: 63.9375em) {
   .container {
     max-width: 34rem; }
 
@@ -486,7 +499,7 @@ strong, .bold {
   .tile:nth-child(6n+1) {
     margin-left: 0;
     clear: left; } }
-@media (min-width: 60em) and (max-width: 67.9375em) {
+@media (min-width: 64em) and (max-width: 69.9375em) {
   .container {
     max-width: 59rem; }
 
@@ -499,7 +512,7 @@ strong, .bold {
   .tile:nth-child(8n+1) {
     margin-left: 0;
     clear: left; } }
-@media (min-width: 68em) and (max-width: 80.9375em) {
+@media (min-width: 70em) and (max-width: 80.9375em) {
   .container {
     max-width: 57.5rem; }
 
