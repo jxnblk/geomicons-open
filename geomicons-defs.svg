@@ -65,6 +65,11 @@
 
 
 <path d="
+     M2 18 L30 2 L14 30 L14 18z
+   " id="geolocation">
+</path>
+
+<path d="
     M0 18
     C0 11 3 4 5 2
     L10 7
