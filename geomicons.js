@@ -5,9 +5,11 @@
 // JS SVG injection
 // 
 
+// Location of SVG sprite
+var iconUrl = 'geomicons.svg';
+
 
 var icons = document.getElementsByClassName('geomicon'),
-    iconUrl = 'geomicons.svg', // Location of svg sprite
     xmlHttp = null,
     injectSvg,
     sprite;

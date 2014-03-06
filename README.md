@@ -17,7 +17,7 @@ Open Source Icons for the Web
 
 #### Defs Method
 - Include defs file at bottom of HTML (can use templating system)
-- <svg><use xlink:href="url(#cog)"></svg>
+- <svg><use xlink:href="#cog"></svg>
 
 #### Style with CSS
 - fill, size, transform, button example

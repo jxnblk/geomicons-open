@@ -1,3 +1,6 @@
+---
+---
+
 <!doctype html> 
 <html lang="en"> 
 <head>
@@ -83,6 +86,84 @@
 
   -->
 </section>
+
+<section id="value-props" class="container mb4">
+  <h1 class="h1 mb0">Fast</h1>
+  <p class="p">Smaller than similar webfonts and fewer network requests than other icon solutions</p>
+  <h1 class="h1 mb0">Hand-coded</h1>
+  <p class="p">No extraneous cruft from drawing apps &ndash; just pixel-perfect paths</p>
+  <h1 class="h1 mb0">Javascript-free options</h1>
+  <p class="p">With native SVG defs, you can use icons without javascript or any additional network requests</p>
+  <h1 class="h1 mb0">Style with CSS</h1>
+  <p class="p">Add hover effects and transitions with simple CSS</p>
+</section>
+
+<section id="usage" class="container mb4">
+  <h1 class="h1">Usage</h1>
+  <h2 class="h2">Javascript Method</h2>
+
+  <p class="p">Include <code>geomicons.js</code> just before the closing body tag in HTML.</p>
+  <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<script src="geomicons.js"></script>
+</body>
+{% endhighlight %}
+  </div>
+
+  <p class="p">Link to the SVG sprite file</p>
+  <div class="p1 mb2 bg-light-gray rounded">
+{% highlight javascript %}
+// Location of svg sprite
+var iconUrl = 'geomicons.svg';
+{% endhighlight %}
+  </div>
+
+  <p class="p">Use the placeholder markup in your HTML</p>
+  <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<span class="geomicon" data-id="heart"></span>
+{% endhighlight %}
+  </div>
+
+  <h2 class="h2">Style with CSS</h2>
+
+  <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<style>
+  .fill-red { fill: red; }
+</style>
+<span class="geomicon fill-red" data-id="heart"></span>
+{% endhighlight %}
+  </div>
+
+  <h2 class="h2">Alternative defs method</h2>
+  <p class="p">For even faster performance, you can use the native SVG defs method without any javascript.</p>
+
+  <p class="p">Copy and paste or include the contents of the <code>geomicons-defs.svg</code> file directly into the HTML.</p>
+  <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs><path d="M6 2 L26 2 L26 30 L16 24 L6 30 Z" id="bookmark">
+    ...
+</defs></svg>
+</body>
+{% endhighlight %}
+  </div>
+
+  <p class="p">Call SVG icons with the <code>use</code> tag.</p>
+  <div class="p1 mb2 bg-light-gray rounded">
+{% highlight html %}
+<svg><use xlink:href="#heart"></svg>
+{% endhighlight %}
+  </div>
+
+</section>
+
+<!--
+<section id="iterative-design" class="container mb4">
+  <h1 class="h1 mb0">Iterative by Design</h1>
+  <p class="p">This is just a starting point</p>
+</section>
+-->
 
 <section class="container clearfix mb2">
   <h1 class="f2">24 &times; 24</h1>
@@ -206,31 +287,11 @@
   </div>
 </section>
 
-<section id="typography" class="container">
-  <h1 class="f1">Hamburgers</h1>
-  <h1 class="f2">Hamburgers</h1>
-  <h1 class="f3">Hamburgers</h1>
-  <p>Paragraph</p>
-</section>
-
-<!--
-<section id="value-props" class="container mb4">
-  <h1 class="f2 mb0">Built for speed</h1>
-  <p>Smaller than similar webfonts, fewer network requests than other icon solutions</p>
-  <h1 class="f2 mb0">Hand-coded for pixel precision</h1>
-  <p>No extraneous cruft from drawing apps, just pixel-perfect paths</p>
-  <h1 class="f2 mb0">Javascript-free options</h1>
-  <p>Sometimes you don't want extra javascript, no problem</p>
-  <h1 class="f2 mb0">The power of SVG</h1>
-  <p>Do things that webfonts can't</p>
-  <h1 class="f2 mb0">Open Source</h1>
-  <p>Use it however you want. It will just keep getting better.</p>
-</section>
--->
 
 <footer class="container clearfix px-responsive py4">
   <span class="geomicon f2 stroke-mid-gray" data-id="globe"></span> 
   <p class="small">Made with love by Jxnblk</p>
+  <p class="small">MIT License</p>
 </footer>
 
 <script src="geomicons.js"></script>
