@@ -584,6 +584,9 @@ strong, .bold {
 .fill-dark-gray {
   fill: #30393f; }
 
+.fill-white-alpha {
+  fill: rgba(255, 255, 255, 0.8); }
+
 .stroke-mid-gray {
   stroke: #c0c9cc; }
 
@@ -642,6 +645,9 @@ a {
 
 .bottom-edge {
   box-shadow: 0 2rem 4rem 2rem rgba(51, 34, 0, 0.1); }
+
+.gradient {
+  background-image: linear-gradient(to bottom left, rgba(255, 102, 0, 0.1), rgba(0, 102, 255, 0.1)); }
 
 .bg-grid {
   background-image: url(../dev/bg-grid.svg); }
