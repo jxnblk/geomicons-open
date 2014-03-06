@@ -8,6 +8,7 @@ Open Source Icons for the Web
 - Two methods - js and defs
 - Hand-coded pixel precise
 - Design-agnostic
+- Alignment with type
 
 ### Usage
 #### JS Method
@@ -21,6 +22,7 @@ Open Source Icons for the Web
 
 #### Style with CSS
 - fill, size, transform, button example
+- Alignment
 
 #### List of icons and ids
 
