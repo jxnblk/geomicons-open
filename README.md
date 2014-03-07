@@ -22,9 +22,8 @@ Icon    | ID
 ![heart](icons/heart.svg) | heart
 ![pin](icons/pin.svg) | pin
 
-![heart](icons/heart.svg)
 
-![bookmark](https://raw.github.com/jxnblk/geomicons-open/gh-pages/icons/bookmark.svg)
+![bookmark](http://jxnblk.github.io/geomicons-open/icons/bookmark.svg)
 
 ### Custom Builds
 - Installing Gulp
