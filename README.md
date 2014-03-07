@@ -17,6 +17,11 @@ http://jxnblk.github.io/geomicons-open
 
 ### List of icons and ids
 
+Icon    | ID
+--------|--------
+![icons/heart.svg] | heart
+![icons/pin.svg] | pin
+
 ### Custom Builds
 - Installing Gulp
 - gulp sprite for js method

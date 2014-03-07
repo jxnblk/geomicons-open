@@ -478,17 +478,13 @@ strong, .bold {
   margin-right: 1rem;
   margin-bottom: 1rem; }
 
-@media (min-width: 57em) {
-  .table-grid {
-    display: table;
-    table-layout: fixed;
-    width: 100%; }
+.table {
+  display: table;
+  table-layout: fixed; }
 
-  .cell {
-    display: table-cell;
-    padding-left: 3rem; }
-    .cell:first-child {
-      padding-left: 0; } }
+.cell {
+  display: table-cell; }
+
 .geomicon {
   width: 1em;
   height: 1em;

@@ -52,18 +52,12 @@
 }
 
 
-@media (min-width: 57em) {
-  .table-grid {
+  .table {
     display: table;
     table-layout: fixed;
-    width: 100%;
+    //width: 100%;
   }
   .cell {
     display: table-cell;
-    padding-left: 3rem;
-    &:first-child {
-      padding-left: 0;
-    }
   }
-}
 
