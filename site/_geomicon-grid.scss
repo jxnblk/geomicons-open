@@ -3,87 +3,67 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  //transition: max-width .3s linear;
+  max-width: 18rem;
 }
 
+.tile-wrap { margin-right: -2rem; }
 .tile {
   float: left;
   font-size: 3rem;
   width: 3rem;
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
-  //transition: font-size .3s linear, width .3s linear;
-}
-
-.tile-medium-wrap { margin-right: -2.5rem; }
-.tile-medium {
-  float: left;
-  font-size: 1.5rem;
-  width: 1.5rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
 
-.tile-small-wrap { margin-right: -1.5rem; }
+@media (min-width: 32em) and (max-width: 37.9375em) {
+  .container { max-width: 28rem; }  
+}
+
+@media (min-width: 38em) and (max-width: 56.9375em) {
+  .container { max-width: 34rem; }
+  .tile {
+    font-size: 4rem;
+    width: 4rem;
+  }
+}
+
+@media (min-width: 57em) {
+  .container { max-width: 51rem; }
+  .tile-wrap { margin-right: -3rem; }
+  .tile {
+    font-size: 6rem;
+    width: 6rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 84em) {
+  .container { max-width: 78rem; }
+}
+
+.tile-small-wrap { margin-right: -1rem; }
 .tile-small {
   float: left;
   font-size: 1rem;
   width: 1rem;
-  margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 29.9375em) {
-  .container {
-    max-width: 16.5rem;
-  }
-  .tile:nth-child(4n+1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
 
-@media (min-width: 30em) and (max-width: 37.9375em) {
-  .container { max-width: 25.5rem; }
-  .tile:nth-child(6n+1) {
-    margin-left: 0;
-    clear: left;
+@media (min-width: 57em) {
+  .table-grid {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
   }
-}
-
-@media (min-width: 38em) and (max-width: 63.9375em) {
-  .container { max-width: 34rem; }
-  .tile { font-size: 4rem; width: 4rem; margin-left: 2rem; margin-bottom: 2rem; }
-  .tile:nth-child(6n+1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-
-@media (min-width: 64em) and (max-width: 69.9375em) {
-  .container { max-width: 59rem; }
-  .tile { font-size: 5rem; width: 5rem; margin-left: 2.5rem; margin-bottom: 2.5rem; }
-  .tile:nth-child(8n+1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-
-@media (min-width: 70em) and (max-width: 80.9375em) {
-  .container { max-width: 57.5rem; }
-  .tile { font-size: 5rem; width: 5rem; margin-left: 2.5rem; margin-bottom: 2.5rem; }
-  .tile:nth-child(8n+1) {
-    margin-left: 0;
-    clear: left;
-  }
-}
-
-@media (min-width: 81em) {
-  .container { max-width: 69rem; }
-  .tile { font-size: 6rem; width: 6rem; margin-left: 3rem; margin-bottom: 3rem; }
-  .tile:nth-child(8n+1) {
-    margin-left: 0;
-    clear: left;
+  .cell {
+    display: table-cell;
+    padding-left: 3rem;
+    &:first-child {
+      padding-left: 0;
+    }
   }
 }
 
