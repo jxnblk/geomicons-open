@@ -103,6 +103,7 @@ Icon    | ID
 ![mail](http://jxnblk.github.io/geomicons-open/icons/mail.svg) | mail
 ![music-note](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | music-note
 ![next](http://jxnblk.github.io/geomicons-open/icons/next.svg) | next
+![no](http://jxnblk.github.io/geomicons-open/icons/no.svg) | no
 ![pause](http://jxnblk.github.io/geomicons-open/icons/pause.svg) | pause
 ![picture](http://jxnblk.github.io/geomicons-open/icons/picture.svg) | picture
 ![pin](http://jxnblk.github.io/geomicons-open/icons/pin.svg) | pin
