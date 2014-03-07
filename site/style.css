@@ -478,13 +478,6 @@ strong, .bold {
   margin-right: 1rem;
   margin-bottom: 1rem; }
 
-.table {
-  display: table;
-  table-layout: fixed; }
-
-.cell {
-  display: table-cell; }
-
 .geomicon {
   width: 1em;
   height: 1em;
