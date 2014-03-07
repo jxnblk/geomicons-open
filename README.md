@@ -64,8 +64,10 @@ If you're using a templating system, such as Jekyll, I'd recommend keeping the d
 
 To use the icons, use the SVG `<use>` tag as shown below:
 ```html
-<svg><use xlink:href="#heart"></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16"><use xlink:href="#heart"></use></svg>
 ```
+
+Note: the loading icon does not currently work with the defs method.
 
 ---
 

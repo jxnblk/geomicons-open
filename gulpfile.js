@@ -35,7 +35,7 @@ gulp.task('defs', function() {
         var id = $('svg').attr('id');
         $path.attr('id', id);
         $('svg').replaceWith($path[0]);
-        }
+      }
     }))
     .pipe(concat('geomicons-defs.svg'))
     .pipe(header('<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs>'))
