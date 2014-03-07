@@ -73,7 +73,7 @@ To use the icons, use the SVG `<use>` tag as shown below:
 
 Icon    | ID
 --------|--------
-![bookmark](http://jxnblk.github.io/geomicons-open/icons/bookmark.svg =16x16) | bookmark
+![bookmark](http://jxnblk.github.io/geomicons-open/icons/bookmark.svg) | bookmark
 ![calendar](http://jxnblk.github.io/geomicons-open/icons/calendar.svg) | calendar
 ![camera](http://jxnblk.github.io/geomicons-open/icons/camera.svg) | camera
 ![carat-down](http://jxnblk.github.io/geomicons-open/icons/carat-down.svg) | carat-down
