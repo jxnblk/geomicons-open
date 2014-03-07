@@ -428,6 +428,9 @@ strong, .bold {
   margin: auto;
   display: table; }
 
+html, body {
+  height: 100%; }
+
 .container {
   margin-right: auto;
   margin-left: auto;

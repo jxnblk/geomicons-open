@@ -69,7 +69,7 @@ To use the icons, use the SVG `<use>` tag as shown below:
 
 ---
 
-### Icon Reference Table
+## Icon Reference Table
 
 Icon    | ID
 --------|--------

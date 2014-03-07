@@ -1,0 +1,8 @@
+<svg id="paperclip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+  <path fill="none" stroke="cyan" stroke-width="4" opacity=".7" d="
+    M26 6 L18 4
+    L4 18 L2 22 L10 30
+    L14 26
+    L24 16
+  "/>
+</svg>
