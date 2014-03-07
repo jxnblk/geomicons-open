@@ -82,6 +82,7 @@ Icon    | ID
 ![carat-up](http://jxnblk.github.io/geomicons-open/icons/carat-up.svg) | carat-up
 ![chat](http://jxnblk.github.io/geomicons-open/icons/chat.svg) | chat
 ![check](http://jxnblk.github.io/geomicons-open/icons/check.svg) | check
+![clock](http://jxnblk.github.io/geomicons-open/icons/clock.svg) | clock
 ![close](http://jxnblk.github.io/geomicons-open/icons/close.svg) | close
 ![cloud](http://jxnblk.github.io/geomicons-open/icons/cloud.svg) | cloud
 ![cog](http://jxnblk.github.io/geomicons-open/icons/cog.svg) | cog
