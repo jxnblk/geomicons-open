@@ -93,30 +93,19 @@
 
 <section id="usage" class="container mb4">
   <h1 class="h1">Usage</h1>
-  <h2 class="h2">Javascript Method</h2>
-  <p class="">Link to or include <code class="blue">geomicons.min.js</code> (648 bytes) just before the closing body tag in your HTML.</p>
+  <p>Link to <code class="blue">geomicons.min.js</code> and include the <code class="blue">geomicons.svg</code> file in your project.</p>
   <div class="p1 mb2 bg-dark-gray rounded">
 {% highlight html %}
 <script src="geomicons.min.js"></script>
-</body>
 {% endhighlight %}
   </div>
-  <p class="">Link to the SVG sprite file <code class="blue">geomicons.svg</code> (12KB).</p>
-  <div class="p1 mb2 bg-dark-gray rounded">
-{% highlight javascript %}
-// Location of svg sprite
-var iconUrl = 'geomicons.svg';
-{% endhighlight %}
-  </div>
-  <p class="">Use the placeholder markup in your HTML</p>
+  <p>Use the <code class="blue">geomicon</code> class along with a <code class="blue">data-id</code> attribute on an element where you'd like the icon to appear.</p>
   <div class="p1 mb2 bg-dark-gray rounded">
 {% highlight html %}
 <span class="geomicon" data-id="heart"></span>
 {% endhighlight %}
   </div>
-
-  <h2 class="h2 mt4">Style with CSS</h2>
-
+  <p>Style with CSS.</p>
   <div class="p1 mb2 bg-dark-gray rounded">
 {% highlight html %}
 <style>
@@ -125,27 +114,7 @@ var iconUrl = 'geomicons.svg';
 <span class="geomicon fill-red" data-id="heart"></span>
 {% endhighlight %}
   </div>
-
-  <h2 class="h2 mt4 mb0">Alternative defs method</h2>
-  <p class="">For even faster performance, you can use the native SVG defs method without any javascript.</p>
-
-  <p class="">Copy and paste or include the contents of the <code class="blue">geomicons-defs.svg</code> file directly into your HTML. Note: these won't actually show up on the page.</p>
-  <div class="p1 mb2 bg-dark-gray rounded">
-{% highlight html %}
-<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0"><defs><path d="M6 2 L26 2 L26 30 L16 24 L6 30 Z" id="bookmark">
-    ...
-</defs></svg>
-</body>
-{% endhighlight %}
-  </div>
-
-  <p class="">Call SVG icons with the <code class="blue">use</code> tag.</p>
-  <div class="p1 mb2 bg-dark-gray rounded">
-{% highlight html %}
-<svg><use xlink:href="#heart"></svg>
-{% endhighlight %}
-  </div>
-
+  <p>For more detailed documentation, <a href="//github.com/jxnblk/geomicons-open">view the README.</a></p> 
 </section>
 
 <section id="cta" class="container py4">
@@ -232,7 +201,7 @@ var iconUrl = 'geomicons.svg';
     </div>
   </section>
   <p class="small">
-    <a href="https://twitter.com/intent/tweet?text=Open source icons for the web: &url=http://jxnblk.github.io/geomicons-open&via=jxnblk" class="button button-small button-blue mr1">
+    <a href="https://twitter.com/intent/tweet?text=Open source icons for the web: &url=http://jxnblk.github.io/geomicons-open&via=jxnblk" class="button button-small button-box-gray mr1">
       <span class="geomicon" data-id="twitter"></span>
       Tweet
     </a>

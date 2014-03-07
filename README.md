@@ -9,7 +9,7 @@ Smaller than similar webfonts and making fewer network requests than other icon 
 ![Globe icon](http://jxnblk.github.io/geomicons-open/dev/globe.svg)
 
 ## Usage
-### JS Method
+### Javascript Method
 Link to or include the `geomicons.js` (648 bytes) just before the closing `body` tag in your HTML.
 
 ```html
@@ -51,7 +51,7 @@ Each icon is designed on a 32 x 32px grid. This means icons will look best at mu
 --- 
 
 ### Alternative SVG Defs Method
-For even faster network performance, you can use native SVG defs instead of the JS method above. This method require zero extra network requests.
+For even faster network performance, you can use native SVG defs instead of the javascript method above. This method require zero extra network requests.
 
 Instead of linking to the `geomicons.js` file, copy and paste the contents of the `geomicons-defs.svg` file in your HTML. This code will not show up in your page.
 ```html

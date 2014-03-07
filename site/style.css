@@ -588,6 +588,15 @@ a {
     fill: #33aadd;
     background-color: #fff; }
 
+.button-box-gray {
+  color: #30393f;
+  fill: #30393f;
+  box-shadow: inset 0 0 0 2px #30393f; }
+  .button-box-gray:focus, .button-box-gray:hover {
+    color: #33aadd;
+    fill: #33aadd;
+    background-color: #30393f; }
+
 .border {
   border-style: solid;
   border-width: 1px; }
