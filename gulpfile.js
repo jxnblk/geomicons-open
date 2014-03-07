@@ -1,12 +1,12 @@
 var gulp = require('gulp');
 var cheerio = require('gulp-cheerio');
+var cleanhtml = require('gulp-cleanhtml');
 var concat = require('gulp-concat');
 var footer = require('gulp-footer');
 var header = require('gulp-header');
 var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var cleanhtml = require('gulp-cleanhtml');
 
 gulp.task('default', function() {
   console.log('herro!');
