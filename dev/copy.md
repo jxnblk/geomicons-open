@@ -24,3 +24,6 @@ Add hover effects and transitions with simple CSS
 - clearer explaination of linking to svg sprite in js
 - explain grid maths more
 
+- Adding custom icons
+- Other tools: Grunticon, Iconic
+

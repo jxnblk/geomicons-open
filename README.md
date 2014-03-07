@@ -1,21 +1,65 @@
+![Globe icon](http://jxnblk.github.io/geomicons-open/dev/globe.svg)
 # Geomicons Open
 Open Source Icons for the Web
+
 http://jxnblk.github.io/geomicons-open
 
+## Fast, Plain &amp; Simple
+Smaller than similar webfonts and making fewer network requests than other icon solutions, Geomicons Open is built from the ground up for performance. Designed on a grid for pixel-precision at standard sizes, each icon is hand-coded to avoid the extra bloat from traditional vector drawing applications.
 
 ## Usage
 ### JS Method
-- Include geomicons.js, or embed
-- Link to sprite file
-- Use the placeholder in markup
+Link to or include the `geomicons.js` (648 bytes) just before the closing `body` tag in your HTML.
 
-### Defs Method
-- Include defs file at bottom of HTML (can use templating system)
-- <svg><use xlink:href="#cog"></svg>
+```html
+<script src="geomicons.js"></script>
+</body>
+```
+
+Include the `geomicons.svg` file with your project. By default, the javascript looks for `geomicons.svg` in the same folder.
+
+To change the location, adjust the `iconUrl` variable in `geomicons.js`.
+```js
+// Location of svg sprite
+var iconUrl = 'geomicons.svg';
+```
+
+Use the following markup wherever you want an icon to appear. Be sure to include the `.geomicons` class and adjust the `data-id` attribute to match the icon you want.
+```html
+<span class="geomicon" data-id="heart"></span>
+```
+The javascript will replace this markup with an inline SVG and keep any classes you've added.
+
+See the [Icon Reference Table](#icon-reference-table) to find the proper id.
 
 ### Style with CSS
+SVGs have different properties than HTML elements. To change the color, use the `fill` property.
 
-### List of icons and ids
+```html
+<style>
+  .fill-red { fill: red; }
+</style>
+<span class="geomicon fill-red" data-id="heart"></span>
+```
+
+### Alternative SVG Defs Method
+For even faster network performance, you can use native SVG defs without any javascript. This method require zero extra network requests.
+
+Instead of linking to the `geomicons.js` file, copy and paste the contents of the `geomicons-defs.svg` file in your HTML. This code will not show up in your page.
+```html
+<svg xmnls="http://www.w3.org/2000/svg" width="0" height="0"><defs><path ...
+</body>
+</html>
+```
+
+If you're using a templating system, such as Jekyll, I'd recommend keeping the defs file in a partial for easy inclusion.
+
+To use the icons, use the SVG `<use>` tag as shown below:
+```html
+<svg><use xlink:href="#heart"></svg>
+```
+
+### Icon Reference Table
 
 Icon    | ID
 --------|--------
@@ -71,14 +115,27 @@ Icon    | ID
 ![warning](http://jxnblk.github.io/geomicons-open/icons/warning.svg) | warning
 
 ### Custom Builds
-- Installing Gulp
-- gulp sprite for js method
-- gulp defs for defs method
-- Adding custom icons
-- Other tools: Grunticon, Iconic
+If there are icons in the set that you will not be using, you can build custom versions of the sprites with Gulp tasks.
+
+If you're unfamiliar with Gulp, get set up here: http://gulpjs.com/
+
+To remove icons from the sprite, first remove the unwanted icons from the `/icons` folder. Then run `gulp sprite` to create a new `geomicons.svg` file.
+
+If you're using the defs method, run `gulp defs` to create a new `geomicons-defs.svg` file.
+
+Currently, these Gulp tasks aren't very flexible, but if you're daring and would like to attempt to add your own icons, the SVGs must:
+- Have a unique `id` attribute.
+- Contain only a single `path` element.
+
+For more powerful SVG tools, I'd suggest [Grunticon](https://github.com/filamentgroup/grunticon).
 
 ### Requesting Additional Icons
-- Link to Issues
+This set is intended to cover the most common use cases, and some things should just *not* be represented as an icon. I intend to add more, but if you have any requests, please [Create an Issue](https://github.com/jxnblk/geomicons-open/issues/new).
+
+### Contributing
+Geomicons Open is a curated set of icons. Guidelines for contributing are coming soon.
+
+If you'd like to help improve the Gulp tasks, javascript or other development aspects, please do. I could use the help.
 
 [MIT License](http://opensource.org/licenses/MIT)
 
