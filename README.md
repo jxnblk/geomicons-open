@@ -22,6 +22,8 @@ Icon    | ID
 !(icons/heart.svg) | heart
 !(icons/pin.svg) | pin
 
+!(icons/heart.svg)
+
 ### Custom Builds
 - Installing Gulp
 - gulp sprite for js method
