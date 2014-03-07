@@ -1,4 +1,3 @@
-![Globe icon](http://jxnblk.github.io/geomicons-open/dev/globe.svg)
 # Geomicons Open
 Open Source Icons for the Web
 
@@ -6,6 +5,8 @@ http://jxnblk.github.io/geomicons-open
 
 ## Fast, Plain &amp; Simple
 Smaller than similar webfonts and making fewer network requests than other icon solutions, Geomicons Open is built from the ground up for performance. Designed on a grid for pixel-precision at standard sizes, each icon is hand-coded to avoid the extra bloat from traditional vector drawing applications.
+
+![Globe icon](http://jxnblk.github.io/geomicons-open/dev/globe.svg)
 
 ## Usage
 ### JS Method
@@ -42,8 +43,15 @@ SVGs have different properties than HTML elements. To change the color, use the 
 <span class="geomicon fill-red" data-id="heart"></span>
 ```
 
+See the `geomicons.css` file for a simple example of how to get started.
+
+### Sizing
+Each icon is designed on a 32 x 32px grid. This means icons will look best at multiples of 16. I recommend sizing icons based on your type scale, or using one of the following sizes: 16, 24, 32, 48, 64.
+
+--- 
+
 ### Alternative SVG Defs Method
-For even faster network performance, you can use native SVG defs without any javascript. This method require zero extra network requests.
+For even faster network performance, you can use native SVG defs instead of the JS method above. This method require zero extra network requests.
 
 Instead of linking to the `geomicons.js` file, copy and paste the contents of the `geomicons-defs.svg` file in your HTML. This code will not show up in your page.
 ```html
@@ -59,11 +67,13 @@ To use the icons, use the SVG `<use>` tag as shown below:
 <svg><use xlink:href="#heart"></svg>
 ```
 
+---
+
 ### Icon Reference Table
 
 Icon    | ID
 --------|--------
-![bookmark](http://jxnblk.github.io/geomicons-open/icons/bookmark.svg) | bookmark
+![bookmark](http://jxnblk.github.io/geomicons-open/icons/bookmark.svg =16x16) | bookmark
 ![calendar](http://jxnblk.github.io/geomicons-open/icons/calendar.svg) | calendar
 ![camera](http://jxnblk.github.io/geomicons-open/icons/camera.svg) | camera
 ![carat-down](http://jxnblk.github.io/geomicons-open/icons/carat-down.svg) | carat-down
