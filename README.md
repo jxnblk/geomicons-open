@@ -19,8 +19,8 @@ http://jxnblk.github.io/geomicons-open
 
 Icon    | ID
 --------|--------
-![icons/heart.svg] | heart
-![icons/pin.svg] | pin
+!(icons/heart.svg) | heart
+!(icons/pin.svg) | pin
 
 ### Custom Builds
 - Installing Gulp
