@@ -89,6 +89,7 @@ Icon    | ID
 ![cloud](http://jxnblk.github.io/geomicons-open/icons/cloud.svg) | cloud
 ![cog](http://jxnblk.github.io/geomicons-open/icons/cog.svg) | cog
 ![compose](http://jxnblk.github.io/geomicons-open/icons/compose.svg) | compose
+![dribbble](http://jxnblk.github.io/geomicons-open/icons/dribbble.svg) | dribbble
 ![expand](http://jxnblk.github.io/geomicons-open/icons/expand.svg) | expand
 ![external](http://jxnblk.github.io/geomicons-open/icons/external.svg) | external
 ![facebook](http://jxnblk.github.io/geomicons-open/icons/facebook.svg) | facebook
@@ -102,6 +103,7 @@ Icon    | ID
 ![info](http://jxnblk.github.io/geomicons-open/icons/info.svg) | info
 ![link](http://jxnblk.github.io/geomicons-open/icons/link.svg) | link
 ![list](http://jxnblk.github.io/geomicons-open/icons/list.svg) | list
+![loading](http://jxnblk.github.io/geomicons-open/icons/loading.svg) | loading
 ![lock](http://jxnblk.github.io/geomicons-open/icons/lock.svg) | lock
 ![mail](http://jxnblk.github.io/geomicons-open/icons/mail.svg) | mail
 ![music-note](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | music-note
@@ -112,8 +114,11 @@ Icon    | ID
 ![pin](http://jxnblk.github.io/geomicons-open/icons/pin.svg) | pin
 ![play](http://jxnblk.github.io/geomicons-open/icons/play.svg) | play
 ![previous](http://jxnblk.github.io/geomicons-open/icons/previous.svg) | previous
+![refresh](http://jxnblk.github.io/geomicons-open/icons/refresh.svg) | refresh
 ![repost](http://jxnblk.github.io/geomicons-open/icons/repost.svg) | repost
 ![search](http://jxnblk.github.io/geomicons-open/icons/search.svg) | search
+![shopping-cart](http://jxnblk.github.io/geomicons-open/icons/shopping-cart.svg) | shopping-cart
+![skull](http://jxnblk.github.io/geomicons-open/icons/skull.svg) | skull
 ![speaker-volume](http://jxnblk.github.io/geomicons-open/icons/speaker-volume.svg) | speaker-volume
 ![speaker](http://jxnblk.github.io/geomicons-open/icons/speaker.svg) | speaker
 ![star](http://jxnblk.github.io/geomicons-open/icons/star.svg) | star
