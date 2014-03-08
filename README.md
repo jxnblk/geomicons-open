@@ -80,12 +80,12 @@ Icon    | ID
 ![bookmark](http://jxnblk.github.io/geomicons-open/icons/bookmark.svg) | bookmark
 ![calendar](http://jxnblk.github.io/geomicons-open/icons/calendar.svg) | calendar
 ![camera](http://jxnblk.github.io/geomicons-open/icons/camera.svg) | camera
+![chat](http://jxnblk.github.io/geomicons-open/icons/chat.svg) | chat
+![check](http://jxnblk.github.io/geomicons-open/icons/check.svg) | check
 ![chevron-down](http://jxnblk.github.io/geomicons-open/icons/chevron-down.svg) | chevron-down
 ![chevron-left](http://jxnblk.github.io/geomicons-open/icons/chevron-left.svg) | chevron-left
 ![chevron-right](http://jxnblk.github.io/geomicons-open/icons/chevron-right.svg) | chevron-right
 ![chevron-up](http://jxnblk.github.io/geomicons-open/icons/chevron-up.svg) | chevron-up
-![chat](http://jxnblk.github.io/geomicons-open/icons/chat.svg) | chat
-![check](http://jxnblk.github.io/geomicons-open/icons/check.svg) | check
 ![clock](http://jxnblk.github.io/geomicons-open/icons/clock.svg) | clock
 ![close](http://jxnblk.github.io/geomicons-open/icons/close.svg) | close
 ![cloud](http://jxnblk.github.io/geomicons-open/icons/cloud.svg) | cloud
