@@ -10,12 +10,7 @@ var rename = require('gulp-rename');
 
 gulp.task('default', function() {
   console.log('herro!');
-});
-
-gulp.task('dev', function() {
-  gulp.watch(['./icons/*.svg'], function(){
-    gulp.run('sprite');
-  });
+  gulp.run('sprite', 'defs', 'minify-js');
 });
 
 gulp.task('sprite', function() {
