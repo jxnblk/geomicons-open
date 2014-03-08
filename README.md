@@ -73,6 +73,11 @@ Note: the loading icon does not currently work with the defs method.
 
 ---
 
+### Vector Drawing Applications
+The SVG files in the icons folder should open in applications such as Adobe Illustrator and Sketch. If you encounter any problems, please create an issue.
+
+---
+
 ## Icon Reference Table
 
 Icon    | ID
