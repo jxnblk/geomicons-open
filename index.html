@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="site/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Code+Pro|Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
 </head>
-<body class="bg-light-gray fill-white-alpha xgradient">
+<body class="bg-light-gray fill-white-alpha">
 
-<header class="py4 mb4 relative bg-mid-gray gradient white">
+<header class="py4 relative bg-mid-gray gradient-grid white">
   <div class="container mb4">
     <div class="table">
       <div class="table-cell full-width">
@@ -42,38 +42,30 @@
       <span class="geomicon tile" data-id="bookmark"></span>
       <span class="geomicon tile" data-id="pin"></span>
       <span class="geomicon tile" data-id="search"></span>
-
       <span class="geomicon tile" data-id="star"></span>
       <span class="geomicon tile" data-id="camera"></span>
       <span class="geomicon tile" data-id="calendar"></span>
       <span class="geomicon tile" data-id="chat"></span>
       <span class="geomicon tile" data-id="compose"></span>
       <span class="geomicon tile" data-id="file"></span>
-
       <span class="geomicon tile" data-id="folder"></span>
       <span class="geomicon tile" data-id="trash"></span>
       <span class="geomicon tile" data-id="tag"></span>
       <span class="geomicon tile" data-id="user"></span>
       <span class="geomicon tile" data-id="home"></span>
       <span class="geomicon tile" data-id="lock"></span>
-
       <span class="geomicon tile" data-id="mail"></span>
       <span class="geomicon tile" data-id="music-note"></span>
       <span class="geomicon tile" data-id="picture"></span>
       <span class="geomicon tile" data-id="link"></span>
       <span class="geomicon tile" data-id="external"></span>
       <span class="geomicon tile" data-id="warning"></span>
-
       <span class="geomicon tile" data-id="repost"></span>
-      <!--
-      <span class="geomicon tile" data-id="loading"></span>
-      -->
       <span class="geomicon tile" data-id="expand"></span>
       <span class="geomicon tile" data-id="geolocation"></span>
       <span class="geomicon tile" data-id="grid"></span>
       <span class="geomicon tile" data-id="speaker-volume"></span>
       <span class="geomicon tile" data-id="speaker"></span>
-
       <span class="geomicon tile" data-id="check"></span>
       <span class="geomicon tile" data-id="close"></span>
       <span class="geomicon tile" data-id="play"></span>
@@ -87,7 +79,7 @@
   <section id="value-props" class="container">
     <div class="measure">
       <h2 class="h1">Fast, Plain &amp; Simple</h2>
-      <p class="mb2">Smaller than similar webfonts and making fewer network requests than other icon solutions, Geomicons Open is built from the ground up for performance. Designed on a grid for pixel-precision at standard sizes, each icon is hand-coded to avoid the extra bloat from traditional vector drawing applications.</p>
+      <p class="mb2">Smaller than similar webfonts and with fewer network requests than other solutions, Geomicons Open is built from the ground up for performance. Designed on a grid for pixel-precision at standard sizes, each icon is hand-coded to avoid the extra bloat from traditional vector drawing applications.</p>
     </div>
   </section>
 
@@ -160,22 +152,23 @@
 </header>
 
 
-<section id="usage" class="container mb4">
+<div class="gradient">
+<section id="usage" class="container py4">
   <h1 class="h1">Usage</h1>
-  <p>Link to <code class="blue">geomicons.min.js</code> and include the <code class="blue">geomicons.svg</code> file in your project.</p>
-  <div class="p1 mb2 bg-dark-gray rounded">
+  <p>Link to <code class="mid-gray">geomicons.min.js</code> and include the <code class="mid-gray">geomicons.svg</code> file in your project.</p>
+  <div class="p1 mb2 white bg-mid-gray rounded gradient">
 {% highlight html %}
 <script src="geomicons.min.js"></script>
 {% endhighlight %}
   </div>
-  <p>Use the following markup with the <code class="blue">geomicon</code> class and a <code class="blue">data-id</code> attribute.</p>
-  <div class="p1 mb2 bg-dark-gray rounded">
+  <p>Use the following markup with the <code class="mid-gray">geomicon</code> class and a <code class="mid-gray">data-id</code> attribute.</p>
+  <div class="p1 mb2 white bg-mid-gray rounded gradient">
 {% highlight html %}
 <span class="geomicon" data-id="heart"></span>
 {% endhighlight %}
   </div>
   <p>Style with CSS.</p>
-  <div class="p1 mb2 bg-dark-gray rounded">
+  <div class="p1 mb2 white bg-mid-gray rounded gradient">
 {% highlight html %}
 <style>
   .fill-red { fill: red; }
@@ -188,8 +181,8 @@
 
 <section id="cta" class="container py4">
   <h1>Get started and learn more</h1>
-  <p class="py4">
-    <a href="//github.com/jxnblk/geomicons-open" class="button p button-big button-blue">
+  <p class="py2">
+    <a href="//github.com/jxnblk/geomicons-open" class="button p button-big button-box-blue">
       View on Github
     </a>
   </p>
@@ -197,18 +190,19 @@
 
 
 <footer class="container clearfix py4">
-  <p>
-    <a href="https://twitter.com/intent/tweet?text=Open source icons for the web: &url=http://jxnblk.github.io/geomicons-open&via=jxnblk" class="small button button-small button-box-gray mr1">
-      <span class="geomicon" data-id="twitter"></span>
-      Tweet
-    </a>
-  </p>
   <p class="small">
+    <span class="mb2 mobile-block">
+      <a href="https://twitter.com/intent/tweet?text=Open source icons for the web: &url=http://jxnblk.github.io/geomicons-open&via=jxnblk" class="small button button-small button-box-blue mr1">
+        <span class="geomicon" data-id="twitter"></span>
+        Tweet
+      </a>
+    </span>
     <span class="geomicon fill-mid-gray" data-id="heart"></span> Made with love by <a href="http://jxnblk.com" class="mr1">Jxnblk</a>
     <a href="http://opensource.org/licenses/MIT">MIT License</a>
   </p>
 </footer>
 
+</div>
 
 <script src="geomicons.min.js"></script>
 
