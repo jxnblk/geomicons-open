@@ -20,13 +20,27 @@ html, body { min-height: 100%; }
   .container { max-width: 28rem; }  
 }
 
-@media (min-width: 38em) and (max-width: 56.9375em) {
+@media (min-width: 38em) and (max-width: 59.9375em) {
   .container { max-width: 34rem; }
   .tile {
     font-size: 4rem;
     width: 4rem;
   }
 }
+
+// 4 * 9 = 36 | 32 | 68
+// 36 + 16 | 52
+// Alt tile size
+
+
+//@media (min-width: 60em) {
+//  .container { max-width: 52rem; }
+//  //.tile-wrap { margin-right: -3rem; }
+//  .tile {
+//    font-size: 4rem;
+//    width: 4rem;
+//  }
+//}
 
 @media (min-width: 57em) {
   .container { max-width: 51rem; }
@@ -39,7 +53,8 @@ html, body { min-height: 100%; }
   }
 }
 
-@media (min-width: 90em) {
+//@media (min-width: 90em) {
+@media (min-width: 84em) {
   .container { max-width: 78rem; }
 }
 
