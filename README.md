@@ -10,10 +10,10 @@ Smaller than similar webfonts and making fewer network requests than other icon 
 
 ## Usage
 ### Javascript Method
-Link to or include the `geomicons.js` (648 bytes) just before the closing `body` tag in your HTML.
+Link to or include the `geomicons.min.js` (648 bytes) just before the closing `body` tag in your HTML.
 
 ```html
-<script src="geomicons.js"></script>
+<script src="geomicons.min.js"></script>
 </body>
 ```
 
@@ -25,7 +25,7 @@ To change the location, adjust the `iconUrl` variable in `geomicons.js`.
 var iconUrl = 'geomicons.svg';
 ```
 
-Use the following markup wherever you want an icon to appear. Be sure to include the `.geomicons` class and adjust the `data-id` attribute to match the icon you want.
+Use the following markup wherever you want an icon to appear. Be sure to include the `.geomicon` class and adjust the `data-id` attribute to match the icon you want.
 ```html
 <span class="geomicon" data-id="heart"></span>
 ```
@@ -51,9 +51,9 @@ Each icon is designed on a 32 x 32px grid. This means icons will look best at mu
 --- 
 
 ### Alternative SVG Defs Method
-For even faster network performance, you can use native SVG defs instead of the javascript method above. This method require zero extra network requests.
+For even faster network performance, you can use native SVG defs instead of the javascript method above. This method makes zero extra network requests.
 
-Instead of linking to the `geomicons.js` file, copy and paste the contents of the `geomicons-defs.svg` file in your HTML. This code will not show up in your page.
+Instead of linking to the `geomicons.min.js` file, copy and paste the contents of the `geomicons-defs.svg` file in your HTML. This code will not show up in your page.
 ```html
 <svg xmnls="http://www.w3.org/2000/svg" width="0" height="0"><defs><!-- --></defs></svg>
 </body>
@@ -69,7 +69,7 @@ To use the icons, use the SVG `<use>` tag as shown below:
 </svg>
 ```
 
-Note: the loading icon does not currently work with the defs method.
+Note: the animated loading icon does not currently work with the defs method.
 
 ---
 
@@ -143,7 +143,7 @@ Icon    | ID
 ### Custom Builds
 If there are icons in the set that you will not be using, you can build custom versions of the sprites with Gulp tasks.
 
-If you're unfamiliar with Gulp, get set up here: http://gulpjs.com/
+If you're unfamiliar with Gulp, get started here: http://gulpjs.com/
 
 To remove icons from the sprite, first remove the unwanted icons from the `/icons` folder. Then run `gulp sprite` to create a new `geomicons.svg` file.
 
@@ -153,7 +153,7 @@ Currently, these Gulp tasks aren't very flexible, but if you're daring and would
 - Have a unique `id` attribute.
 - Contain only a single `path` element.
 
-For more powerful SVG tools, I'd suggest [Grunticon](https://github.com/filamentgroup/grunticon).
+For a more powerful SVG tool, I'd suggest [Grunticon](https://github.com/filamentgroup/grunticon).
 
 ### Requesting Additional Icons
 This set is intended to cover the most common use cases, and some things should just *not* be represented as an icon. I intend to add more, but if you have any requests, please [Create an Issue](https://github.com/jxnblk/geomicons-open/issues/new).
