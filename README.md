@@ -73,6 +73,11 @@ Note: the animated loading icon does not currently work with the defs method.
 
 ---
 
+### Only using one or two icons
+If you're only using one or two icons in your markup, it's probably better to just put the SVG code inline. Open the icon SVG file and copy and paste the contents where you'd like to use it. Be sure to adjust the `id` attribute to not conflict with other elements.
+
+---
+
 ### Vector Drawing Applications
 The SVG files in the icons folder should open in applications such as Adobe Illustrator and Sketch. If you encounter any problems, please create an issue.
 
