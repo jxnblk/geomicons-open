@@ -6,6 +6,15 @@ $light-gray: #f9fcff;
 $mid-gray: #a9acac;
 $dark-gray: #30393f;
 
+// Jxnblk colors
+$blue: #0096cc;
+$light-gray: #eaeff0;
+$mid-gray: #708690;
+$dark-gray: #405660;
+
+$red: #f60;
+//$bright-blue: #06f;
+
 .white { color: #fff; }
 .blue { color: $blue; }
 .light-gray { color: $light-gray; }
@@ -101,10 +110,10 @@ a {
 .rounded { border-radius: .25rem; }
 
 .gradient {
-  background-image: linear-gradient( to bottom left, rgba(#f60,.05), rgba(#06f,.05) );
+  background-image: linear-gradient( to bottom left, rgba($red,.05), rgba($blue,.05) );
 }
 .gradient-grid {
-  background-image: url(../site/grid.svg), linear-gradient( to bottom left, rgba(#f60,.1), rgba(#06f,.1) );
+  background-image: url(../site/grid.svg), linear-gradient( to bottom left, rgba($red,.1), rgba($blue,.1) );
   background-position: top center;
 }
 
