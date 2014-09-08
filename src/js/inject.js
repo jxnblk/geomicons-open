@@ -15,6 +15,7 @@ module.exports = function(el, pathdata) {
   }
 
   svg.setAttribute('viewBox', '0 0 32 32');
+  svg.setAttribute('style', 'fill:currentcolor');
   path.setAttribute('d', pathdata);
   svg.appendChild(path);
 
