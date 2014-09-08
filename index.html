@@ -160,12 +160,15 @@
 <script src="geomicons.min.js"></script>
 {% endhighlight %}
   </div>
-  <p>Use the following markup with the <code class="mid-gray">geomicon</code> class and a <code class="mid-gray">data-icon</code> attribute.</p>
+  <p>
+    Add the <code>data-icon</code> attribute with the icon you'd like to include as the value.
+  </p>
   <div class="p1 mb2 white bg-mid-gray rounded gradient">
 {% highlight html %}
-<span class="geomicon" data-icon="heart"></span>
+<span class="geomicon js-geomicon" data-icon="heart"></span>
 {% endhighlight %}
   </div>
+  <p>Do some js call stuff</p>
   <p>Style with CSS.</p>
   <div class="p1 mb2 white bg-mid-gray rounded gradient">
 {% highlight html %}
@@ -210,9 +213,8 @@
 -->
 <script src="dist/geomicons.js"></script>
 <script>
-  var geo = new Geomicons();
   var icons = document.querySelectorAll('.geomicon');
-  geo.inject(icons);
+  Geomicons.inject(icons);
 </script>
 
 </body>

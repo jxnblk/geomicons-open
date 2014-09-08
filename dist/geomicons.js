@@ -11,24 +11,35 @@
 var paths = _dereq_('./paths');
 var inject = _dereq_('./inject');
 
-var Geomicons = function() {
+var Geomicons = {
 
-  var camelCase = function(string) {
-    return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
-  };
+  inject: function(elements) {
 
-  return {
+    var camelCase = function(string) {
+      return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+    };
 
-    inject: function(elements) {
-      for (var i = 0; i < elements.length; i++) {
-        var id = elements[i].getAttribute('data-icon');
-        id = camelCase(id);
-        var d = paths[id];
+    for (var i = 0; i < elements.length; i++) {
+      var id = elements[i].getAttribute('data-icon');
+      id = camelCase(id);
+      var d = paths[id];
+      if (!d) {
+        var iconList = [];
+        for (var key in paths) {
+          iconList.push(key);
+        };
+        iconList = iconList.join();
+        console.error(
+          'No icon found for ' + id + '.\n' +
+          'Geomicons Open includes the following icons: \n' + iconList
+        );
+      } else {
         inject(elements[i], d);
       }
     }
 
   }
+
 
 };
 
