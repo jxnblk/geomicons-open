@@ -4,10 +4,16 @@ var gutil = require('gulp-util');
 
 module.exports = function() {
 
+  var camelCase = function(string) {
+    return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+  };
+
+
   var pathsArr = [];
 
   var transform = function(file, enc, cb) {
     var name = file.relative.split('.')[0];
+    name = camelCase(name);
     var contents = String(file.contents).replace(/\r?\n|\r/g, ' ');
     pathsArr.push(name + ': ' + '\'' + contents + '\'');
     cb();

@@ -1,5 +1,6 @@
 
 var gulp = require('gulp');
+var browserify = require('gulp-browserify');
 var cheerio = require('gulp-cheerio');
 var cleanhtml = require('gulp-cleanhtml');
 var concat = require('gulp-concat');
@@ -18,8 +19,8 @@ gulp.task('default', ['sprite', 'defs', 'minify-js'], function() {
   console.log('herro!');
 });
 
-gulp.task('dev', ['default', 'jekyll', 'serve'], function() {
-  gulp.watch(['./src/**/*', './**/*.html', '!./_site/**/*', '!./node_modules/**/*'], ['default', 'jekyll', 'serve']);
+gulp.task('dev', ['default', 'compile-js', 'jekyll', 'serve'], function() {
+  gulp.watch(['./src/**/*', './**/*.html', '!./_site/**/*', '!./node_modules/**/*'], ['default', 'compile-js', 'jekyll']);
 });
 
 gulp.task('paths', function() {
@@ -27,6 +28,15 @@ gulp.task('paths', function() {
   gulp.src('./src/paths/*.d')
     .pipe(paths())
     .pipe(gulp.dest('./src/js'));
+});
+
+gulp.task('compile-js', function() {
+  gulp.src('src/js/geomicons.js')
+    .pipe(browserify({ standalone: 'Geomicons' }))
+    .pipe(gulp.dest('dist'))
+    .pipe(uglify())
+    .pipe(rename({ extname: '.min.js' }))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('sprite', function() {

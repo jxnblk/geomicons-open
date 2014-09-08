@@ -1,3 +1,68 @@
+!function(e){if("object"==typeof exports)module.exports=e();else if("function"==typeof define&&define.amd)define(e);else{var o;"undefined"!=typeof window?o=window:"undefined"!=typeof global?o=global:"undefined"!=typeof self&&(o=self),o.Geomicons=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+/*
+
+    Geomicons Open
+    http://jxnblk.github.io/geomicons-open
+
+    SVG Injector
+
+*/
+
+var paths = _dereq_('./paths');
+var inject = _dereq_('./inject');
+
+var Geomicons = function() {
+
+  var camelCase = function(string) {
+    return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+  };
+
+  return {
+
+    inject: function(elements) {
+      for (var i = 0; i < elements.length; i++) {
+        var id = elements[i].getAttribute('data-icon');
+        id = camelCase(id);
+        var d = paths[id];
+        inject(elements[i], d);
+      }
+    }
+
+  }
+
+};
+
+module.exports = Geomicons;
+
+
+
+},{"./inject":2,"./paths":3}],2:[function(_dereq_,module,exports){
+// Replaces element with SVG
+
+module.exports = function(el, pathdata) {
+
+  var svg;
+  var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+
+  if (el.tagName == 'svg') {
+    svg = el.cloneNode(true);
+  } else {
+    svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    for (var i = 0; i < el.attributes.length; i++) {
+      svg.setAttribute(el.attributes[i].name, el.attributes[i].value);
+    }
+  }
+
+  svg.setAttribute('viewBox', '0 0 32 32');
+  path.setAttribute('d', pathdata);
+  svg.appendChild(path);
+
+  el.parentNode.replaceChild(svg, el);
+
+};
+
+
+},{}],3:[function(_dereq_,module,exports){
 module.exports = {
   bookmark: 'M6 2 L26 2 L26 30 L16 24 L6 30 Z  ',
   calendar: 'M2 4 L6 4 L6 2 A2 2 0 0 1 10 2 L10 4 L22 4 L22 2 A2 2 0 0 1 26 2 L26 4 L30 4 L30 10 L2 10 M2 12 L30 12 L30 30 L2 30  ',
@@ -56,3 +121,7 @@ module.exports = {
   video: 'M0 6 L0 26 L24 26 L24 19 L32 23 L32 9 L24 13 L24 6 z  ',
   warning: 'M15 0 H17 L32 29 L31 30 L1 30 L0 29 z M19 8 L13 8 L14 20 L18 20 z M16 22 A3 3 0 0 0 16 28 A3 3 0 0 0 16 22  '
 };
+
+},{}]},{},[1])
+(1)
+});
