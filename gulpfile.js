@@ -16,7 +16,7 @@ var fs = require('fs');
 var exec = require('child_process').exec;
 
 
-gulp.task('default', ['sprite', 'defs', 'minify-js'], function() {
+gulp.task('default', ['sprite', 'defs'], function() {
   console.log('herro!');
 });
 

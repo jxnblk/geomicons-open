@@ -594,7 +594,7 @@ a {
   background-image: linear-gradient(to bottom left, rgba(255, 102, 0, 0.05), rgba(0, 150, 204, 0.05)); }
 
 .gradient-grid {
-  background-image: url(../site/grid.svg), linear-gradient(to bottom left, rgba(255, 102, 0, 0.1), rgba(0, 150, 204, 0.1));
+  background-image: url(/docs/assets/grid.svg), linear-gradient(to bottom left, rgba(255, 102, 0, 0.1), rgba(0, 150, 204, 0.1));
   background-position: top center; }
 
 .bg-grid {
