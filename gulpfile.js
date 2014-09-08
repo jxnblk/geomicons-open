@@ -15,13 +15,16 @@ var webserver = require('gulp-webserver');
 var fs = require('fs');
 var exec = require('child_process').exec;
 
+
 gulp.task('default', ['sprite', 'defs', 'minify-js'], function() {
   console.log('herro!');
 });
 
+
 gulp.task('dev', ['default', 'compile-js', 'jekyll', 'serve'], function() {
   gulp.watch(['./src/**/*', './**/*.html', '!./_site/**/*', '!./node_modules/**/*'], ['default', 'compile-js', 'jekyll']);
 });
+
 
 gulp.task('paths', function() {
   var paths = require('./gulp/paths');
@@ -29,6 +32,15 @@ gulp.task('paths', function() {
     .pipe(paths())
     .pipe(gulp.dest('./src/js'));
 });
+
+
+gulp.task('compile-svg', function() {
+  var dsvg = require('./gulp/dsvg');
+  gulp.src('./src/paths/*.d')
+    .pipe(dsvg())
+    .pipe(gulp.dest('./icons'));
+});
+
 
 gulp.task('compile-js', function() {
   gulp.src('src/js/geomicons.js')
@@ -39,6 +51,7 @@ gulp.task('compile-js', function() {
     .pipe(gulp.dest('dist'));
 });
 
+
 gulp.task('sprite', function() {
   return gulp.src('./icons/*.svg')
     .pipe(concat('geomicons.svg'))
@@ -47,6 +60,7 @@ gulp.task('sprite', function() {
     .pipe(cleanhtml())
     .pipe(gulp.dest('./'));
 });
+
 
 gulp.task('defs', function() {
   var stream = gulp.src('./icons/*.svg')
@@ -63,12 +77,7 @@ gulp.task('defs', function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('minify-js', function() {
-  return gulp.src('geomicons.js')
-    .pipe(uglify())
-    .pipe(rename('geomicons.min.js'))
-    .pipe(gulp.dest('./'));
-});
+
 
 gulp.task('jekyll', function() {
   exec('jekyll build --config _config.yml,_config_dev.yml', function(err, stdout, stderr) {
@@ -76,8 +85,10 @@ gulp.task('jekyll', function() {
   });
 });
 
+
 gulp.task('serve', function() {
   gulp.src('./_site')
     .pipe(webserver());
 });
+
 
