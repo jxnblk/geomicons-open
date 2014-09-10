@@ -11,6 +11,8 @@ var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
+// gulp-rsvg
+
 var webserver = require('gulp-webserver');
 var browserSync = require('browser-sync');
 
