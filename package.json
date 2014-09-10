@@ -1,8 +1,8 @@
 {
   "name": "geomicons-open",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Open Source Icons for the Web",
-  "main": "geomicons.min.js",
+  "main": "dist/geomicons.min.js",
   "devDependencies": {
     "gulp": "^3.5.5",
     "gulp-browserify": "^0.5.0",
