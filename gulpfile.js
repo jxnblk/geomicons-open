@@ -10,7 +10,9 @@ var inject = require('gulp-inject');
 var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+
 var webserver = require('gulp-webserver');
+var browserSync = require('browser-sync');
 
 var fs = require('fs');
 var exec = require('child_process').exec;
@@ -82,13 +84,19 @@ gulp.task('defs', function() {
 gulp.task('jekyll', function() {
   exec('jekyll build --config _config.yml,_config_dev.yml', function(err, stdout, stderr) {
     console.log(err, stdout, stderr);
+    browserSync.reload();
   });
 });
 
 
 gulp.task('serve', function() {
-  gulp.src('./_site')
-    .pipe(webserver());
+  //gulp.src('./_site')
+  //  .pipe(webserver());
+  browserSync({
+    server: {
+      baseDir: './_site'
+    }
+  });
 });
 
 
