@@ -1,23 +1,22 @@
 {
   "name": "geomicons-open",
   "version": "0.0.1",
-  "dependencies": {
-    "gulp": "~3.5.5",
+  "description": "Open Source Icons for the Web",
+  "main": "geomicons.min.js",
+  "devDependencies": {
+    "gulp": "^3.5.5",
+    "gulp-browserify": "^0.5.0",
     "gulp-cheerio": "~0.1.0",
     "gulp-cleanhtml": "0.0.2",
     "gulp-concat": "2.1.7",
     "gulp-footer": "1.0.4",
     "gulp-header": "1.0.2",
+    "gulp-inject": "^1.0.2",
     "gulp-rename": "1.2.0",
     "gulp-uglify": "0.2.1",
-    "gulp-watch": "0.5.0"
-  },
-  "devDependencies": {
-    "gulp": "^3.5.5",
-    "gulp-webserver": "^0.8.0",
-    "gulp-inject": "^1.0.2",
-    "through2": "^0.6.1",
     "gulp-util": "^3.0.1",
-    "gulp-browserify": "^0.5.0"
+    "gulp-watch": "0.5.0",
+    "gulp-webserver": "^0.8.0",
+    "through2": "^0.6.1"
   }
 }
