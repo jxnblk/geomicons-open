@@ -92,13 +92,7 @@ gulp.task('jekyll', function() {
 
 
 gulp.task('serve', function() {
-  //gulp.src('./_site')
-  //  .pipe(webserver());
-  browserSync({
-    server: {
-      baseDir: './_site'
-    }
-  });
+  browserSync({ server: { baseDir: './_site' } });
 });
 
 
