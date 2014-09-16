@@ -20,8 +20,9 @@ var fs = require('fs');
 var exec = require('child_process').exec;
 
 
-gulp.task('default', ['sprite', 'defs'], function() {
+gulp.task('default', ['paths', 'compile-svg', 'sprite', 'defs'], function() {
   console.log('herro!');
+  console.log('tasks: dev, paths, compile-svg, compile-js, sprite, defs, jekyll, serve');
 });
 
 

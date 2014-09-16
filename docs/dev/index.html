@@ -3,18 +3,28 @@
 <head>
   <meta charset="utf-8">
   <title>Build - Geomicons Open</title>
+  <link rel="stylesheet" href="/docs/assets/style.css">
+  <style>
+    svg { max-height: 100%; width: 1em; height: 1em; }
+  </style>
 </head>
 <body class="container white bg-dark-gray xgradient">
 
 <div class="container py2">
   <style>
     .dev { display: block; width: 1em; height: 1em; }
-    .dev:before { display: block; width: 1em; height: 1em; content: url(icons/repost.svg); }
-    .dev-big { width: 16em; height: 16em; }
+    /*
+    .dev:before { display: block; width: 1em; height: 1em; content: url(/icons/repost.svg); }
+    */
+    .dev-big { font-size: 16rem; width: 1em; height: 1em; }
     .dev-big:before { width: 16em; height: 16em; }
   </style>
-  <span class="dev dev-big bg-grid bg-cover"></span>
-  <span class="dev"></span>
+  <span class="dev dev-big bg-grid bg-cover">
+    <span class="geomicon" data-icon="bar-chart"></span>
+  </span>
+  <span class="dev">
+    <span class="geomicon" data-icon="bar-chart"></span>
+  </span>
   <span class="dev h1"></span>
 </div>
 
@@ -72,11 +82,9 @@
   <span class="geomicon" data-icon="no"></span> 
   <span class="geomicon" data-icon="clock"></span> 
   <span class="geomicon" data-icon="skull"></span> 
-  <span class="geomicon" data-icon="skull-1"></span> 
   <span class="geomicon" data-icon="dribbble"></span> 
   <span class="geomicon" data-icon="shopping-cart"></span> 
   <span class="geomicon" data-icon="refresh"></span> 
-  <span class="geomicon" data-icon="loading"></span> 
 </section>
 
 <section class="py-responsive h2 fill-white-alpha">
@@ -133,11 +141,9 @@
   <span class="geomicon" data-icon="no"></span> 
   <span class="geomicon" data-icon="clock"></span> 
   <span class="geomicon" data-icon="skull"></span> 
-  <span class="geomicon" data-icon="skull-1"></span> 
   <span class="geomicon" data-icon="dribbble"></span> 
   <span class="geomicon" data-icon="shopping-cart"></span> 
   <span class="geomicon" data-icon="refresh"></span> 
-  <span class="geomicon" data-icon="loading"></span> 
 </section>
 
 <footer class="py-responsive">

@@ -76,6 +76,7 @@ module.exports = function(el, pathdata) {
 
 },{}],3:[function(_dereq_,module,exports){
 module.exports = {
+  barChart: 'M0 6 V26 H32 V25 H1 V6 z M4 14 V24 H10 V14 z M13 10 V24 H19 V10 z M22 6 V24 H28 V6 z ',
   bookmark: 'M6 2 L26 2 L26 30 L16 24 L6 30 Z  ',
   calendar: 'M2 4 L6 4 L6 2 A2 2 0 0 1 10 2 L10 4 L22 4 L22 2 A2 2 0 0 1 26 2 L26 4 L30 4 L30 10 L2 10 M2 12 L30 12 L30 30 L2 30  ',
   camera: 'M0 6 L8 6 L10 2 L22 2 L24 6 L32 6 L32 28 L0 28 z M9 17 A7 7 0 0 0 23 17 A7 7 0 0 0 9 17  ',
@@ -109,8 +110,10 @@ module.exports = {
   musicNote: 'M0 24 A6 6 0 0 0 12 24 V8 H26 V18 A6 6 0 0 0 18 24 A6 6 0 0 0 30 24 V2 H8 V18 A6 6 0 0 0 0 24 ',
   next: 'M4 4 L24 14 V4 H28 V28 H24 V18 L4 28 z ',
   no: 'M16 0 A16 16 0 0 0 0 16 A16 16 0 0 0 16 32 A16 16 0 0 0 32 16 A16 16 0 0 0 16 0 M16 6 A10 10 0 0 1 20.675 7 L7 20.675 A10 10 0 0 1 6 16 A10 10 0 0 1 16 6 M26 16 A10 10 0 0 1 16 26 A10 10 0 0 1 11.325 25 L25 11.325 A10 10 0 0 1 26 16 ',
+  numeral: 'M 2 0 H30 L32 2 V30 L30 32 H2 L0 30 V2 z ',
   pause: 'M4 4 H12 V28 H4 z M20 4 H28 V28 H20 z ',
   picture: 'M0 4 L0 28 L32 28 L32 4 z M4 24 L10 10 L15 18 L18 14 L24 24z M25 7 A4 4 0 0 1 25 15 A4 4 0 0 1 25 7  ',
+  pieChart: 'M15 0 A16 16 0 0 0 0 16  A16 16 0 0 0 16 32 A16 16 0 0 0 32 17 H15 z  M17 0 V15 H32 A16 16 0 0 0 17 0 ',
   pin: 'M4 12 A12 12 0 0 1 28 12 C28 20, 16 32, 16 32 C16 32, 4 20 4 12 M11 12 A5 5 0 0 0 21 12 A5 5 0 0 0 11 12 Z  ',
   play: 'M4 4 L28 16 L4 28 z ',
   previous: 'M4 4 H8 V14 L28 4 V28 L8 18 V28 H4 z ',

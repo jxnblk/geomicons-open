@@ -10,8 +10,8 @@ module.exports = function() {
     var contents = String(file.contents).replace(/\r?\n|\r/g, ' ');
 
     // Build SVG
-    var svg = '<svg id="' + name + '" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\n' +
-      '  <path d="' + contents + '">\n' +
+    var svg = '<svg id="' + name + '" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentcolor">\n' +
+      '  <path d="' + contents + '"></path>\n' +
       '</svg>';
 
     file.contents = new Buffer(svg); 
