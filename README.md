@@ -17,6 +17,18 @@ each icon is hand-coded to avoid the extra bloat from traditional vector drawing
 
 ## Getting Started
 
+Download the source or install via NPM:
+
+```
+npm install geomicons-open
+```
+
+Or use the CDN link:
+
+```
+http://d2v52k3cl9vedd.cloudfront.net/geomicons/0.2.0/geomicons.min.js
+```
+
 ### Javascript Method
 
 Include `geomicons.min.js` (3KB gzipped).
