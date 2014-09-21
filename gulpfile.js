@@ -13,7 +13,6 @@ var rename = require('gulp-rename');
 
 // gulp-rsvg
 
-var webserver = require('gulp-webserver');
 var browserSync = require('browser-sync');
 
 var fs = require('fs');
@@ -25,8 +24,8 @@ gulp.task('default', ['sprite', 'defs'], function() {
 });
 
 
-gulp.task('dev', ['default', 'compile-js', 'jekyll', 'serve'], function() {
-  gulp.watch(['./src/**/*', './**/*.html', '!./_site/**/*', '!./node_modules/**/*'], ['default', 'compile-js', 'jekyll']);
+gulp.task('dev', ['default', 'compile-js', 'serve'], function() {
+  gulp.watch(['./src/**/*', './**/*.html', '!./_site/**/*', '!./node_modules/**/*'], ['default', 'compile-js', 'reload']);
 });
 
 
@@ -83,22 +82,12 @@ gulp.task('defs', function() {
 
 
 
-gulp.task('jekyll', function() {
-  exec('jekyll build --config _config.yml,_config_dev.yml', function(err, stdout, stderr) {
-    console.log(err, stdout, stderr);
-    browserSync.reload();
-  });
+gulp.task('reload', function() {
+  browserSync.reload();
 });
 
-
 gulp.task('serve', function() {
-  //gulp.src('./_site')
-  //  .pipe(webserver());
-  browserSync({
-    server: {
-      baseDir: './_site'
-    }
-  });
+  browserSync({ server: { baseDir: './' } , open: false, ghostMode: false });
 });
 
 

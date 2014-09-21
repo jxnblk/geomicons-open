@@ -32,7 +32,7 @@ See the [Icon Reference Table](#icon-reference-table) for reference.
 <span class="js-geomicon" data-icon="heart"></span>
 ```
 
-Call the `Geomicons.inject()` method with a nodelist of the elements to replace with SVG icons.
+Pass a nodelist to the `Geomicons.inject()` method to replace elements with SVG icons.
 
 ```html
 <script>
@@ -48,14 +48,15 @@ Set the width, height, and other properties with additional CSS.
 
 ```html
 <style>
-  .red { color: red; }
+  .geomicon { width: 1em; height: 1em; }
 </style>
-<span class="js-geomicon red" data-id="heart"></span>
+<span class="js-geomicon geomicon" data-id="heart"></span>
+
 ```
 
 ### Sizing
 
-Each icon is designed on a 32 x 32px grid. This means icons will look best at multiples of 16. I recommend sizing icons based on your type scale, or using one of the following sizes: 16, 24, 32, 48, 64.
+Each icon is designed on a 32 x 32px grid. This means icons will look best at multiples of 16. I recommend sizing icons based on your type scale, or using one of the following sizes: **16, 24, 32, 48, or 64px**.
 
 #### 1em
 
@@ -84,7 +85,7 @@ Instead of linking to the `geomicons.min.js` file, copy and paste the contents o
 </html>
 ```
 
-If you're using a templating system, such as Jekyll or Rails, I'd recommend keeping the defs file in a partial for easy inclusion.
+If you're using a templating system, such as Angular, React, Rails, or Jekyll, I'd recommend keeping the defs file in a component, helper, or partial for easy inclusion.
 
 To use the icons, use the SVG `<use>` tag as shown below:
 
@@ -145,7 +146,7 @@ Icon    | ID
 ![info](http://jxnblk.github.io/geomicons-open/icons/info.svg) | info
 ![link](http://jxnblk.github.io/geomicons-open/icons/link.svg) | link
 ![list](http://jxnblk.github.io/geomicons-open/icons/list.svg) | list
-![loading](http://jxnblk.github.io/geomicons-open/icons/loading.svg) | loading
+![loading](http://jxnblk.github.io/geomicons-open/icons/loading.svg) | loading (not available in JavaScript version)
 ![lock](http://jxnblk.github.io/geomicons-open/icons/lock.svg) | lock
 ![mail](http://jxnblk.github.io/geomicons-open/icons/mail.svg) | mail
 ![music-note](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | music-note
@@ -182,7 +183,7 @@ If there are icons in the set that you will not be using, you can build custom v
 If you're unfamiliar with Gulp, get started here: http://gulpjs.com/
 
 To remove icons from the sprite, first remove the unwanted icons from the `/src/paths` folder.
-Then run `TK` to create a new `geomicons.svg` file.
+Then run `gulp default` to create a new `geomicons.svg` file.
 
 If you're using the defs method, run `gulp defs` to create a new `geomicons-defs.svg` file.
 
