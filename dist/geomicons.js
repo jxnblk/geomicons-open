@@ -19,6 +19,8 @@ var Geomicons = {
       return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
     };
 
+    if (!elements.length) elements = [elements];
+
     for (var i = 0; i < elements.length; i++) {
       var id = elements[i].getAttribute('data-icon');
       id = camelCase(id);
