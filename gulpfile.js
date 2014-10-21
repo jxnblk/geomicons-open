@@ -11,21 +11,21 @@ var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
-// gulp-rsvg
-
 var browserSync = require('browser-sync');
-
 var fs = require('fs');
-var exec = require('child_process').exec;
-
+var basswork = require('gulp-basswork');
+var mincss = require('gulp-minify-css');
 
 gulp.task('default', ['sprite', 'defs'], function() {
   console.log('herro!');
 });
 
 
-gulp.task('dev', ['default', 'compile-js', 'serve'], function() {
-  gulp.watch(['./src/**/*', './**/*.html', '!./_site/**/*', '!./node_modules/**/*'], ['default', 'compile-js', 'reload']);
+gulp.task('dev', ['default', 'compile-js', 'css', 'serve'], function() {
+  gulp.watch(
+    ['./src/**/*', './**/*.html', './docs/assets/index.css', '!./_site/**/*', '!./node_modules/**/*'],
+    ['default', 'compile-js', 'css', 'reload']
+  );
 });
 
 
@@ -80,6 +80,14 @@ gulp.task('defs', function() {
     .pipe(gulp.dest('./'));
 });
 
+
+gulp.task('css', function() {
+  gulp.src('./docs/assets/index.css')
+    .pipe(basswork())
+    .pipe(mincss())
+    .pipe(rename('base.min.css'))
+    .pipe(gulp.dest('./docs/assets'));
+});
 
 
 gulp.task('reload', function() {
