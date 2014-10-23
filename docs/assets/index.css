@@ -10,16 +10,15 @@ svg { max-height: 100% }
   opacity: 1;
 }
 
-.tile-wrap {
+.tiles {
   margin: -1rem;
   opacity: .8;
 }
 
-.tile {
+.tiles .geomicon {
   width: 2rem;
   height: 2rem;
   margin: .75rem;
-  cursor: pointer;
 }
 
 .copy-button {
@@ -55,18 +54,18 @@ svg { max-height: 100% }
 }
 
 @media (min-width: 30em) {
-  .tile-wrap { margin: -1.5rem; }
-  .tile { width: 3rem; height: 3rem; margin: 1.5rem; }
+  .tiles { margin: -1.5rem; }
+  .tiles .geomicon { width: 3rem; height: 3rem; margin: 1.5rem; }
 }
 
 @media (min-width: 40em) {
-  .tile-wrap { margin: -2rem; }
-  .tile { width: 4rem; height: 4rem; margin: 2rem; }
+  .tiles { margin: -2rem; }
+  .tiles .geomicon { width: 4rem; height: 4rem; margin: 2rem; }
 }
 
 @media (min-width: 50em) {
-  .tile-wrap { margin: -2rem; }
-  .tile { width: 5rem; height: 5rem; margin: 2rem; }
+  .tiles { margin: -2rem; }
+  .tiles .geomicon { width: 5rem; height: 5rem; margin: 2rem; }
 }
 
 .gradient {
