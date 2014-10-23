@@ -27,7 +27,7 @@
   </header>
 
   <section class="clearfix mb4">
-    <div class="tiles flex flex-wrap flex-justify-between">
+    <div class="tiles flex flex-wrap flex-justify-between js-hover-group">
       <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="heart"></div></a>
       <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="cog"></div></a>
       <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="cloud"></div></a>
@@ -132,7 +132,7 @@
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;js-geomicon geomicon red&quot;</span> <span class="na">data-id=</span><span class="s">&quot;heart&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
 </pre></div>
 </div>
-    <p>Or, if you&#x2019;re just using one or two, copy and paste the SVG code from the icons on this page.</p>
+    <p class="zero-show">Or, if you&#x2019;re just using one or two, copy and paste the SVG code from the icons on this page.</p>
   </section>
 
   <section class="container px3 py4 xs-center">
@@ -205,6 +205,7 @@
     zero.on('ready', function() {
       var iconName = '';
       var timeout;
+      document.body.classList.add('has-zeroclipboard');
       zero.on('copy', function(e) {
         var el = e.target.querySelector('.geomicon');
         iconName = el.dataset.icon;

@@ -27,9 +27,7 @@ svg { max-height: 100% }
   transition: transform .05s ease;
 }
 
-.copy-button:hover,
-.copy-button:focus,
-.copy-button.zeroclipboard-is-hover {
+.has-zeroclipboard .copy-button.zeroclipboard-is-hover {
   position: relative;
   outline: none;
   transform: scale(1.03125);
@@ -38,8 +36,8 @@ svg { max-height: 100% }
   border-radius: 3px;
   cursor: pointer;
 }
-.copy-button:hover:after,
-.copy-button.zeroclipboard-is-hover:after {
+
+.has-zeroclipboard .copy-button.zeroclipboard-is-hover:after {
   content: 'Copy';
   position: absolute;
   bottom: .25rem;
@@ -48,10 +46,12 @@ svg { max-height: 100% }
   color: #0096ff;
 }
 
-.copy-button:active,
-.copy-button.zeroclipboard-is-active {
+.has-zeroclipboard .copy-button.zeroclipboard-is-active {
   transform: scale(0.96875);
 }
+
+.zero-show { display: none }
+.has-zeroclipboard .zero-show { display: block }
 
 @media (min-width: 30em) {
   .tiles { margin: -1.5rem; }
