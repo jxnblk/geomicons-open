@@ -15,7 +15,19 @@ svg { max-height: 100% }
   opacity: .8;
 }
 
-.tile { width: 2rem; height: 2rem; margin: .75rem; }
+.tile {
+  width: 2rem;
+  height: 2rem;
+  margin: .75rem;
+  cursor: pointer;
+}
+
+/*
+.tile:hover {
+  transform: scale(1.125);
+  box-shadow: inset 0 0 0 2px rgba(#0096ff, .5);
+}
+*/
 
 @media (min-width: 30em) {
   .tile-wrap { margin: -1.5rem; }
@@ -43,4 +55,51 @@ svg { max-height: 100% }
 
 .bg-darken-3 { background-color: rgba(0,0,0,.25) }
 .bg-darken-4 { background-color: rgba(0,0,0,.5) }
+
+code {
+  font-size: 87.5%;
+  padding-left: .25em;
+  padding-right: .25em;
+  background-color: rgba(#000,.25);
+}
+
+.highlight, .highlight span {
+  color: inherit;
+  color: #0096ff;
+}
+
+.button-bright-blue-outline {
+  color: white;
+}
+
+@keyframes floatup {
+  from {
+    transform: translateY(100%);
+    opacity: .5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast {
+  position: fixed;
+  right: 0;
+  bottom: 2rem;
+  left: 0;
+  text-align: center;
+}
+
+.toast-inner {
+  display: inline-block;
+  display: none;
+  padding: .5rem 1rem;
+  color: white;
+  background-color: rgba(#000,.5);
+  border-radius: 3px;
+  animation-name: floatup;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+}
 
