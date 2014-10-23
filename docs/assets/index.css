@@ -24,7 +24,10 @@ svg { max-height: 100% }
 .copy-button {
   display: block;
   color: white;
-  transition: transform .05s ease;
+  transition: transform .05s ease, background-color .075s linear, box-shadow .1s linear;
+  transform: scale(1);
+  background-color: rgba(#0096ff, 0);
+  box-shadow: inset 0 0 0 2px rgba(#0096ff, 0);
 }
 
 .has-zeroclipboard .copy-button.zeroclipboard-is-hover {
@@ -48,6 +51,7 @@ svg { max-height: 100% }
 
 .has-zeroclipboard .copy-button.zeroclipboard-is-active {
   transform: scale(0.96875);
+  background-color: rgba(#0096ff, .25);
 }
 
 .zero-show { display: none }
