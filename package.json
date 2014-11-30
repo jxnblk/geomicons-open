@@ -1,6 +1,6 @@
 {
   "name": "geomicons-open",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Open Source Icons for the Web",
   "main": "dist/geomicons.min.js",
   "devDependencies": {
