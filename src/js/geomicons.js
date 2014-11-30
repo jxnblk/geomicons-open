@@ -29,8 +29,9 @@ var Geomicons = {
       inject(elements[i], d);
     }
 
-  }
+  },
 
+  toString: require('./to-string')
 
 };
 

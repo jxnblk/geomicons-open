@@ -51,8 +51,9 @@ var Geomicons = {
       inject(elements[i], d);
     }
 
-  }
+  },
 
+  toString: _dereq_('./to-string')
 
 };
 
@@ -60,7 +61,7 @@ module.exports = Geomicons;
 
 
 
-},{"./camel-case":1,"./error":2,"./inject":4,"./paths":5}],4:[function(_dereq_,module,exports){
+},{"./camel-case":1,"./error":2,"./inject":4,"./paths":5,"./to-string":6}],4:[function(_dereq_,module,exports){
 // Replaces element with SVG
 
 module.exports = function(el, pathdata) {
@@ -147,6 +148,30 @@ module.exports = {
   warning: 'M15 0 H17 L32 29 L31 30 L1 30 L0 29 z M19 8 L13 8 L14 20 L18 20 z M16 22 A3 3 0 0 0 16 28 A3 3 0 0 0 16 22  '
 };
 
-},{}]},{},[3])
+},{}],6:[function(_dereq_,module,exports){
+
+var paths = _dereq_('./paths'); 
+var camelCase = _dereq_('./camel-case');
+var error = _dereq_('./error');
+
+module.exports = function(key) {
+
+  var string = '';
+  var d = paths[camelCase(key)] || false;
+  if (!d) {
+    error(key);
+    return false;
+  }
+
+  string = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="fill:currentcolor">\n' +
+               '<path d="' + d + '"/>\n' +
+               '</svg>';
+
+  return string;
+
+};
+
+
+},{"./camel-case":1,"./error":2,"./paths":5}]},{},[3])
 (3)
 });
