@@ -1,4 +1,25 @@
 !function(e){if("object"==typeof exports)module.exports=e();else if("function"==typeof define&&define.amd)define(e);else{var o;"undefined"!=typeof window?o=window:"undefined"!=typeof global?o=global:"undefined"!=typeof self&&(o=self),o.Geomicons=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+
+module.exports = function(string) {
+  return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+};
+
+
+},{}],2:[function(_dereq_,module,exports){
+
+var paths = _dereq_('./paths');
+
+module.exports = function(key) {
+  var iconList = Object.keys(paths);
+  iconList = iconList.join();
+  console.error(
+    'No icon found for ' + key + '.\n' +
+    'Geomicons Open includes the following icons: \n' + iconList
+  );
+};
+
+
+},{"./paths":5}],3:[function(_dereq_,module,exports){
 /*
 
     Geomicons Open
@@ -10,34 +31,24 @@
 
 var paths = _dereq_('./paths');
 var inject = _dereq_('./inject');
+var camelCase = _dereq_('./camel-case');
+var error = _dereq_('./error');
 
 var Geomicons = {
 
   inject: function(elements) {
 
-    var camelCase = function(string) {
-      return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
-    };
-
     if (!elements.length) elements = [elements];
 
     for (var i = 0; i < elements.length; i++) {
-      var id = elements[i].getAttribute('data-icon');
-      id = camelCase(id);
-      var d = paths[id];
+      var key = elements[i].getAttribute('data-icon');
+      key = camelCase(key);
+      var d = paths[key];
       if (!d) {
-        var iconList = [];
-        for (var key in paths) {
-          iconList.push(key);
-        };
-        iconList = iconList.join();
-        console.error(
-          'No icon found for ' + id + '.\n' +
-          'Geomicons Open includes the following icons: \n' + iconList
-        );
-      } else {
-        inject(elements[i], d);
+        error(key);
+        return false;
       }
+      inject(elements[i], d);
     }
 
   }
@@ -49,7 +60,7 @@ module.exports = Geomicons;
 
 
 
-},{"./inject":2,"./paths":3}],2:[function(_dereq_,module,exports){
+},{"./camel-case":1,"./error":2,"./inject":4,"./paths":5}],4:[function(_dereq_,module,exports){
 // Replaces element with SVG
 
 module.exports = function(el, pathdata) {
@@ -76,7 +87,7 @@ module.exports = function(el, pathdata) {
 };
 
 
-},{}],3:[function(_dereq_,module,exports){
+},{}],5:[function(_dereq_,module,exports){
 module.exports = {
   bookmark: 'M6 2 L26 2 L26 30 L16 24 L6 30 Z  ',
   calendar: 'M2 4 L6 4 L6 2 A2 2 0 0 1 10 2 L10 4 L22 4 L22 2 A2 2 0 0 1 26 2 L26 4 L30 4 L30 10 L2 10 M2 12 L30 12 L30 30 L2 30  ',
@@ -136,6 +147,6 @@ module.exports = {
   warning: 'M15 0 H17 L32 29 L31 30 L1 30 L0 29 z M19 8 L13 8 L14 20 L18 20 z M16 22 A3 3 0 0 0 16 28 A3 3 0 0 0 16 22  '
 };
 
-},{}]},{},[1])
-(1)
+},{}]},{},[3])
+(3)
 });

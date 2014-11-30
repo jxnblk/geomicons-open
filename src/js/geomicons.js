@@ -9,34 +9,24 @@
 
 var paths = require('./paths');
 var inject = require('./inject');
+var camelCase = require('./camel-case');
+var error = require('./error');
 
 var Geomicons = {
 
   inject: function(elements) {
 
-    var camelCase = function(string) {
-      return string.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
-    };
-
     if (!elements.length) elements = [elements];
 
     for (var i = 0; i < elements.length; i++) {
-      var id = elements[i].getAttribute('data-icon');
-      id = camelCase(id);
-      var d = paths[id];
+      var key = elements[i].getAttribute('data-icon');
+      key = camelCase(key);
+      var d = paths[key];
       if (!d) {
-        var iconList = [];
-        for (var key in paths) {
-          iconList.push(key);
-        };
-        iconList = iconList.join();
-        console.error(
-          'No icon found for ' + id + '.\n' +
-          'Geomicons Open includes the following icons: \n' + iconList
-        );
-      } else {
-        inject(elements[i], d);
+        error(key);
+        return false;
       }
+      inject(elements[i], d);
     }
 
   }
