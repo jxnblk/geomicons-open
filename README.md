@@ -2,7 +2,7 @@
 
 Open Source Icons for the Web
 
-http://jxnblk.github.io/geomicons-open
+http://geomicons.com
 
 ---
 
