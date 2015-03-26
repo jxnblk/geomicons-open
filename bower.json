@@ -9,14 +9,11 @@
   "ignore": [
     "docs",
     "gulp",
-    "icons",
     "src",
     ".gitignore",
     "CNAME",
-    "geomicons-defs.svg",
-    "geomicons.svg",
     "gulpfile.js",
     "index.html",
-    "pckage.json"
+    "package.json"
   ]
 }
