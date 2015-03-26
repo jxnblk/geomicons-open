@@ -4,7 +4,7 @@
   "description": "Open Source Icons for the Web",
   "main": [
     "dist/geomicons.js",
-    "dist/geomicons.min.js",
+    "dist/geomicons.min.js"
   ],
   "ignore": [
     "docs",
