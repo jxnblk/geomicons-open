@@ -1,12 +1,13 @@
 
 var paths = require('../paths'); 
-var camelCase = require('camel-case');
+var camelCase = require('./camel-case');
 var error = require('./error');
 
 module.exports = function(key) {
 
   var string = '';
   var d = paths[camelCase(key)] || false;
+
   if (!d) {
     error(key);
     return false;

@@ -3,17 +3,6 @@
   "version": "1.0.1",
   "description": "Open Source Icons for the Web",
   "main": [
-    "dist/geomicons.js",
     "dist/geomicons.min.js"
-  ],
-  "ignore": [
-    "docs",
-    "gulp",
-    "src",
-    ".gitignore",
-    "CNAME",
-    "gulpfile.js",
-    "index.html",
-    "package.json"
   ]
 }

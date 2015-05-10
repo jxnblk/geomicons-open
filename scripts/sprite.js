@@ -1,7 +1,7 @@
 
 var fs = require('fs');
 var path = require('path');
-var paths = require('../src').paths;
+var paths = require('..').paths;
 
 var sprite = [
   '<svg xmlns="http://www.w3.org/2000/svg">'

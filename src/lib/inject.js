@@ -1,5 +1,5 @@
 
-var camelCase = require('camel-case');
+var camelCase = require('./camel-case');
 var paths = require('../paths');
 
 function inject(el, pathdata) {

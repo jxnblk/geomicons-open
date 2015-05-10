@@ -1,7 +1,7 @@
 
 var fs = require('fs');
 var path = require('path');
-var paths = require('../src').paths;
+var paths = require('..').paths;
 
 function buildSvg(name) {
   var contents = paths[name];

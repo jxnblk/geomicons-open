@@ -5,24 +5,26 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test",
+    "js": "webpack --progress --colors & webpack --config webpack.config.min.js",
     "svg": "node scripts/build-svg",
     "sprite": "node scripts/sprite",
-    "js": "webpack --progress --colors & webpack --config webpack.config.min.js",
+    "json": "node scripts/paths-json",
+    "compile": "npm run js & npm run svg & npm run sprite & npm run json",
+    "watch:compile": "onchange './src/**/*' -- npm run compile",
     "docs": "node docs/build",
     "watch:docs": "onchange './docs/**/*' -- npm run docs",
     "serve": "http-server",
-    "start": "npm run watch:docs & npm run serve"
+    "dev": "npm run watch:compile & npm run watch:docs & npm run serve",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "blk": "^2.0.0",
     "cssnext": "^1.4.0",
     "http-server": "^0.8.0",
+    "json-loader": "^0.5.1",
     "lodash": "^3.8.0",
     "mocha": "^2.2.4",
     "onchange": "^1.1.0",
     "webpack": "^1.9.4"
-  },
-  "dependencies": {
-    "camel-case": "^1.1.1"
   }
 }
