@@ -47,13 +47,13 @@ var Geomicons =
 
 	
 	var paths = __webpack_require__(31);
-	var inject = __webpack_require__(2);
-	var toString = __webpack_require__(3);
+	var toString = __webpack_require__(2);
+	var inject = __webpack_require__(3);
 
 	module.exports = {
 	  paths: paths,
-	  inject: inject,
-	  toString: toString
+	  toString: toString,
+	  inject: inject
 	};
 
 
@@ -72,6 +72,35 @@ var Geomicons =
 
 /***/ },
 /* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	var paths = __webpack_require__(31); 
+	var camelCase = __webpack_require__(60);
+	var error = __webpack_require__(61);
+
+	module.exports = function(key) {
+
+	  var string = '';
+	  var d = paths[camelCase(key)] || false;
+
+	  if (!d) {
+	    error(key);
+	    return false;
+	  }
+
+	  string = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="fill:currentcolor">\n' +
+	               '<path d="' + d + '"/>\n' +
+	               '</svg>';
+
+	  return string;
+
+	};
+
+
+
+/***/ },
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -120,35 +149,6 @@ var Geomicons =
 	    console.error('geomicons.inject() only works in a browser context');
 	    return false;
 	  }
-
-	};
-
-
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	var paths = __webpack_require__(31); 
-	var camelCase = __webpack_require__(60);
-	var error = __webpack_require__(61);
-
-	module.exports = function(key) {
-
-	  var string = '';
-	  var d = paths[camelCase(key)] || false;
-
-	  if (!d) {
-	    error(key);
-	    return false;
-	  }
-
-	  string = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="fill:currentcolor">\n' +
-	               '<path d="' + d + '"/>\n' +
-	               '</svg>';
-
-	  return string;
 
 	};
 

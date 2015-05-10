@@ -1,6 +1,6 @@
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './client.js',
   output: {
     path: __dirname + '/dist',
     filename: 'geomicons.js',

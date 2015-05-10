@@ -1,10 +1,10 @@
 
 var fs = require('fs');
 var path = require('path');
-var paths = require('..').paths;
+var geomicons = require('..');
 
 function buildSvg(name) {
-  var contents = paths[name];
+  var contents = geomicons.paths[name];
   var svg = [
     '<svg id="' + name + '" xmlns="http://www.w3.org/2000/svg"' +
     ' viewBox="0 0 32 32" width="32" height="32" fill="currentcolor">',
@@ -15,7 +15,7 @@ function buildSvg(name) {
   console.log(name + '.svg saved');
 }
 
-Object.keys(paths).forEach(function(key) {
+Object.keys(geomicons.paths).forEach(function(key) {
   buildSvg(key);
 });
 

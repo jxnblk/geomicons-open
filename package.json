@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test",
-    "js": "webpack --progress --colors & webpack --config webpack.config.min.js",
+    "js": "webpack --progress --colors & webpack --config webpack-min.config.js",
     "svg": "node scripts/build-svg",
     "sprite": "node scripts/sprite",
     "json": "node scripts/paths-json",
