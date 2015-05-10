@@ -15,6 +15,7 @@
     "watch:docs": "onchange './docs/**/*' -- npm run docs",
     "serve": "http-server",
     "dev": "npm run watch:compile & npm run watch:docs & npm run serve",
+    "prepublish": "npm run compile",
     "start": "npm run dev"
   },
   "devDependencies": {
