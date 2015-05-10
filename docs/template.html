@@ -30,7 +30,7 @@
     <section class="mb4">
       <div class="tiles flex flex-wrap flex-justify js-hover-group">
         <% icons.map(function(icon) { %>
-          <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="<%= icon %>"></div></a>
+          <a href="#!" class="js-copy copy-button"><div class="js-geomicon geomicon" data-icon="<%= icon %>"></div></a>
         <% }) %>
       </div>
     </section>
@@ -99,8 +99,9 @@
 
   <script src="dist/geomicons.js"></script>
   <script>
-    var icons = document.querySelectorAll('.geomicon');
-    Geomicons.inject(icons);
+    var icons = document.querySelectorAll('.js-geomicon');
+    console.log(icons);
+    geomicons.inject(icons);
   </script>
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.6/ZeroClipboard.min.js"></script>
@@ -113,7 +114,7 @@
       var timeout;
       document.body.classList.add('has-zeroclipboard');
       zero.on('copy', function(e) {
-        var el = e.target.querySelector('.geomicon');
+        var el = e.target.querySelector('.js-geomicon');
         iconName = el.dataset.icon;
         var string = e.target.innerHTML;
         zero.setText(string);

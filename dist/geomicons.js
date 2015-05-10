@@ -1,4 +1,4 @@
-var Geomicons =
+var geomicons =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -89,9 +89,11 @@ var Geomicons =
 	    return false;
 	  }
 
-	  string = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="fill:currentcolor">\n' +
-	               '<path d="' + d + '"/>\n' +
-	               '</svg>';
+	  string = [
+	    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="fill:currentcolor">',
+	    '<path d="' + d + '"/>',
+	    '</svg>'
+	  ].join(' ');
 
 	  return string;
 
@@ -108,6 +110,8 @@ var Geomicons =
 	var paths = __webpack_require__(31);
 
 	function inject(el, pathdata) {
+
+	  console.log('inject', el, pathdata);
 
 	  var svg;
 	  var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
