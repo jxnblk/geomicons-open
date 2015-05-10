@@ -152,10 +152,10 @@ Icon    | ID
 ![camera](http://jxnblk.github.io/geomicons-open/icons/camera.svg) | camera
 ![chat](http://jxnblk.github.io/geomicons-open/icons/chat.svg) | chat
 ![check](http://jxnblk.github.io/geomicons-open/icons/check.svg) | check
-![chevron-down](http://jxnblk.github.io/geomicons-open/icons/chevron-down.svg) | chevron-down
-![chevron-left](http://jxnblk.github.io/geomicons-open/icons/chevron-left.svg) | chevron-left
-![chevron-right](http://jxnblk.github.io/geomicons-open/icons/chevron-right.svg) | chevron-right
-![chevron-up](http://jxnblk.github.io/geomicons-open/icons/chevron-up.svg) | chevron-up
+![chevronDown](http://jxnblk.github.io/geomicons-open/icons/chevron-down.svg) | chevron-down
+![chevronLeft](http://jxnblk.github.io/geomicons-open/icons/chevron-left.svg) | chevron-left
+![chevronRight](http://jxnblk.github.io/geomicons-open/icons/chevron-right.svg) | chevron-right
+![chevronUp](http://jxnblk.github.io/geomicons-open/icons/chevron-up.svg) | chevron-up
 ![clock](http://jxnblk.github.io/geomicons-open/icons/clock.svg) | clock
 ![close](http://jxnblk.github.io/geomicons-open/icons/close.svg) | close
 ![cloud](http://jxnblk.github.io/geomicons-open/icons/cloud.svg) | cloud
@@ -178,7 +178,7 @@ Icon    | ID
 ![loading](http://jxnblk.github.io/geomicons-open/icons/loading.svg) | loading (not available in JavaScript version)
 ![lock](http://jxnblk.github.io/geomicons-open/icons/lock.svg) | lock
 ![mail](http://jxnblk.github.io/geomicons-open/icons/mail.svg) | mail
-![music-note](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | music-note
+![musicNote](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | music-note
 ![next](http://jxnblk.github.io/geomicons-open/icons/next.svg) | next
 ![no](http://jxnblk.github.io/geomicons-open/icons/no.svg) | no
 ![pause](http://jxnblk.github.io/geomicons-open/icons/pause.svg) | pause
@@ -189,17 +189,17 @@ Icon    | ID
 ![refresh](http://jxnblk.github.io/geomicons-open/icons/refresh.svg) | refresh
 ![repost](http://jxnblk.github.io/geomicons-open/icons/repost.svg) | repost
 ![search](http://jxnblk.github.io/geomicons-open/icons/search.svg) | search
-![shopping-cart](http://jxnblk.github.io/geomicons-open/icons/shopping-cart.svg) | shopping-cart
+![shoppingCart](http://jxnblk.github.io/geomicons-open/icons/shopping-cart.svg) | shopping-cart
 ![skull](http://jxnblk.github.io/geomicons-open/icons/skull.svg) | skull
-![speaker-volume](http://jxnblk.github.io/geomicons-open/icons/speaker-volume.svg) | speaker-volume
+![speakerVolume](http://jxnblk.github.io/geomicons-open/icons/speaker-volume.svg) | speaker-volume
 ![speaker](http://jxnblk.github.io/geomicons-open/icons/speaker.svg) | speaker
 ![star](http://jxnblk.github.io/geomicons-open/icons/star.svg) | star
 ![tag](http://jxnblk.github.io/geomicons-open/icons/tag.svg) | tag
 ![trash](http://jxnblk.github.io/geomicons-open/icons/trash.svg) | trash
-![triangle-down](http://jxnblk.github.io/geomicons-open/icons/triangle-down.svg) | triangle-down
-![triangle-left](http://jxnblk.github.io/geomicons-open/icons/triangle-left.svg) | triangle-left
-![triangle-right](http://jxnblk.github.io/geomicons-open/icons/triangle-right.svg) | triangle-right
-![triangle-up](http://jxnblk.github.io/geomicons-open/icons/triangle-up.svg) | triangle-up
+![triangleDown](http://jxnblk.github.io/geomicons-open/icons/triangle-down.svg) | triangle-down
+![triangleLeft](http://jxnblk.github.io/geomicons-open/icons/triangle-left.svg) | triangle-left
+![triangleRight](http://jxnblk.github.io/geomicons-open/icons/triangle-right.svg) | triangle-right
+![triangleUp](http://jxnblk.github.io/geomicons-open/icons/triangle-up.svg) | triangle-up
 ![twitter](http://jxnblk.github.io/geomicons-open/icons/twitter.svg) | twitter
 ![user](http://jxnblk.github.io/geomicons-open/icons/user.svg) | user
 ![video](http://jxnblk.github.io/geomicons-open/icons/video.svg) | video
