@@ -86,7 +86,8 @@ You can also create partials, helper methods, or components to streamline the de
 ### Copy/Paste
 
 If you're only using one or two icons in your markup, it's probably better to paste the SVG code inline.
-Open the icon SVG file and copy and paste the contents where you'd like to use it.
+Copy the icon from the [website](//geomicons.com)
+or open the icon SVG file and copy and paste the SVG code.
 Be sure to adjust the `id` attribute to not conflict with other elements.
 
 ---
@@ -113,7 +114,7 @@ See [react-geomicons](//github.com/jxnblk/react-geomicons) for more details.
 ### Styling inline SVG with CSS
 
 Inline SVGs can be styled with CSS, just like any other HTML element.
-Geomicons Open JS adds a style attribute with `fill:currentcolor` to inherit the foreground color.
+Geomicons Open icons have the `fill` attribute set to `currentcolor` to inherit the foreground color.
 Set the width, height, and other properties with additional CSS.
 
 ```html
@@ -121,7 +122,6 @@ Set the width, height, and other properties with additional CSS.
   .geomicon { width: 1em; height: 1em; }
 </style>
 <span class="js-geomicon geomicon" data-id="heart"></span>
-
 ```
 
 
@@ -131,7 +131,7 @@ Each icon is designed on a 32 x 32px grid. This means icons will look best at mu
 
 #### 1em
 
-If you're base font size is the browser default 16px,
+Leaving the default browser font size set at 16px,
 you can add styles that set width and height in ems and use multiples to keep the icons pixel perfect.
 
 ```css
@@ -152,10 +152,10 @@ Icon    | ID
 ![camera](http://jxnblk.github.io/geomicons-open/icons/camera.svg) | camera
 ![chat](http://jxnblk.github.io/geomicons-open/icons/chat.svg) | chat
 ![check](http://jxnblk.github.io/geomicons-open/icons/check.svg) | check
-![chevronDown](http://jxnblk.github.io/geomicons-open/icons/chevron-down.svg) | chevron-down
-![chevronLeft](http://jxnblk.github.io/geomicons-open/icons/chevron-left.svg) | chevron-left
-![chevronRight](http://jxnblk.github.io/geomicons-open/icons/chevron-right.svg) | chevron-right
-![chevronUp](http://jxnblk.github.io/geomicons-open/icons/chevron-up.svg) | chevron-up
+![chevronDown](http://jxnblk.github.io/geomicons-open/icons/chevron-down.svg) | chevronDown
+![chevronLeft](http://jxnblk.github.io/geomicons-open/icons/chevron-left.svg) | chevronLeft
+![chevronRight](http://jxnblk.github.io/geomicons-open/icons/chevron-right.svg) | chevronRight
+![chevronUp](http://jxnblk.github.io/geomicons-open/icons/chevron-up.svg) | chevronUp
 ![clock](http://jxnblk.github.io/geomicons-open/icons/clock.svg) | clock
 ![close](http://jxnblk.github.io/geomicons-open/icons/close.svg) | close
 ![cloud](http://jxnblk.github.io/geomicons-open/icons/cloud.svg) | cloud
@@ -175,10 +175,9 @@ Icon    | ID
 ![info](http://jxnblk.github.io/geomicons-open/icons/info.svg) | info
 ![link](http://jxnblk.github.io/geomicons-open/icons/link.svg) | link
 ![list](http://jxnblk.github.io/geomicons-open/icons/list.svg) | list
-![loading](http://jxnblk.github.io/geomicons-open/icons/loading.svg) | loading (not available in JavaScript version)
 ![lock](http://jxnblk.github.io/geomicons-open/icons/lock.svg) | lock
 ![mail](http://jxnblk.github.io/geomicons-open/icons/mail.svg) | mail
-![musicNote](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | music-note
+![musicNote](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | musicNote
 ![next](http://jxnblk.github.io/geomicons-open/icons/next.svg) | next
 ![no](http://jxnblk.github.io/geomicons-open/icons/no.svg) | no
 ![pause](http://jxnblk.github.io/geomicons-open/icons/pause.svg) | pause
@@ -189,17 +188,17 @@ Icon    | ID
 ![refresh](http://jxnblk.github.io/geomicons-open/icons/refresh.svg) | refresh
 ![repost](http://jxnblk.github.io/geomicons-open/icons/repost.svg) | repost
 ![search](http://jxnblk.github.io/geomicons-open/icons/search.svg) | search
-![shoppingCart](http://jxnblk.github.io/geomicons-open/icons/shopping-cart.svg) | shopping-cart
+![shoppingCart](http://jxnblk.github.io/geomicons-open/icons/shopping-cart.svg) | shoppingCart
 ![skull](http://jxnblk.github.io/geomicons-open/icons/skull.svg) | skull
-![speakerVolume](http://jxnblk.github.io/geomicons-open/icons/speaker-volume.svg) | speaker-volume
+![speakerVolume](http://jxnblk.github.io/geomicons-open/icons/speaker-volume.svg) | speakerVolume
 ![speaker](http://jxnblk.github.io/geomicons-open/icons/speaker.svg) | speaker
 ![star](http://jxnblk.github.io/geomicons-open/icons/star.svg) | star
 ![tag](http://jxnblk.github.io/geomicons-open/icons/tag.svg) | tag
 ![trash](http://jxnblk.github.io/geomicons-open/icons/trash.svg) | trash
-![triangleDown](http://jxnblk.github.io/geomicons-open/icons/triangle-down.svg) | triangle-down
-![triangleLeft](http://jxnblk.github.io/geomicons-open/icons/triangle-left.svg) | triangle-left
-![triangleRight](http://jxnblk.github.io/geomicons-open/icons/triangle-right.svg) | triangle-right
-![triangleUp](http://jxnblk.github.io/geomicons-open/icons/triangle-up.svg) | triangle-up
+![triangleDown](http://jxnblk.github.io/geomicons-open/icons/triangle-down.svg) | triangleDown
+![triangleLeft](http://jxnblk.github.io/geomicons-open/icons/triangle-left.svg) | triangleLeft
+![triangleRight](http://jxnblk.github.io/geomicons-open/icons/triangle-right.svg) | triangleRight
+![triangleUp](http://jxnblk.github.io/geomicons-open/icons/triangle-up.svg) | triangleUp
 ![twitter](http://jxnblk.github.io/geomicons-open/icons/twitter.svg) | twitter
 ![user](http://jxnblk.github.io/geomicons-open/icons/user.svg) | user
 ![video](http://jxnblk.github.io/geomicons-open/icons/video.svg) | video
@@ -208,7 +207,7 @@ Icon    | ID
 ### Requesting Additional Icons
 
 This set is intended to cover the most common use cases,
-and some things should just *not* be represented as an icon.
+and some things are *not* well suited to be represented as an icon.
 I intend to add more, but if you have any requests,
 please [Create an Issue](https://github.com/jxnblk/geomicons-open/issues/new).
 
