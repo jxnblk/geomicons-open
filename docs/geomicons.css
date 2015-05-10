@@ -1,0 +1,115 @@
+
+.geomicon {
+  position: relative;
+  top: .1875em;
+  width: 1em; height: 1em;
+  opacity: 1;
+}
+
+.tiles {
+  margin: -1rem;
+  opacity: .8;
+}
+
+.tiles .geomicon {
+  width: 2rem;
+  height: 2rem;
+  margin: .75rem;
+}
+
+.copy-button {
+  display: block;
+  transition: transform .05s ease, background-color .075s linear, box-shadow .1s linear;
+  transform: scale(1);
+  background-color: color(#0096ff alpha(0));
+  box-shadow: inset 0 0 0 2px color(#0096ff alpha(0));
+}
+
+.has-zeroclipboard .copy-button.zeroclipboard-is-hover {
+  position: relative;
+  outline: none;
+  transform: scale(1.03125);
+  background-color: color(#0096ff alpha(.125));
+  box-shadow: inset 0 0 0 2px color(#0096ff alpha(.5));
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.has-zeroclipboard .copy-button.zeroclipboard-is-hover:after {
+  content: 'Copy';
+  position: absolute;
+  bottom: .25rem;
+  right: .5rem;
+  font-size: 75%;
+  color: #0096ff;
+}
+
+.has-zeroclipboard .copy-button.zeroclipboard-is-active {
+  transform: scale(0.96875);
+  background-color: color(#0096ff alpha(.25));
+}
+
+.zero-show { display: none }
+.has-zeroclipboard .zero-show { display: block }
+
+@media (min-width: 30em) {
+  .tiles { margin: -1.5rem; }
+  .tiles .geomicon { width: 3rem; height: 3rem; margin: 1.5rem; }
+}
+
+@media (min-width: 40em) {
+  .tiles { margin: -2rem; }
+  .tiles .geomicon { width: 4rem; height: 4rem; margin: 2rem; }
+}
+
+@media (min-width: 50em) {
+  .tiles { margin: -2rem; }
+  .tiles .geomicon { width: 5rem; height: 5rem; margin: 2rem; }
+}
+
+/*
+.gradient {
+  background-image: linear-gradient( to bottom left, rgba(255,0,0,.05), rgba(0,127,255,.05) );
+}
+*/
+
+.bg-grid {
+  background-image: url(/docs/grid.svg),
+  linear-gradient(-45deg, rgba(255,0,0,.05), rgba(0,127,255,.05) );
+  background-position: top center;
+}
+
+@keyframes floatup {
+  from {
+    transform: translateY(200%);
+    opacity: .5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast {
+  position: fixed;
+  right: 0;
+  bottom: 4rem;
+  left: 0;
+  text-align: center;
+}
+
+.toast-inner {
+  display: inline-block;
+  display: none;
+  padding: .5rem 1rem;
+  color: white;
+  background-color: color(#0096ff alpha(.75));
+  border-radius: 3px;
+  animation-name: floatup;
+  animation-duration: .25s;
+  animation-timing-function: ease-out;
+}
+
+.align-baseline { vertical-align: baseline }
+.align-middle { vertical-align: middle }
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <title>Geomicons</title>
+  <meta name="author" content="Jxnblk">
+  <meta name="description" content="Open Source Icons for The Web">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="docs/favicon.png">
+  <style><%= css %></style>
+</head>
+<body>
+
+  <div class="container px3">
+
+    <header class="sm-flex flex-wrap flex-center py2 mb2 mxn1">
+      <div class="flex-auto px1">
+        <h1 class="m0">Geomicons</h1>
+        <p class="m0">Open Source Icons for the Web</p>
+      </div>
+      <a href="http://github.com/jxnblk/geomicons-open" class="button m1 button-outline blue">
+          Github
+      </a>
+      <a href="https://twitter.com/intent/tweet?text=Open source icons for the web: &amp;url=http://geomicons.com&amp;via=jxnblk" class="button m1 button-outline blue">
+        <span class="js-geomicon geomicon" data-icon="twitter"></span>
+        Tweet
+      </a>
+    </header>
+
+    <section class="mb4">
+      <div class="tiles flex flex-wrap flex-justify js-hover-group">
+        <% icons.map(function(icon) { %>
+          <a href="#!" class="js-copy copy-button"><div class="js-geomicon geomicon" data-icon="<%= icon %>"></div></a>
+        <% }) %>
+      </div>
+    </section>
+
+    <section id="value-props" class="py3">
+      <h2>Fast, Plain &amp; Simple</h2>
+      <p class="h3">Smaller than similar webfonts and with fewer network requests than other solutions, Geomicons Open is built from the ground up for performance. Designed on a grid for pixel-precision at standard sizes, each icon is hand-coded to avoid the extra bloat from traditional vector drawing applications.</p>
+    </section>
+
+    <section class="py3">
+      <h2>Getting Started</h2>
+      <p>Download and learn more about how to use Geomicons on GitHub.</p>
+      <div class="mxn1">
+        <code class="h5 p1 m1 bg-darken-1 border rounded ">npm install geomicons-open</code>
+        <a href="https://github.com/jxnblk/geomicons-open/archive/<%= version %>.zip"
+          class="button m1 align-baseline button-outline blue">Download</a>
+        <a href="//github.com/jxnblk/geomicons-open"
+          class="button m1 align-baseline button-outline blue">GitHub</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="py2">
+      <h2 class="h4 m0">Related</h2>
+      <div class="sm-flex mxn2">
+        <a href="//jxnblk.com/react-geomicons"
+          class="button block m2 button-link">
+          <h2 class="mt0 mb1">React Geomicons</h2>
+          <p class="m0">React component for Geomicons Open</p>
+        </a>
+        <a href="https://symbolset.com/icons/geomicons-squared"
+          class="button block m2 button-link">
+          <h2 class="mt0 mb1">Geomicons Squared</h2>
+          <p class="m0">Symbolset Webfont with a Friendly Demeanor</p>
+        </a>
+        <a href="http://jxnblk.com/geomicons-wired"
+          class="button block m2 button-link">
+          <h2 class="mt0 mb1">Geomicons Wired</h2>
+          <p class="m0">The Original Outlined Icons</p>
+        </a>
+      </div>
+    </section>
+
+    <hr>
+
+    <footer class="flex flex-baseline py2 mb2">
+      <a href="https://twitter.com/intent/tweet?text=Open source icons for the web: &amp;url=http://geomicons.com&amp;via=jxnblk" class="button button-outline blue">
+        <span class="js-geomicon geomicon" data-icon="twitter"></span>
+        Tweet
+      </a>
+      <div class="flex-auto"></div>
+      <a href="http://jxnblk.com" class="button button-link">
+        <span class="js-geomicon geomicon red" data-icon="heart"></span>
+        Made by Jxnblk
+      </a>
+    </footer>
+
+  </div>
+
+  <div id="toast" class="toast">
+    <div id="toast-inner" class="toast-inner">
+      Toast Test
+    </div>
+  </div>
+
+  <script src="dist/geomicons.js"></script>
+  <script>
+    var icons = document.querySelectorAll('.js-geomicon');
+    console.log(icons);
+    geomicons.inject(icons);
+  </script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.6/ZeroClipboard.min.js"></script>
+  <script>
+    var copyButtons = document.querySelectorAll('.js-copy');
+    var zero = new ZeroClipboard(copyButtons);
+    var toast = document.querySelector('#toast-inner');
+    zero.on('ready', function() {
+      var iconName = '';
+      var timeout;
+      document.body.classList.add('has-zeroclipboard');
+      zero.on('copy', function(e) {
+        var el = e.target.querySelector('.js-geomicon');
+        iconName = el.dataset.icon;
+        var string = e.target.innerHTML;
+        zero.setText(string);
+      });
+      zero.on('aftercopy', function(e) {
+        var copy = 'Copied ' + iconName + ' SVG to clipboard';
+        toast.textContent = copy;
+        toast.style.display = 'inline-block';
+        if (timeout) window.clearTimeout(timeout);
+        timeout = window.setTimeout(function() {
+          toast.style.display = 'none';
+        }, 3000);
+        e.target.blur();
+        console.log(e);
+      });
+    });
+  </script>
+
+  <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-4603832-5', 'auto'); ga('send', 'pageview'); </script>
+
+</body>
+</html>
