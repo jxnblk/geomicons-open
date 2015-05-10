@@ -91,6 +91,7 @@ var geomicons =
 
 	  string = [
 	    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="fill:currentcolor">',
+	    '<title>' + key + ' icon</title>',
 	    '<path d="' + d + '"/>',
 	    '</svg>'
 	  ].join(' ');
@@ -109,12 +110,13 @@ var geomicons =
 	var camelCase = __webpack_require__(60);
 	var paths = __webpack_require__(31);
 
-	function inject(el, pathdata) {
+	function inject(el, key) {
 
-	  console.log('inject', el, pathdata);
+	  var pathdata = paths[key];
 
 	  var svg;
 	  var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+	  var title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
 
 	  if (el.tagName == 'svg') {
 	    svg = el.cloneNode(true);
@@ -127,7 +129,10 @@ var geomicons =
 
 	  svg.setAttribute('viewBox', '0 0 32 32');
 	  svg.setAttribute('style', 'fill:currentcolor');
+	  title.innerHTML = key + ' icon';
 	  path.setAttribute('d', pathdata);
+
+	  svg.appendChild(title);
 	  svg.appendChild(path);
 
 	  el.parentNode.replaceChild(svg, el);
@@ -142,12 +147,11 @@ var geomicons =
 	    for (var i = 0; i < elements.length; i++) {
 	      var key = elements[i].getAttribute('data-icon');
 	      key = camelCase(key);
-	      var d = paths[key];
-	      if (!d) {
+	      if (!paths[key]) {
 	        error(key);
 	        return false;
 	      }
-	      inject(elements[i], d);
+	      inject(elements[i], key);
 	    }
 	  } else {
 	    console.error('geomicons.inject() only works in a browser context');

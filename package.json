@@ -11,11 +11,11 @@
     "json": "node scripts/paths-json",
     "css": "node scripts/css",
     "compile": "npm run js & npm run svg & npm run sprite & npm run json & npm run css",
-    "watch:compile": "npm run compile && onchange './src/**/*' -- npm run compile",
+    "watch:compile": "onchange './src/**/*' -- npm run compile",
     "docs": "node docs/build",
     "watch:docs": "onchange './docs/**/*' -- npm run docs",
     "serve": "http-server",
-    "dev": "npm run watch:compile & npm run watch:docs & npm run serve",
+    "dev": "npm run compile & npm run watch:compile & npm run watch:docs & npm run serve",
     "prepublish": "npm run compile",
     "start": "npm run dev"
   },
