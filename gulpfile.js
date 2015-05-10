@@ -14,17 +14,16 @@ var browserSync = require('browser-sync');
 var fs = require('fs');
 var basswork = require('gulp-basswork');
 var mincss = require('gulp-minify-css');
-var pygmentize = require('./gulp/pygmentize');
 
 gulp.task('default', ['sprite', 'defs'], function() {
   console.log('herro!');
 });
 
 
-gulp.task('dev', ['default', 'compile-js', 'css', 'html', 'serve'], function() {
+gulp.task('dev', ['default', 'compile-js', 'css', 'serve'], function() {
   gulp.watch(
     ['./src/**/*', './docs/dev/*.html', './docs/assets/index.css', './docs/index.html', '!./node_modules/**/*'],
-    ['default', 'compile-js', 'css', 'html', 'reload']
+    ['default', 'compile-js', 'css', 'reload']
   );
 });
 
@@ -87,12 +86,6 @@ gulp.task('css', function() {
     .pipe(mincss())
     .pipe(rename('base.min.css'))
     .pipe(gulp.dest('./docs/assets'));
-});
-
-gulp.task('html', function() {
-  gulp.src('./docs/index.html')
-    .pipe(pygmentize())
-    .pipe(gulp.dest('./'));
 });
 
 gulp.task('reload', function() {

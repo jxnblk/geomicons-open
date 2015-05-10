@@ -1,8 +1,4 @@
 
-@import "flex-object";
-
-svg { max-height: 100% }
-
 .geomicon {
   position: relative;
   top: .1875em;
@@ -23,7 +19,9 @@ svg { max-height: 100% }
 
 .copy-button {
   display: block;
+  /*
   color: white;
+  */
   transition: transform .05s ease, background-color .075s linear, box-shadow .1s linear;
   transform: scale(1);
   background-color: rgba(#0096ff, 0);
@@ -79,25 +77,6 @@ svg { max-height: 100% }
 .gradient-grid {
   background-image: url(/docs/assets/grid.svg), linear-gradient( to bottom left, rgba(255,0,0,.1), rgba(0,127,255,.1) );
   background-position: top center;
-}
-
-.bg-darken-3 { background-color: rgba(0,0,0,.25) }
-.bg-darken-4 { background-color: rgba(0,0,0,.5) }
-
-code {
-  font-size: 87.5%;
-  padding-left: .25em;
-  padding-right: .25em;
-  background-color: rgba(#000,.25);
-}
-
-.highlight, .highlight span {
-  color: inherit;
-  color: #0096ff;
-}
-
-.button-bright-blue-outline {
-  color: white;
 }
 
 @keyframes floatup {
