@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: 'geomicons.min.js',
-    library: 'Geomicons'
+    library: 'geomicons'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({minimize: true})

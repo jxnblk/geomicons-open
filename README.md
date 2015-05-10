@@ -1,37 +1,31 @@
 # Geomicons Open
 
-Open Source Icons for the Web
+Hand-Coded Open Source Icons for the Web http://geomicons.com
 
-http://geomicons.com
-
----
-
-## Fast, Plain &amp; Simple
+## Fast, Plain & Simple
 
 Smaller than similar webfonts and making fewer network requests than other icon solutions,
 Geomicons Open is built from the ground up for performance.
 Designed on a grid for pixel-precision at standard sizes,
 each icon is hand-coded to avoid the extra bloat from traditional vector drawing applications.
 
-![Globe icon](http://jxnblk.github.io/geomicons-open/dev/globe.svg)
+![Heart icon](dist/icons/heart.svg)
 
 ## Getting Started
 
-Download the source or install via NPM:
+Download the source or install via npm or Bower:
 
 ```
 npm install geomicons-open
 ```
 
-Or use the CDN link:
-
 ```
-http://d2v52k3cl9vedd.cloudfront.net/geomicons/0.2.0/geomicons.min.js
+bower install geomicons-open
 ```
 
-### Javascript Method
+### Client-side Javascript Usage
 
-Include `geomicons.min.js` (3KB gzipped).
+Include the client-side JavaScript file.
 
 ```html
 <script src="geomicons.min.js"></script>
@@ -44,17 +38,81 @@ See the [Icon Reference Table](#icon-reference-table) for reference.
 <span class="js-geomicon" data-icon="heart"></span>
 ```
 
-Pass a nodelist to the `Geomicons.inject()` method to replace elements with SVG icons.
+Pass a nodelist to the `geomicons.inject()` method to replace elements with SVG icons.
 
 ```html
 <script>
   var icons = document.querySelectorAll('.js-geomicon');
-  Geomicons.inject(icons);
+  geomicons.inject(icons);
 </script>
 ```
 
-### Style with CSS
+---
 
+### Node Usage
+
+```js
+var geomicons = require('geomicons-open');
+
+var pathData = geomicons.paths.heart; // Returns the path's d attribute value
+var svgString = geomicons.toString('heart'); // Returns an SVG string
+```
+
+---
+
+### SVG Defs Usage
+
+For a server-side solution, you can use native SVG defs instead of the javascript method above.
+This method makes zero extra network requests beyond the HTML file that includes it.
+
+Instead of linking to the `geomicons.min.js` file, copy and paste the contents of the `dist/geomicons-defs.svg` file in your HTML. This code will not show up in your page.
+
+```html
+<svg xmnls="http://www.w3.org/2000/svg" width="0" height="0"><defs>...</defs></svg>
+```
+
+Use the SVG `<use>` tag to create an instance of an icon.
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16">
+  <use xlink:href="#heart"></use>
+</svg>
+```
+
+You can also create partials, helper methods, or components to streamline the development process.
+
+---
+
+### Copy/Paste
+
+If you're only using one or two icons in your markup, it's probably better to paste the SVG code inline.
+Open the icon SVG file and copy and paste the contents where you'd like to use it.
+Be sure to adjust the `id` attribute to not conflict with other elements.
+
+---
+
+### Vector Drawing Applications
+
+The SVG files in the `dist/icons` folder should open in applications such as Adobe Illustrator and Sketch.
+If you encounter any problems, please create an issue.
+
+---
+
+### React
+
+A React component for Geomicons Open is available on NPM.
+
+```bash
+npm install react-geomicons
+```
+
+See [react-geomicons](//github.com/jxnblk/react-geomicons) for more details.
+
+---
+
+### Styling inline SVG with CSS
+
+Inline SVGs can be styled with CSS, just like any other HTML element.
 Geomicons Open JS adds a style attribute with `fill:currentcolor` to inherit the foreground color.
 Set the width, height, and other properties with additional CSS.
 
@@ -65,6 +123,7 @@ Set the width, height, and other properties with additional CSS.
 <span class="js-geomicon geomicon" data-id="heart"></span>
 
 ```
+
 
 ### Sizing
 
@@ -83,48 +142,6 @@ you can add styles that set width and height in ems and use multiples to keep th
 ```
 
 --- 
-
-### Alternative SVG Defs Method
-
-For a server-side solution, you can use native SVG defs instead of the javascript method above.
-This method makes zero extra network requests beyond the HTML file that includes it.
-
-Instead of linking to the `geomicons.min.js` file, copy and paste the contents of the `geomicons-defs.svg` file in your HTML. This code will not show up in your page.
-
-```html
-<svg xmnls="http://www.w3.org/2000/svg" width="0" height="0"><defs><!-- --></defs></svg>
-</body>
-</html>
-```
-
-If you're using a templating system, such as Angular, React, Rails, or Jekyll, I'd recommend keeping the defs file in a component, helper, or partial for easy inclusion.
-
-To use the icons, use the SVG `<use>` tag as shown below:
-
-```html
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16">
-  <use xlink:href="#heart"></use>
-</svg>
-```
-
-You can also create partials, helper methods, or components to streamline the development process.
-
----
-
-### Only using one or two icons
-
-If you're only using one or two icons in your markup, it's probably better to paste the SVG code inline.
-Open the icon SVG file and copy and paste the contents where you'd like to use it.
-Be sure to adjust the `id` attribute to not conflict with other elements.
-
----
-
-### Vector Drawing Applications
-
-The SVG files in the icons folder should open in applications such as Adobe Illustrator and Sketch.
-If you encounter any problems, please create an issue.
-
----
 
 ## Icon Reference Table
 
@@ -188,20 +205,6 @@ Icon    | ID
 ![video](http://jxnblk.github.io/geomicons-open/icons/video.svg) | video
 ![warning](http://jxnblk.github.io/geomicons-open/icons/warning.svg) | warning
 
-### Custom Builds
-
-If there are icons in the set that you will not be using, you can build custom versions of the sprites with Gulp tasks.
-
-If you're unfamiliar with Gulp, get started here: http://gulpjs.com/
-
-To remove icons from the sprite, first remove the unwanted icons from the `/src/paths` folder.
-Then run `gulp default` to create a new `geomicons.svg` file.
-
-If you're using the defs method, run `gulp defs` to create a new `geomicons-defs.svg` file.
-
-For a more flexible SVG tool, check out
-[Grunticon](https://github.com/filamentgroup/grunticon).
-
 ### Requesting Additional Icons
 
 This set is intended to cover the most common use cases,
@@ -215,25 +218,5 @@ Geomicons Open is a curated set of icons.
 Guidelines for contributing are coming soon.
 
 
-### The MIT License (MIT)
-
-Copyright (c) 2014 Brent Jackson
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT License
 

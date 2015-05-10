@@ -4,7 +4,7 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: 'geomicons.js',
-    library: 'Geomicons'
+    library: 'geomicons'
   }
 };
 
