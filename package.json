@@ -5,6 +5,7 @@
   "main": "src/js/geomicons.js",
   "scripts": {
     "test": "mocha test",
+    "svg": "node scripts/build-svg",
     "docs": "node docs/build",
     "watch:docs": "onchange './docs/**/*' -- npm run docs",
     "serve": "http-server",
@@ -32,7 +33,12 @@
     "http-server": "^0.8.0",
     "lodash": "^3.8.0",
     "mocha": "^2.2.4",
+    "node-libs-browser": "^0.5.0",
     "onchange": "^1.1.0",
-    "through2": "^0.6.1"
+    "through2": "^0.6.1",
+    "webpack": "^1.9.4"
+  },
+  "dependencies": {
+    "camel-case": "^1.1.1"
   }
 }

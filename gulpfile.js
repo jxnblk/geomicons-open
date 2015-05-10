@@ -10,38 +10,7 @@ var inject = require('gulp-inject');
 var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var browserSync = require('browser-sync');
-var fs = require('fs');
-var basswork = require('gulp-basswork');
-var mincss = require('gulp-minify-css');
 
-gulp.task('default', ['sprite', 'defs'], function() {
-  console.log('herro!');
-});
-
-
-gulp.task('dev', ['default', 'compile-js', 'css', 'serve'], function() {
-  gulp.watch(
-    ['./src/**/*', './docs/dev/*.html', './docs/assets/index.css', './docs/index.html', '!./node_modules/**/*'],
-    ['default', 'compile-js', 'css', 'reload']
-  );
-});
-
-
-gulp.task('paths', function() {
-  var paths = require('./gulp/paths');
-  gulp.src('./src/paths/*.d')
-    .pipe(paths())
-    .pipe(gulp.dest('./src/js'));
-});
-
-
-gulp.task('compile-svg', function() {
-  var dsvg = require('./gulp/dsvg');
-  gulp.src('./src/paths/*.d')
-    .pipe(dsvg())
-    .pipe(gulp.dest('./icons'));
-});
 
 
 gulp.task('compile-js', function() {
@@ -79,21 +48,5 @@ gulp.task('defs', function() {
     .pipe(gulp.dest('./'));
 });
 
-
-gulp.task('css', function() {
-  gulp.src('./docs/assets/index.css')
-    .pipe(basswork())
-    .pipe(mincss())
-    .pipe(rename('base.min.css'))
-    .pipe(gulp.dest('./docs/assets'));
-});
-
-gulp.task('reload', function() {
-  browserSync.reload();
-});
-
-gulp.task('serve', function() {
-  browserSync({ server: { baseDir: './' } , open: false, ghostMode: false });
-});
 
 
