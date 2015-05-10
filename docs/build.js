@@ -4,6 +4,7 @@ var path = require('path');
 var _ = require('lodash');
 var cssnext = require('cssnext');
 var data = require('../package.json');
+var geomicons = require('..');
 
 var tpl = _.template(fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8'));
 var html;
@@ -17,6 +18,7 @@ data.css = cssnext('@import "blk"; @import "./docs/geomicons";', {
   }
 });
 
+data.icons = Object.keys(geomicons.paths);
 
 html = tpl(data);
 

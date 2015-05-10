@@ -29,62 +29,9 @@
 
     <section class="mb4">
       <div class="tiles flex flex-wrap flex-justify js-hover-group">
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="heart"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="cog"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="cloud"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="bookmark"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="pin"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="search"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="star"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="camera"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="calendar"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="chat"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="compose"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="file"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="folder"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="trash"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="tag"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="user"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="home"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="lock"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="mail"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="music-note"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="picture"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="link"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="external"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="warning"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="repost"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="expand"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="geolocation"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="grid"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="speaker-volume"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="speaker"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="check"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="close"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="play"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="pause"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="previous"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="next"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="video"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="clock"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="info"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="list"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="chevron-left"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="chevron-right"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="chevron-up"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="chevron-down"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="triangle-left"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="triangle-right"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="triangle-up"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="triangle-down"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="twitter"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="facebook"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="github"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="dribbble"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="no"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="refresh"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="shopping-cart"></div></a>
-        <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="skull"></div></a>
+        <% icons.map(function(icon) { %>
+          <a href="#!" class="js-copy copy-button"><div class="geomicon" data-icon="<%= icon %>"></div></a>
+        <% }) %>
       </div>
     </section>
 
