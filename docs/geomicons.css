@@ -67,12 +67,15 @@
   .tiles .geomicon { width: 5rem; height: 5rem; margin: 2rem; }
 }
 
+/*
 .gradient {
   background-image: linear-gradient( to bottom left, rgba(255,0,0,.05), rgba(0,127,255,.05) );
 }
+*/
 
-.gradient-grid {
-  background-image: url(/docs/assets/grid.svg), linear-gradient( to bottom left, rgba(255,0,0,.1), rgba(0,127,255,.1) );
+.bg-grid {
+  background-image: url(/docs/grid.svg),
+  linear-gradient(-45deg, rgba(255,0,0,.05), rgba(0,127,255,.05) );
   background-position: top center;
 }
 
@@ -106,4 +109,7 @@
   animation-duration: .25s;
   animation-timing-function: ease-out;
 }
+
+.align-baseline { vertical-align: baseline }
+.align-middle { vertical-align: middle }
 
