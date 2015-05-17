@@ -9,8 +9,6 @@ Geomicons Open is built from the ground up for performance.
 Designed on a grid for pixel-precision at standard sizes,
 each icon is hand-coded to avoid the extra bloat from traditional vector drawing applications.
 
-![Heart icon](dist/icons/heart.svg)
-
 ## Getting Started
 
 Download the source or install via npm or Bower:
@@ -32,7 +30,7 @@ Include the client-side JavaScript file.
 ```
 
 Add the `data-icon` attribute to any element.
-See the [Icon Reference Table](#icon-reference-table) for reference.
+[View the Site](http://geomicons.com) for referencing the icon name.
 
 ```html
 <span class="js-geomicon" data-icon="heart"></span>
@@ -141,68 +139,7 @@ you can add styles that set width and height in ems and use multiples to keep th
 }
 ```
 
---- 
-
-## Icon Reference Table
-
-Icon    | ID
---------|--------
-![bookmark](/dist/icons/bookmark.svg?raw=true) | bookmark
-![calendar](http://jxnblk.github.io/geomicons-open/icons/calendar.svg) | calendar
-![camera](http://jxnblk.github.io/geomicons-open/icons/camera.svg) | camera
-![chat](http://jxnblk.github.io/geomicons-open/icons/chat.svg) | chat
-![check](http://jxnblk.github.io/geomicons-open/icons/check.svg) | check
-![chevronDown](http://jxnblk.github.io/geomicons-open/icons/chevron-down.svg) | chevronDown
-![chevronLeft](http://jxnblk.github.io/geomicons-open/icons/chevron-left.svg) | chevronLeft
-![chevronRight](http://jxnblk.github.io/geomicons-open/icons/chevron-right.svg) | chevronRight
-![chevronUp](http://jxnblk.github.io/geomicons-open/icons/chevron-up.svg) | chevronUp
-![clock](http://jxnblk.github.io/geomicons-open/icons/clock.svg) | clock
-![close](http://jxnblk.github.io/geomicons-open/icons/close.svg) | close
-![cloud](http://jxnblk.github.io/geomicons-open/icons/cloud.svg) | cloud
-![cog](http://jxnblk.github.io/geomicons-open/icons/cog.svg) | cog
-![compose](http://jxnblk.github.io/geomicons-open/icons/compose.svg) | compose
-![dribbble](http://jxnblk.github.io/geomicons-open/icons/dribbble.svg) | dribbble
-![expand](http://jxnblk.github.io/geomicons-open/icons/expand.svg) | expand
-![external](http://jxnblk.github.io/geomicons-open/icons/external.svg) | external
-![facebook](http://jxnblk.github.io/geomicons-open/icons/facebook.svg) | facebook
-![file](http://jxnblk.github.io/geomicons-open/icons/file.svg) | file
-![folder](http://jxnblk.github.io/geomicons-open/icons/folder.svg) | folder
-![geolocation](http://jxnblk.github.io/geomicons-open/icons/geolocation.svg) | geolocation
-![github](http://jxnblk.github.io/geomicons-open/icons/github.svg) | github
-![grid](http://jxnblk.github.io/geomicons-open/icons/grid.svg) | grid
-![heart](http://jxnblk.github.io/geomicons-open/icons/heart.svg) | heart
-![home](http://jxnblk.github.io/geomicons-open/icons/home.svg) | home
-![info](http://jxnblk.github.io/geomicons-open/icons/info.svg) | info
-![link](http://jxnblk.github.io/geomicons-open/icons/link.svg) | link
-![list](http://jxnblk.github.io/geomicons-open/icons/list.svg) | list
-![lock](http://jxnblk.github.io/geomicons-open/icons/lock.svg) | lock
-![mail](http://jxnblk.github.io/geomicons-open/icons/mail.svg) | mail
-![musicNote](http://jxnblk.github.io/geomicons-open/icons/music-note.svg) | musicNote
-![next](http://jxnblk.github.io/geomicons-open/icons/next.svg) | next
-![no](http://jxnblk.github.io/geomicons-open/icons/no.svg) | no
-![pause](http://jxnblk.github.io/geomicons-open/icons/pause.svg) | pause
-![picture](http://jxnblk.github.io/geomicons-open/icons/picture.svg) | picture
-![pin](http://jxnblk.github.io/geomicons-open/icons/pin.svg) | pin
-![play](http://jxnblk.github.io/geomicons-open/icons/play.svg) | play
-![previous](http://jxnblk.github.io/geomicons-open/icons/previous.svg) | previous
-![refresh](http://jxnblk.github.io/geomicons-open/icons/refresh.svg) | refresh
-![repost](http://jxnblk.github.io/geomicons-open/icons/repost.svg) | repost
-![search](http://jxnblk.github.io/geomicons-open/icons/search.svg) | search
-![shoppingCart](http://jxnblk.github.io/geomicons-open/icons/shopping-cart.svg) | shoppingCart
-![skull](http://jxnblk.github.io/geomicons-open/icons/skull.svg) | skull
-![speakerVolume](http://jxnblk.github.io/geomicons-open/icons/speaker-volume.svg) | speakerVolume
-![speaker](http://jxnblk.github.io/geomicons-open/icons/speaker.svg) | speaker
-![star](http://jxnblk.github.io/geomicons-open/icons/star.svg) | star
-![tag](http://jxnblk.github.io/geomicons-open/icons/tag.svg) | tag
-![trash](http://jxnblk.github.io/geomicons-open/icons/trash.svg) | trash
-![triangleDown](http://jxnblk.github.io/geomicons-open/icons/triangle-down.svg) | triangleDown
-![triangleLeft](http://jxnblk.github.io/geomicons-open/icons/triangle-left.svg) | triangleLeft
-![triangleRight](http://jxnblk.github.io/geomicons-open/icons/triangle-right.svg) | triangleRight
-![triangleUp](http://jxnblk.github.io/geomicons-open/icons/triangle-up.svg) | triangleUp
-![twitter](http://jxnblk.github.io/geomicons-open/icons/twitter.svg) | twitter
-![user](http://jxnblk.github.io/geomicons-open/icons/user.svg) | user
-![video](http://jxnblk.github.io/geomicons-open/icons/video.svg) | video
-![warning](http://jxnblk.github.io/geomicons-open/icons/warning.svg) | warning
+---
 
 ### Requesting Additional Icons
 
