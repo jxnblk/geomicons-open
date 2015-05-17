@@ -147,7 +147,7 @@ you can add styles that set width and height in ems and use multiples to keep th
 
 Icon    | ID
 --------|--------
-![bookmark](/dist/icons/bookmark.svg) | bookmark
+![bookmark](/dist/icons/bookmark.svg?raw=true) | bookmark
 ![calendar](http://jxnblk.github.io/geomicons-open/icons/calendar.svg) | calendar
 ![camera](http://jxnblk.github.io/geomicons-open/icons/camera.svg) | camera
 ![chat](http://jxnblk.github.io/geomicons-open/icons/chat.svg) | chat
