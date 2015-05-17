@@ -29,8 +29,7 @@ Include the client-side JavaScript file.
 <script src="geomicons.min.js"></script>
 ```
 
-Add the `data-icon` attribute to any element.
-[View the Site](http://geomicons.com) for referencing the icon name.
+Add the `data-icon` attribute with an icon name to an element.
 
 ```html
 <span class="js-geomicon" data-icon="heart"></span>
