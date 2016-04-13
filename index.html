@@ -337,7 +337,7 @@
       document.body.classList.add('has-zeroclipboard');
       zero.on('copy', function(e) {
         var el = e.target.querySelector('.js-geomicon');
-        iconName = el.dataset.icon;
+        iconName = el.getAttribute('data-icon');
         var string = e.target.innerHTML;
         zero.setText(string);
       });
