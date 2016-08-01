@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "mkdir -p dist/svg && node build-svg.js",
-    "test": "ava -v",
+    "test": "standard && ava -v",
     "start": ""
   },
   "devDependencies": {
-    "ava": "^0.15.2"
+    "ava": "^0.15.2",
+    "standard": "^7.1.2"
   }
 }

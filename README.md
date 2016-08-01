@@ -3,6 +3,9 @@
 
 Hand-Coded Open Source Icons for the Web http://geomicons.com
 
+[![Build Status](https://travis-ci.org/jxnblk/geomicons-open.svg?branch=master)](https://travis-ci.org/jxnblk/geomicons-open)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 ## Fast, Plain & Simple
 
 Smaller than similar webfonts,

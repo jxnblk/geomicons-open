@@ -2,7 +2,6 @@
 module.exports = {
   bookmark: require('./paths/bookmark'),
   calendar: require('./paths/calendar'),
-  calendar: require('./paths/calendar'),
   camera: require('./paths/camera'),
   chat: require('./paths/chat'),
   check: require('./paths/check'),
@@ -52,6 +51,6 @@ module.exports = {
   triangleUp: require('./paths/triangle-up'),
   user: require('./paths/user'),
   video: require('./paths/video'),
-  warning: require('./paths/warning'),
+  warning: require('./paths/warning')
 }
 
