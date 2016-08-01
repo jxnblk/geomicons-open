@@ -1,7 +1,0 @@
-{
-  "name": "geomicons-open",
-  "description": "Open Source Icons for the Web",
-  "main": [
-    "dist/geomicons.min.js"
-  ]
-}

@@ -1,32 +1,12 @@
 {
   "name": "geomicons-open",
-  "version": "2.0.0",
+  "version": "3.0.0-beta.1",
   "description": "Open Source Icons for the Web",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha test",
-    "js": "webpack --progress --colors & webpack --config webpack-min.config.js",
-    "svg": "node scripts/build-svg",
-    "sprite": "node scripts/sprite",
-    "json": "node scripts/paths-json",
-    "css": "node scripts/css",
-    "compile": "npm run js & npm run svg & npm run sprite & npm run json & npm run css",
-    "watch:compile": "onchange './src/**/*' -- npm run compile",
-    "docs": "node docs/build",
-    "watch:docs": "onchange './docs/**/*' -- npm run docs",
-    "serve": "http-server",
-    "dev": "npm run compile & npm run watch:compile & npm run watch:docs & npm run serve",
-    "prepublish": "npm run compile",
-    "start": "npm run dev"
+    "test": "ava -v",
+    "start": ""
   },
   "devDependencies": {
-    "blk": "^2.0.0",
-    "cssnext": "^1.4.0",
-    "http-server": "^0.8.0",
-    "json-loader": "^0.5.1",
-    "lodash": "^3.8.0",
-    "mocha": "^2.2.4",
-    "onchange": "^1.1.0",
-    "webpack": "^1.9.4"
   }
 }
