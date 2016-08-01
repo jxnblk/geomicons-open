@@ -1,8 +1,8 @@
 {
   "name": "geomicons-open",
-  "version": "3.0.0-beta.1",
+  "version": "3.0.0-beta.2",
   "description": "Open Source Icons for the Web",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "mkdir -p dist/svg && node build-svg.js",
     "test": "standard && ava -v",
