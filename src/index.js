@@ -15,14 +15,11 @@ module.exports = {
   cloud: require('./src/cloud'),
   cog: require('./src/cog'),
   compose: require('./src/compose'),
-  dribbble: require('./src/dribbble'),
   expand: require('./src/expand'),
   external: require('./src/external'),
-  facebook: require('./src/facebook'),
   file: require('./src/file'),
   folder: require('./src/folder'),
   geolocation: require('./src/geolocation'),
-  github: require('./src/github'),
   grid: require('./src/grid'),
   heart: require('./src/heart'),
   home: require('./src/home'),
@@ -53,9 +50,8 @@ module.exports = {
   triangleLeft: require('./src/triangle-left'),
   triangleRight: require('./src/triangle-right'),
   triangleUp: require('./src/triangle-up'),
-  twitter: require('./src/twitter'),
   user: require('./src/user'),
   video: require('./src/video'),
   warning: require('./src/warning'),
-};
+}
 
