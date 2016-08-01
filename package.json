@@ -4,9 +4,11 @@
   "description": "Open Source Icons for the Web",
   "main": "index.js",
   "scripts": {
+    "build": "mkdir -p dist/svg && node build-svg.js",
     "test": "ava -v",
     "start": ""
   },
   "devDependencies": {
+    "ava": "^0.15.2"
   }
 }
