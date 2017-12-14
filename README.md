@@ -1,6 +1,6 @@
 # Geomicons Open
 
-Hand-Coded Open Source Icons for the Web http://geomicons.com
+Hand-Coded Open Source Icons for the Web
 
 ## Fast, Plain & Simple
 
@@ -83,7 +83,7 @@ You can also create partials, helper methods, or components to streamline the de
 ### Copy/Paste
 
 If you're only using one or two icons in your markup, it's probably better to paste the SVG code inline.
-Copy the icon from the [website](//geomicons.com)
+Copy the icon from the [website](http://jxnblk.com/geomicons-open/)
 or open the icon SVG file and copy and paste the SVG code.
 Be sure to adjust the `id` attribute to not conflict with other elements.
 
